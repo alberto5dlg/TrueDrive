@@ -17,7 +17,7 @@ namespace LibreriaTD.CAD
 
         //Método para insertar un empleado en la BD
         //devuelve un tipo bool dependiendo de si ha podido insertar
-        public bool InsertarEmpleado(string dni, string nombre, string apellidos, string direccion, string numContacto, string email, string usuario, string pass)
+        public bool InsertarEmpleado(EmpleadoEN newEmpleado)
         {
             bool insert = false;
             return insert;
