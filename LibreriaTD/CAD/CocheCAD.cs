@@ -49,7 +49,7 @@ namespace LibreriaTD.CAD
         public bool modPrecio(float mPre)
         {
             bool modifi = false;
-            return false;
+            return modifi;
         }
     }
 }

@@ -64,11 +64,12 @@ namespace LibreriaTD.CAD
         }
 
         //Método que saca toda la información de un empleado asociada a un dni
-        //devuelve toda la información de un empleado
-        public EmpleadoEN SacarEmpleado(string dni)
+        //devuelve verdadero y la informacion si se ha encontrado
+        public bool SacarEmpleado(string dni)
         {
-            EmpleadoEN empleado;
-            return empleado;
+            bool encontrado = false;
+
+            return encontrado;
         }
 
         //Método que actualiza la información de un empleado en la BD
