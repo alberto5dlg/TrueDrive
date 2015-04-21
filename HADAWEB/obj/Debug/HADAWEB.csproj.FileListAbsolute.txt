@@ -1,0 +1,4 @@
+C:\Users\Albertodlg\Dropbox\UA\2º Curso\2º Cuatrimestre\Arquitecturas Comp\Practicas\Fase 3\Fase 3 Individual\HADAWEB\HADAWEB\bin\HADAWEB.dll
+C:\Users\Albertodlg\Dropbox\UA\2º Curso\2º Cuatrimestre\Arquitecturas Comp\Practicas\Fase 3\Fase 3 Individual\HADAWEB\HADAWEB\bin\HADAWEB.pdb
+C:\Users\Albertodlg\Dropbox\UA\2º Curso\2º Cuatrimestre\Arquitecturas Comp\Practicas\Fase 3\Fase 3 Individual\HADAWEB\HADAWEB\obj\Debug\HADAWEB.dll
+C:\Users\Albertodlg\Dropbox\UA\2º Curso\2º Cuatrimestre\Arquitecturas Comp\Practicas\Fase 3\Fase 3 Individual\HADAWEB\HADAWEB\obj\Debug\HADAWEB.pdb
