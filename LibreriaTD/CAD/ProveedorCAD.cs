@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using LibreriaTD.EN;
+using System.Data;
 
 namespace LibreriaTD.CAD
 {
@@ -16,10 +17,10 @@ namespace LibreriaTD.CAD
         }
 
         //Crear empleado.
-        public int insertarProveedor(ProveedorEN proveedorNuevo)
+        public int crearProveedor(ProveedorEN proveedorNuevo)
         {
-            /*int idEmpleado = 0;
-            SqlConnection con = null;
+            int idEmpleado = 0;
+            /*SqlConnection con = null;
 
             string comando = "Insert into Empleado (Nif,nombre,apellidos,usuario,password,direccion,ciudad,pais,codigoPostal,email,telefono,foto,sueldo,cuentaBancaria) values ('" + empleadoNuevo.Nif + "' , '" + empleadoNuevo.Nombre + "' , '" + empleadoNuevo.Apellidos + "' , 'c" + empleadoNuevo.Usuario + "' , '" + empleadoNuevo.Password + "' , '" + empleadoNuevo.Direccion + "' , '" + empleadoNuevo.Ciudad + "' , '" + empleadoNuevo.Pais + "' , '" + empleadoNuevo.CodigoPostal + "' , '" + empleadoNuevo.Email + "' , '" + empleadoNuevo.Telefono + "' , '" + empleadoNuevo.Foto + "' , '" + empleadoNuevo.Sueldo + "' , '" + empleadoNuevo.CuentaBancaria + "')";
 
@@ -41,16 +42,16 @@ namespace LibreriaTD.CAD
             {
                 if (con != null)
                     con.Close();
-            }
-            return idEmpleado;*/
+            }*/
+            return idEmpleado;
         }
 
         //Borrar proveedor.
         public int bajaProveedor(ProveedorEN borrarProveedor)
         {
-            /*
+            
             int idEmpleado = 0;
-
+            /*
             SqlConnection con = null;
 
             string comando = "Delete from Empleado where Nif ='" + borrarEmpleado.Nif + "' and nombre='" + borrarEmpleado.Nombre + "' and apellidos='" + borrarEmpleado.Apellidos + "' and usuario='" + borrarEmpleado.Usuario + "'";
@@ -75,16 +76,16 @@ namespace LibreriaTD.CAD
                     con.Close();
                 MessageBox.Show("Empleado Borrado Correctamente", "Empleado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-            return idEmpleado;*/
+            */
+            return idEmpleado;
         }
 
         //Modificar proveedor.
         public int modifcarProveedor(ProveedorEN prove)
         {
-            /*
+            
             int idEmple = 0;
-            SqlConnection con = null;
+            /*SqlConnection con = null;
 
             string comando = "update Empleado set nif=' " + prove.Nif + "', usuario =' " + prove.Usuario + "', password =' " + prove.Password + "', nombre =' " + prove.Nombre + "', apellidos =' " + prove.Apellidos + "', ciudad =' " + prove.Ciudad + "', telefono =' " + prove.Telefono + "', direccion =' " + prove.Direccion + "', codigoPostal =' " + prove.CodigoPostal + "', cuenta =' " + prove.Cuenta + "', pais =' " + prove.Pais + "', email =' " + prove.Email + "', sueldo =' " + prove.Sueldo + "'";
             try
@@ -105,8 +106,8 @@ namespace LibreriaTD.CAD
             {
                 if (con != null)
                     con.Close();
-            }
-            return idEmple;*/
+            }*/
+            return idEmple;
         }
 
         //Buscar Proveedor por su Cif.
@@ -136,6 +137,7 @@ namespace LibreriaTD.CAD
                 MessageBox.Show(ex.Message.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }*/
+            return null;
         }
 
         //Buscar Proveedor por su Ciudad.
@@ -165,6 +167,7 @@ namespace LibreriaTD.CAD
                 MessageBox.Show(ex.Message.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }*/
+            return null;
         }
 
         //Proveedores en un comboBox (Funcion para que alguien que haga otra EN y CAD pueda visualizar proveedores).
@@ -195,6 +198,7 @@ namespace LibreriaTD.CAD
                 MessageBox.Show(ex.Message.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }*/
+            return null;
         }
 
         public DataSet listaPaises()
@@ -224,6 +228,8 @@ namespace LibreriaTD.CAD
                 MessageBox.Show(ex.Message.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }*/
+            return null;
+
         }
 
     }
