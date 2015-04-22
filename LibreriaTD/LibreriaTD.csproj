@@ -42,10 +42,8 @@
   <ItemGroup>
     <Compile Include="CAD\CocheCAD.cs" />
     <Compile Include="CAD\EmpleadoCAD.cs" />
-    <Compile Include="CAD\ProveedorCAD.cs" />
     <Compile Include="EN\CocheEN.cs" />
     <Compile Include="EN\EmpleadoEN.cs" />
-    <Compile Include="EN\ProveedorEN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

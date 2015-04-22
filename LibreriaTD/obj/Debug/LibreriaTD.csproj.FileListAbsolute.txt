@@ -3,8 +3,3 @@ C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\bin\Debug\LibreriaTD.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\obj\Debug\LibreriaTD.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\obj\Debug\LibreriaTD.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\obj\Debug\LibreriaTD.csprojResolveAssemblyReference.cache
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\LibreriaTD\obj\Debug\LibreriaTD.csprojResolveAssemblyReference.cache
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\LibreriaTD\obj\Debug\LibreriaTD.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\LibreriaTD\obj\Debug\LibreriaTD.pdb
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\LibreriaTD\bin\Debug\LibreriaTD.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\LibreriaTD\bin\Debug\LibreriaTD.pdb
