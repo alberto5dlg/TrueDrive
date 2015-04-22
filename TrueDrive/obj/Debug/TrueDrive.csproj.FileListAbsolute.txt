@@ -1,0 +1,11 @@
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\HADAWEB\bin\HADAWEB.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\HADAWEB\bin\HADAWEB.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\HADAWEB\obj\Debug\TrueDrive.csprojResolveAssemblyReference.cache
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\HADAWEB\obj\Debug\HADAWEB.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\HADAWEB\obj\Debug\HADAWEB.pdb
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\HADAWEB\bin\HADAWEB.dll.config
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\HADAWEB\bin\HADAWEB.dll
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\HADAWEB\bin\HADAWEB.pdb
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\HADAWEB\obj\Debug\TrueDrive.csprojResolveAssemblyReference.cache
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\HADAWEB\obj\Debug\HADAWEB.dll
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\HADAWEB\obj\Debug\HADAWEB.pdb
