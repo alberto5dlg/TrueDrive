@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 using LibreriaTD.CAD;
 
 namespace LibreriaTD.EN
@@ -60,7 +61,7 @@ namespace LibreriaTD.EN
             set { telefono = value; }
         }
 
-        public string Fax
+        public int Fax
         {
             get { return fax; }
             set { fax = value; }
@@ -71,14 +72,16 @@ namespace LibreriaTD.EN
 
         public int insertarProveedor()
         {
-            /*ProveedorCAD proveedorCad = new ProveedorCAD();
-            proveedorCad.CrearProveedor(this);*/
+            ProveedorCAD proveedorCad = new ProveedorCAD();
+            proveedorCad.crearProveedor(this);
+            return 0;
         }
 
         public int bajaProveedor()
         {
             /*ProveedorCAD proveedorCad = new ProveedorCAD();
             proveedorCad.BajaProveedor(this);*/
+            return 0;
         }
 
         public int modificarProveedor()
@@ -86,6 +89,7 @@ namespace LibreriaTD.EN
             /*
             ProveedorCAD proveedorCAD = new ProveedorCAD();
             proveedorCAD.modifcarProveedor(this);*/
+            return 0;
         }
 
         public DataSet buscarPorCif(string cif)
@@ -96,6 +100,7 @@ namespace LibreriaTD.EN
             pNif = porNif.BuscarPorNif(nif);
 
             return pNif;*/
+            return null;
         }
 
         public DataSet buscarPorCiudad(string ciudad)
@@ -106,6 +111,7 @@ namespace LibreriaTD.EN
             pCiudad = porCiudad.BuscarPorCiudad(ciudad);
 
             return pCiudad;*/
+            return null;
         }
 
         //Mostrar en un combobox los proveedores.
@@ -118,14 +124,14 @@ namespace LibreriaTD.EN
             cat = paisCad.VisualizarProveedor();
 
             return cat;*/
+            return null;
         }
 
-        public ENProveedor verDatosProveedor(string cf)
+        public ProveedorEN verDatosProveedor(string cf)
         {
-            /*
-            ENProveedor enproveedor = new ENProveedor();
-            ENProveedor proveedor = new ENProveedor();
-            DataSet dataprov = new DataSet();
+            ProveedorEN enproveedor = new ProveedorEN();
+            ProveedorEN proveedor = new ProveedorEN();
+            /*DataSet dataprov = new DataSet();
 
             dataprov = proveedor.buscarProveedor2(cf);
 
@@ -145,8 +151,8 @@ namespace LibreriaTD.EN
             catch
             {
                 MessageBox.Show("No hay nada seleccionado");
-            }
-            return proveedor;*/
+            }*/
+            return proveedor;
         }
 
         public DataSet listaPaises()
@@ -157,6 +163,7 @@ namespace LibreriaTD.EN
 
             data = pcad.ListaPaises();
             return data;*/
+            return null;
         }
     }
 }
