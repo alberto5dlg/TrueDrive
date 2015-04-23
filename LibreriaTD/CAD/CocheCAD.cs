@@ -8,6 +8,14 @@ namespace LibreriaTD.CAD
 {
     public class CocheCAD
     {
+
+        //private string conexion;
+        
+        public CocheCAD()
+        {
+
+        }
+
         /*Con esta funcion insertaremos un coche en nuestra base de datos
         * devolvera verdadero cuando se inserte correctamente en caso contrario 
         * devolvera false

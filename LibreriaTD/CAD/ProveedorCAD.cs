@@ -9,7 +9,7 @@ namespace LibreriaTD.CAD
 {
     public class ProveedorCAD
     {
-        private string conexion;
+        //private string conexion;
 
         public ProveedorCAD()
         {

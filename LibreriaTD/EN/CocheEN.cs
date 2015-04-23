@@ -22,8 +22,33 @@ namespace LibreriaTD.EN
         private string cambio;
         private string color;
         private int unidades;
+        private string matricula;
 
+        public CocheEN(string marca, string modelo,float precio,int puertas,string motor,string matricula,
+            float km,int anyo,string combustible,int plazas,string cambio,string color,int unidades)
+        {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.precio = precio;
+            this.puertas = puertas;
+            this.motor = motor;
+            this.km = km;
+            this.anyo = anyo;
+            this.combustible = combustible;
+            this.plazas = plazas; 
+            this.cambio = cambio;
+            this.color = color;
+            this.unidades = unidades;
+            this.matricula = matricula;
+        }
         // Getters y  Setters basicos para el funcionamiento de la entidad
+
+        public string Matricula
+        {
+            get { return matricula; }
+            set { matricula = value; }
+        }
+
         public string Marca
         {
             get { return marca; }

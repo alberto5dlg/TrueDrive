@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LibreriaTD.CAD;
+
 
 namespace LibreriaTD.EN
 {
@@ -72,6 +74,18 @@ namespace LibreriaTD.EN
         {
             get { return pass; }
             set { pass = value; }
+        }
+
+        public void InsertarEmpleado()
+        {
+            EmpleadoCAD inEmp = new EmpleadoCAD();
+            inEmp.InsertarEmpleado(this);
+        }
+
+        public void BorrarEmpleado()
+        {
+            EmpleadoCAD boEmp = new EmpleadoCAD();
+            boEmp.BorrarEmpleado(this.dni);
         }
     }
 }

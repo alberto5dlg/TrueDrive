@@ -8,7 +8,7 @@ namespace LibreriaTD.CAD
 {
     class EmpleadoCAD
     {
-        string conexion;//Variable que se usará para guardar la cadena de conexión con la BD
+        //private string conexion;//Variable que se usará para guardar la cadena de conexión con la BD
 
         public EmpleadoCAD()
         {

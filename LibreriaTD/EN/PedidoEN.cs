@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LibreriaTD.CAD;
 
 namespace LibreriaTD.EN
 {
@@ -100,6 +101,24 @@ namespace LibreriaTD.EN
         {
             get { return infoAdicional; }
             set { infoAdicional = value; }
+        }
+
+        public void NuevoPedido()
+        {
+            PedidoCAD nPed = new PedidoCAD();
+            nPed.NuevoPedido(this);
+        }
+
+        public void AnularPedido()
+        {
+            PedidoCAD anPed = new PedidoCAD();
+            anPed.AnularPedido(this.codPedido);
+        }
+
+        public void ConsultarPedido()
+        {
+            PedidoCAD conPed = new PedidoCAD();
+            conPed.ConsultarPedido(this.codPedido);
         }
     }
 }
