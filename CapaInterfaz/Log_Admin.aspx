@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="CapaInterfaz.LogIn" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Log_Admin.aspx.cs" Inherits="CapaInterfaz.LogIn" %>
 
 <!DOCTYPE html>
 

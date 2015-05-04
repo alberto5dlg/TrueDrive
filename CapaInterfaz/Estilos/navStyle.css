@@ -1,0 +1,71 @@
+﻿
+.menu{
+    background: url("../Styles/images/noise.png") repeat scroll 0% 0%, linear-gradient(to bottom, #EC2929 0%, #6C6C6C 100%) repeat scroll 0% 0% transparent;
+    border-bottom: 1px solid #C72222;
+    border-top: 1px solid #C72222;
+}
+
+.menu nav {
+    overflow:hidden;
+    border-radius:2px;     
+}
+    .menu nav ul {
+       list-style:none;
+    }
+     .firstLevel > li{
+        font-size:16px;
+    }
+    .menu nav ul:first-child > li {
+        float: left;
+        
+    }   
+         .menu nav li a {
+            display: block;
+            color: white;            
+            text-decoration: none;                        
+        }
+
+        .menu nav ul > li a:hover, .menu nav ul > li:hover {
+             background: #E18282;
+             color:black;            
+        }
+    .menu nav li ul {
+        display: none;
+        position: absolute;
+        z-index: 9999;
+        color: black;
+        border: 2px solid #EC2929;
+        margin-top:-1px;
+        border-bottom-left-radius:2px;
+        border-bottom-right-radius:2px;
+        font-size:12px;
+    }
+    .menu nav li:hover a {
+        color: black;
+        background: #E18282;
+    }
+    .menu nav li:hover ul li a{
+        background-color: white;      
+    }
+    .menu nav li:hover ul li a:hover{
+        padding-left:20px;
+    }
+        .menu nav li:hover > ul {
+            display:block;
+        }
+    .menu nav li ul li {
+        position:relative;
+    }
+    .menu nav li ul li ul {
+        left:101%;
+        top:-0.2%;
+    }
+    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
+        .menu nav li ul li ul {
+            top:-1%;
+        }
+    }
+
+    .secondLevel{
+        min-width:150px;
+    }

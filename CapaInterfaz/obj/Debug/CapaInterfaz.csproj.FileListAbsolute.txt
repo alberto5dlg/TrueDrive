@@ -1,0 +1,7 @@
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaInterfaz.dll
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaInterfaz.pdb
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaNegocio.dll
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaNegocio.pdb
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
+C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb

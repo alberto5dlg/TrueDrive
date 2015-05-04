@@ -7,14 +7,14 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>1d531bc0-13a5-44ec-b77a-0a6a8839a34d</ProjectGuid>
+    <ProjectGuid>{E7BE6B40-1D90-44DC-AACE-A2B30662DD10}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaInterfaz</RootNamespace>
     <AssemblyName>CapaInterfaz</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -57,10 +57,167 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\BaseStyle.css" />
+    <Content Include="Estilos\DisplayGreat.css" />
+    <Content Include="Estilos\DisplayMedium.css" />
+    <Content Include="Estilos\Header.css" />
+    <Content Include="Estilos\imagenes\carrito_x64.png" />
+    <Content Include="Estilos\imagenes\logo.png" />
+    <Content Include="Estilos\imagenes\search.png" />
+    <Content Include="Estilos\imagenes\social\phone.png" />
+    <Content Include="Estilos\imagenes\user-options\config.png" />
+    <Content Include="Estilos\imagenes\user-options\orders.png" />
+    <Content Include="Estilos\imagenes\user-options\shutdown.png" />
+    <Content Include="Estilos\imagenes\user-options\user.png" />
+    <Content Include="Estilos\LogginStyle.css" />
+    <Content Include="Estilos\navStyle.css" />
+    <Content Include="Estilos\RegisterStyle.css" />
+    <Content Include="Estilos\UserAccountStyle.css" />
+    <Content Include="Log_Admin.aspx" />
+    <Content Include="Paginas\CarritoCompra.aspx" />
+    <Content Include="Paginas\Contacto.aspx" />
+    <Content Include="Paginas\CuentaUsuario.aspx" />
+    <Content Include="Paginas\Home.aspx" />
+    <Content Include="Paginas\Login.aspx" />
+    <Content Include="Paginas\Productos.aspx" />
+    <Content Include="Paginas\Registro.aspx" />
+    <Content Include="Panel_Control.aspx" />
+    <Content Include="Scripts\Admin\getCategories.js" />
+    <Content Include="Scripts\Admin\getUsers.js" />
+    <Content Include="Scripts\Admin\options.js" />
+    <Content Include="Scripts\allowHyperLinks.js" />
+    <Content Include="Scripts\Contact\consultMobile.js" />
+    <Content Include="Scripts\Contact\ResizeTextArea.js" />
+    <Content Include="Scripts\DisplayTablet.js" />
+    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.min.map" />
+    <None Include="Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.js" />
+    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.min.css" />
+    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.min.js" />
+    <Content Include="Scripts\JQM\jquery.mobile.external-png-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.external-png-1.4.2.min.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.icons-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.icons-1.4.2.min.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.inline-png-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.inline-png-1.4.2.min.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.inline-svg-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.inline-svg-1.4.2.min.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.structure-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.structure-1.4.2.min.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.theme-1.4.2.css" />
+    <Content Include="Scripts\JQM\jquery.mobile.theme-1.4.2.min.css" />
+    <Content Include="Scripts\jquery-2.0.3.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\light-box\lightbox-2.6.min.js" />
+    <Content Include="Scripts\Log\checkLogin.js" />
+    <Content Include="Scripts\Log\LogIn.js" />
+    <Content Include="Scripts\Menu\resizeMenu.js" />
+    <Content Include="Scripts\MobileHeight.js" />
+    <Content Include="Scripts\OnEnterSearch.js" />
+    <Content Include="Scripts\panelActive.js" />
+    <Content Include="Scripts\Product\checkLevel.js" />
+    <Content Include="Scripts\Register\checkRegister.js" />
+    <Content Include="Scripts\socialNetworks.js" />
+    <Content Include="Scripts\Success\success.js" />
+    <Content Include="Scripts\triggerPanel.js" />
+    <Content Include="Scripts\User\checkConfig.js" />
+    <Content Include="Scripts\User\config.js" />
+    <Content Include="Scripts\User\DropDownMenuOptions.js" />
+    <Content Include="Scripts\User\recoverPass.js" />
+    <Content Include="Scripts\widthmenu.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Log_Admin.aspx.cs">
+      <DependentUpon>Log_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log_Admin.aspx.designer.cs">
+      <DependentUpon>Log_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CarritoCompra.aspx.cs">
+      <DependentUpon>CarritoCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CarritoCompra.aspx.designer.cs">
+      <DependentUpon>CarritoCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Contacto.aspx.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Contacto.aspx.designer.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CuentaUsuario.aspx.cs">
+      <DependentUpon>CuentaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CuentaUsuario.aspx.designer.cs">
+      <DependentUpon>CuentaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_Control.aspx.cs">
+      <DependentUpon>Panel_Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel_Control.aspx.designer.cs">
+      <DependentUpon>Panel_Control.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrueDrive.Master.cs">
+      <DependentUpon>TrueDrive.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrueDrive.Master.designer.cs">
+      <DependentUpon>TrueDrive.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TrueDrive.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{928189a6-f420-43d2-acb3-da0ac9a78c01}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -73,12 +230,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost:7068/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
