@@ -3,3 +3,8 @@ C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaPersistencia\bin\Debug\CapaPersiste
 C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
 C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.dll
 C:\Users\Silexman\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
