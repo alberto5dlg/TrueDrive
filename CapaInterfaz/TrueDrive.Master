@@ -41,9 +41,6 @@
                                     <a  href="http://truedrive.com/Pages/Contacto.aspx">Contacto:  info@truedrive.com</a>
                                 </div>
                                 <asp:TextBox runat="server" ID="searchInput"></asp:TextBox>
-                              <asp:LinkButton ID="searchSubmit" runat="server" CausesValidation="false" OnClick="searchSubmit_Click"><img src="../Styles/images/search.png" /></asp:LinkButton>
-
-                          </div>
                       </div>              
                       <div class="register displayGreat displayMedium">
                          <asp:LoginView runat="server" ID="userView">
