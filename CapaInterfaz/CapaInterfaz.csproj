@@ -61,8 +61,11 @@
     <Content Include="Estilos\DisplayGreat.css" />
     <Content Include="Estilos\DisplayMedium.css" />
     <Content Include="Estilos\Header.css" />
+    <Content Include="Estilos\imagenes\borrar.png" />
     <Content Include="Estilos\imagenes\carrito_x64.png" />
+    <Content Include="Estilos\imagenes\insertar.png" />
     <Content Include="Estilos\imagenes\logo.png" />
+    <Content Include="Estilos\imagenes\modificar.png" />
     <Content Include="Estilos\imagenes\search.png" />
     <Content Include="Estilos\imagenes\social\phone.png" />
     <Content Include="Estilos\imagenes\user-options\config.png" />
@@ -71,6 +74,7 @@
     <Content Include="Estilos\imagenes\user-options\user.png" />
     <Content Include="Estilos\LogginStyle.css" />
     <Content Include="Estilos\navStyle.css" />
+    <Content Include="Estilos\PanelDeControl.css" />
     <Content Include="Estilos\RegisterStyle.css" />
     <Content Include="Estilos\UserAccountStyle.css" />
     <Content Include="Log_Admin.aspx" />
@@ -81,6 +85,7 @@
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Paginas\Productos.aspx" />
     <Content Include="Paginas\Registro.aspx" />
+    <Content Include="Paginas\Clients.aspx" />
     <Content Include="Panel_Control.aspx" />
     <Content Include="Scripts\Admin\getCategories.js" />
     <Content Include="Scripts\Admin\getUsers.js" />
@@ -184,6 +189,13 @@
     </Compile>
     <Compile Include="Paginas\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel_Control.aspx.cs">
       <DependentUpon>Panel_Control.aspx</DependentUpon>
