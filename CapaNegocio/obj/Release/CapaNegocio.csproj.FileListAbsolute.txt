@@ -1,0 +1,7 @@
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Release\CapaNegocio.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Release\CapaNegocio.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Release\CapaPersistencia.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Release\CapaPersistencia.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\obj\Release\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\obj\Release\CapaNegocio.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\obj\Release\CapaNegocio.pdb
