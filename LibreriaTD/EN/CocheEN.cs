@@ -12,10 +12,10 @@ namespace LibreriaTD.EN
         //Variables privadas que definen los atributos del coche. 
         private string marca;
         private string modelo;
-        private float precio;
+        private double precio;//precio del producto sin IVA 
         private int puertas;
         private string motor;
-        private float km;
+        private double km;
         private int anyo;
         private string combustible;
         private int plazas;
@@ -23,9 +23,10 @@ namespace LibreriaTD.EN
         private string color;
         private int unidades;
         private string matricula;
+        private double precioTotal;// Precio del producto total tras aplicar el IVA 
 
-        public CocheEN(string marca, string modelo,float precio,int puertas,string motor,string matricula,
-            float km,int anyo,string combustible,int plazas,string cambio,string color,int unidades)
+        public CocheEN(string marca, string modelo,double precio,int puertas,string motor,string matricula,
+            double km,int anyo,string combustible,int plazas,string cambio,string color,int unidades)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -61,7 +62,7 @@ namespace LibreriaTD.EN
             set { modelo = value; }
         }
 
-        public float Precio
+        public double Precio
         {
             get { return precio; }
             set { precio = value; }
@@ -79,7 +80,7 @@ namespace LibreriaTD.EN
             set { motor = value; }
         }
 
-        public float Km
+        public double Km
         {
             get { return km; }
             set { km = value; }
@@ -120,6 +121,13 @@ namespace LibreriaTD.EN
             get { return unidades; }
             set { unidades = value; }
         }
+
+        public double PrecioTotal
+        {
+            get { return (this.Precio * 1.21); }
+            set { precioTotal = value; }
+        }
+
         //Cuando adquiramos un nuevo coche en nuestro catalogo lo insertaremos en la base de datos
         public void insertarCoche()
         {
