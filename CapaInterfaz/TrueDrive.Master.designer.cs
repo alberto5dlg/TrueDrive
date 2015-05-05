@@ -40,6 +40,15 @@ namespace CapaInterfaz {
         protected global::System.Web.UI.WebControls.TextBox searchInput;
         
         /// <summary>
+        /// Control searchSubmit.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton searchSubmit;
+        
+        /// <summary>
         /// Control userView.
         /// </summary>
         /// <remarks>
