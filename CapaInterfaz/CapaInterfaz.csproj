@@ -57,30 +57,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Estilos\BaseStyle.css" />
-    <Content Include="Estilos\DisplayGreat.css" />
-    <Content Include="Estilos\DisplayMedium.css" />
-    <Content Include="Estilos\Header.css" />
-    <Content Include="Estilos\imagenes\carrito_x64.png" />
-    <Content Include="Estilos\imagenes\logo.png" />
-    <Content Include="Estilos\imagenes\search.png" />
-    <Content Include="Estilos\imagenes\social\phone.png" />
-    <Content Include="Estilos\imagenes\user-options\config.png" />
-    <Content Include="Estilos\imagenes\user-options\orders.png" />
-    <Content Include="Estilos\imagenes\user-options\shutdown.png" />
-    <Content Include="Estilos\imagenes\user-options\user.png" />
-    <Content Include="Estilos\LogginStyle.css" />
-    <Content Include="Estilos\navStyle.css" />
-    <Content Include="Estilos\RegisterStyle.css" />
-    <Content Include="Estilos\UserAccountStyle.css" />
+    <Content Include="Styles\BaseStyle.css" />
+    <Content Include="Styles\DisplayGreat.css" />
+    <Content Include="Styles\DisplayMedium.css" />
+    <Content Include="Styles\Header.css" />
+    <Content Include="Styles\imagenes\carrito_x64.png" />
+    <Content Include="Styles\imagenes\logo.png" />
+    <Content Include="Styles\imagenes\search.png" />
+    <Content Include="Styles\imagenes\social\phone.png" />
+    <Content Include="Styles\imagenes\user-options\config.png" />
+    <Content Include="Styles\imagenes\user-options\orders.png" />
+    <Content Include="Styles\imagenes\user-options\shutdown.png" />
+    <Content Include="Styles\imagenes\user-options\user.png" />
+    <Content Include="Styles\LogginStyle.css" />
+    <Content Include="Styles\navStyle.css" />
+    <Content Include="Styles\RegisterStyle.css" />
+    <Content Include="Styles\UserAccountStyle.css" />
     <Content Include="Log_Admin.aspx" />
-    <Content Include="Paginas\CarritoCompra.aspx" />
-    <Content Include="Paginas\Contacto.aspx" />
-    <Content Include="Paginas\CuentaUsuario.aspx" />
-    <Content Include="Paginas\Home.aspx" />
-    <Content Include="Paginas\Login.aspx" />
-    <Content Include="Paginas\Productos.aspx" />
-    <Content Include="Paginas\Registro.aspx" />
+    <Content Include="Pages\CarritoCompra.aspx" />
+    <Content Include="Pages\Contacto.aspx" />
+    <Content Include="Pages\CuentaUsuario.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\Productos.aspx" />
+    <Content Include="Pages\Registro.aspx" />
     <Content Include="Panel_Control.aspx" />
     <Content Include="Scripts\Admin\getCategories.js" />
     <Content Include="Scripts\Admin\getUsers.js" />
@@ -136,53 +136,53 @@
     <Compile Include="Log_Admin.aspx.designer.cs">
       <DependentUpon>Log_Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\CarritoCompra.aspx.cs">
+    <Compile Include="Pages\CarritoCompra.aspx.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\CarritoCompra.aspx.designer.cs">
+    <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Contacto.aspx.cs">
+    <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Contacto.aspx.designer.cs">
+    <Compile Include="Pages\Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\CuentaUsuario.aspx.cs">
+    <Compile Include="Pages\CuentaUsuario.aspx.cs">
       <DependentUpon>CuentaUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\CuentaUsuario.aspx.designer.cs">
+    <Compile Include="Pages\CuentaUsuario.aspx.designer.cs">
       <DependentUpon>CuentaUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Home.aspx.cs">
+    <Compile Include="Pages\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Home.aspx.designer.cs">
+    <Compile Include="Pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Login.aspx.cs">
+    <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Login.aspx.designer.cs">
+    <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Productos.aspx.cs">
+    <Compile Include="Pages\Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Productos.aspx.designer.cs">
+    <Compile Include="Pages\Productos.aspx.designer.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Registro.aspx.cs">
+    <Compile Include="Pages\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Registro.aspx.designer.cs">
+    <Compile Include="Pages\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel_Control.aspx.cs">
