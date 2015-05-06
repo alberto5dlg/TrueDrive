@@ -57,9 +57,9 @@ namespace LibreriaTD.EN
             get { return idCliente; }
         }
 
-        public CocheEN[] Coches //Este get devuelve un array con los coches
+        public List<CocheEN> Coches //Este get devuelve un array con los coches
         {
-            get { return coches.ToArray(); }
+            get { return coches; }
         }
 
         public double Precio//El precio se calcula al añadir un coche a la lista, por lo tanto solo se tendrá el getter
