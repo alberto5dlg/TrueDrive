@@ -1,0 +1,111 @@
+﻿body {
+
+}
+
+.footer {
+    background:url(../Styles/images/noise-soft.png) repeat, -webkit-linear-gradient(top, #F0F0F0 0%,#F0F0F0 100%);
+    background:url(../Styles/images/noise-soft.png) repeat, -moz-linear-gradient(top, #F0F0F0 0%,#F0F0F0 100%);
+    background:url(../Styles/images/noise-soft.png) repeat, -o-linear-gradient(top, #F0F0F0 0%,#F0F0F0 100%);
+    background:url(../Styles/images/noise-soft.png) repeat, -ms-linear-gradient(top, #F0F0F0 0%,#F0F0F0 100%);
+    border-top: 1px solid #E3DFE3;
+}
+
+.columns {
+
+    float: left; 
+    width: 33%;
+    height: 130px;
+    text-align: center;
+    color: black;
+
+}
+
+    .columns p {
+
+        text-align:center; 
+        font-size: 12px;
+        color: #3f4244;
+
+    }
+
+    .columns img {
+        width:100%
+        
+    }
+
+    .columns ul{
+        padding-left: 10px;
+        text-align: center;
+        color: black;  
+        list-style:none;
+        font: bold 12px;
+    }
+
+.credits {
+    float: left; 
+    width: 100%;
+    height: 25px;
+}
+    .credits p {
+        text-align:center; 
+        font-size: 10px;
+        color:black;
+    }
+.info {
+    float: left; 
+    width: 100%;
+    height: 30px;
+    color: black;
+   
+}
+
+
+    .info p {
+        text-align:center;
+        vertical-align:central; 
+		padding-bottom: 5px;
+        font-size: 12px;
+        color:black;
+    }
+
+    .info a{
+        color:black;
+    }
+
+    .pay-methods{
+        float:left;
+        width: 100%;
+    }
+
+    .methods-img{
+        float:left;
+        margin-left: 65px;
+        width: 15%;
+    }
+
+    /*Social Networks*/
+
+.social{
+    float: left;
+    margin-top: 5px;
+    margin-left:10%;
+    
+}
+
+    .social ul{
+        list-style: none;
+        margin-top: 2px;
+       
+        
+        
+    }
+
+        .social ul li{
+            float: left;
+            padding: 5px;
+            
+          
+        }
+            .social ul li:hover img{
+                
+            }

@@ -57,18 +57,38 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Identity.aspx" />
+    <Content Include="Pages\Legal.aspx" />
+    <Content Include="Pages\Location.aspx" />
+    <Content Include="Pages\Privacy.aspx" />
     <Content Include="Styles\BaseStyle.css" />
     <Content Include="Styles\DisplayGreat.css" />
     <Content Include="Styles\DisplayMedium.css" />
+    <Content Include="Styles\FooterStyle.css" />
     <Content Include="Styles\Header.css" />
-    <Content Include="Styles\imagenes\carrito_x64.png" />
-    <Content Include="Styles\imagenes\logo.png" />
-    <Content Include="Styles\imagenes\search.png" />
-    <Content Include="Styles\imagenes\social\phone.png" />
-    <Content Include="Styles\imagenes\user-options\config.png" />
-    <Content Include="Styles\imagenes\user-options\orders.png" />
-    <Content Include="Styles\imagenes\user-options\shutdown.png" />
-    <Content Include="Styles\imagenes\user-options\user.png" />
+    <Content Include="Styles\images\carrito_x64.png" />
+    <Content Include="Styles\images\logo.png" />
+    <Content Include="Styles\images\payments-methods\paypal.png" />
+    <Content Include="Styles\images\payments-methods\transfer.png" />
+    <Content Include="Styles\images\payments-methods\visa.png" />
+    <Content Include="Styles\images\search.png" />
+    <Content Include="Styles\images\social\Email-Icon.png" />
+    <Content Include="Styles\images\social\Facebook-Icon.png" />
+    <Content Include="Styles\images\social\Flickr-Icon.png" />
+    <Content Include="Styles\images\social\Google-plus-Icon.png" />
+    <Content Include="Styles\images\social\Instagram-Icon.png" />
+    <Content Include="Styles\images\social\Linkedin.png" />
+    <Content Include="Styles\images\social\phone.png" />
+    <Content Include="Styles\images\social\Pinterest-Icon.png" />
+    <Content Include="Styles\images\social\RSS-Icon.png" />
+    <Content Include="Styles\images\social\Tumblr-Icon.png" />
+    <Content Include="Styles\images\social\Twitter-Icon.png" />
+    <Content Include="Styles\images\social\Youtube-Icon.png" />
+    <Content Include="Styles\images\user-options\config.png" />
+    <Content Include="Styles\images\user-options\orders.png" />
+    <Content Include="Styles\images\user-options\shutdown.png" />
+    <Content Include="Styles\images\user-options\user.png" />
+    <Content Include="Styles\Location.css" />
     <Content Include="Styles\LogginStyle.css" />
     <Content Include="Styles\navStyle.css" />
     <Content Include="Styles\RegisterStyle.css" />
@@ -89,24 +109,7 @@
     <Content Include="Scripts\Contact\consultMobile.js" />
     <Content Include="Scripts\Contact\ResizeTextArea.js" />
     <Content Include="Scripts\DisplayTablet.js" />
-    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.min.map" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
-    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.js" />
-    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.min.css" />
-    <Content Include="Scripts\JQM\jquery.mobile-1.4.2.min.js" />
-    <Content Include="Scripts\JQM\jquery.mobile.external-png-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.external-png-1.4.2.min.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.icons-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.icons-1.4.2.min.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.inline-png-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.inline-png-1.4.2.min.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.inline-svg-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.inline-svg-1.4.2.min.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.structure-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.structure-1.4.2.min.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.theme-1.4.2.css" />
-    <Content Include="Scripts\JQM\jquery.mobile.theme-1.4.2.min.css" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\light-box\lightbox-2.6.min.js" />
@@ -164,12 +167,40 @@
     <Compile Include="Pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Identity.aspx.cs">
+      <DependentUpon>Identity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Identity.aspx.designer.cs">
+      <DependentUpon>Identity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Legal.aspx.cs">
+      <DependentUpon>Legal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Legal.aspx.designer.cs">
+      <DependentUpon>Legal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Location.aspx.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Location.aspx.designer.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
