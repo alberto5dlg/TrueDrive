@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<%@ Page Title="Clients" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeBehind="Clients.aspx.cs"  %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -7,6 +8,14 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
+=======
+﻿<%@ Page Title="Clients" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeBehind="Clients.aspx.cs" Inherits="CapaInterfaz.Paginas.Clients" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../Estilos/BaseStyle.css" type="text/css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  
+>>>>>>> origin/Jose
 <!-- Lo que insertemos en este bloque ira al body de la página en particular que estamos desarrollando. -->
 
      <fieldset class="cajaPrincipal">

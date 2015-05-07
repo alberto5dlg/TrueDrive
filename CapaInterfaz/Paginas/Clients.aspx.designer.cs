@@ -7,6 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 
 
 namespace CapaInterfaz.Paginas
@@ -17,3 +18,11 @@ namespace CapaInterfaz.Paginas
     {
     }
 }
+=======
+namespace CapaInterfaz.Paginas {
+    
+    
+    public partial class Clients {
+    }
+}
+>>>>>>> origin/Jose
