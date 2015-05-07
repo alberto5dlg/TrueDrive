@@ -2,3 +2,4 @@ C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\bin\Release\LibreriaTD.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\bin\Release\LibreriaTD.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\obj\Release\LibreriaTD.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\obj\Release\LibreriaTD.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\LibreriaTD\obj\Release\LibreriaTD.csprojResolveAssemblyReference.cache
