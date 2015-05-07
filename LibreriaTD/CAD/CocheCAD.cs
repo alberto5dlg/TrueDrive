@@ -37,7 +37,7 @@ namespace LibreriaTD.CAD
         /* Modificaremos los kilometros de un coche cuando este coche sea alquilado por 
          * algun cliente y tenga mas de los kilometros que tenia antes de ser alquilado
          */
-        public bool modKM(double modKm)
+        public bool modKM(float modKm)
         {
             bool modifi = false;
             return modifi;
@@ -52,8 +52,9 @@ namespace LibreriaTD.CAD
             return modifi;
         }
 
-        /*Modificar el precio del coche */
-        public bool modPrecio(double mPre)
+        /*Modificar el precio del coche
+         */
+        public bool modPrecio(float mPre)
         {
             bool modifi = false;
             return modifi;

@@ -14,8 +14,3 @@ C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\bin\HADAWEB.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\obj\Debug\HADAWEB.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\obj\Debug\HADAWEB.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\obj\Debug\TrueDrive.csprojResolveAssemblyReference.cache
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\TrueDrive\bin\HADAWEB.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\TrueDrive\bin\HADAWEB.pdb
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\TrueDrive\obj\Debug\TrueDrive.csprojResolveAssemblyReference.cache
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\TrueDrive\obj\Debug\HADAWEB.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\TrueDrive\obj\Debug\HADAWEB.pdb

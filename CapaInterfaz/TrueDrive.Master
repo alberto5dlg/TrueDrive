@@ -10,17 +10,12 @@
     <link href='Styles/DisplayGreat.css' type='text/css' rel='stylesheet' media='screen and (min-width: 981px)' />
     <link href='Styles/DisplayMedium.css' type='text/css' rel='stylesheet'  media='screen and (min-width: 801px) and (max-width: 980px)'/>
     <link href='Styles/Header.css' type='text/css' rel='stylesheet'/>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="Styles/Mobile/Buttons And Navbars/buttons-navbars.css" media="(max-width: 800px)" type="text/css"/>
-    
-=======
     <link href='Styles/FooterStyle.css' type='text/css' rel='stylesheet'/>
     <script src="../Scripts/jquery-2.0.3.js" type="text/javascript"></script>
     <script src="../Scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
     <script src="../Scripts/triggerPanel.js"></script>
     <script src="../Scripts/allowHyperLinks.js" type="text/javascript"></script>
     <script src="../Scripts/OnEnterSearch.js" type="text/javascript"></script>
->>>>>>> origin/manuel
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>TrueDrive.com</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -33,32 +28,15 @@
                 <section class="preHeader displayGreat displayMedium">
                     <div class="wrap">
                         <div class="soppingCart">
-<<<<<<< HEAD
-                           <a href="../Pages/CarritoCompra.aspx"><img src="../Styles/imagenes/carrito_x64.png" /><strong>0</strong></a>
-                        </div>
-                        <div class="contactBox">                    
-                                <img src="../Styles/imagenes/social/phone.png" /><strong>987 65 43 21</strong>
-=======
                            <a href="../Pages/CarritoCompra.aspx"><img src="../Styles/images/carrito_x64.png" /><strong>0</strong></a>
                         </div>
                         <div class="contactBox">                    
                                 <img src="../Styles/images/social/phone.png" /><strong>987 65 43 21</strong>
->>>>>>> origin/manuel
                           </div>
                         </div>
                 </section>
                 <section class="mainHeader clear-fix displayGreat displayMedium">
                       <div class =" logo displayGreat displayMedium">
-<<<<<<< HEAD
-                          <a href="http://www.truedrive.com/"><img src="../Styles/imagenes/logo.png" /></a>
-                      </div>                                  
-                      <div class="centralBox displayGreat">
-                          <div class="searchBox">
-                                <div class="contactSearchBox">
-                                    <a  href="http://truedrive.com/Pages/Contacto.aspx">Contacto:  info@truedrive.com</a>
-                                </div>
-                                <asp:TextBox runat="server" ID="searchInput"></asp:TextBox>
-=======
                           <a href="http://www.truedrive.com/"><img src="../Styles/images/logo.png" /></a>
                       </div>                                  
                       <div class="centralBox displayGreat displayMedium">
@@ -74,7 +52,6 @@
                               <a  href="http://google.com"><img src="../Styles/images/social/Google-plus-Icon.png" /></a>
                               <a  href="http://google.com"><img src="../Styles/images/social/Email-Icon.png" /></a>
                           </div>
->>>>>>> origin/manuel
                       </div>              
                       <div class="register displayGreat displayMedium">
                          <asp:LoginView runat="server" ID="userView">
@@ -93,13 +70,8 @@
                                                 <script type="text/javascript" src="../Scripts/Usuario/DropDownMenuOptions.js"></script>
                                                     <li><h3>Tu cuenta</h3></li>
                                                     <li class="dropCaret"><i class="fa fa-caret-up"></i></li>
-<<<<<<< HEAD
-                                                    <li><a href="../Pages/CuentaUsuario.aspx"><img src="../Styles/imagenes/user-options/config.png"><p>Configuración</p></a></li>
-                                                    <li><a href="../Pages/CarritoCompra.aspx"><img src="../Styles/imagenes/user-options/orders.png"/><p>Carrito</p></a></li>
-=======
                                                     <li><a href="../Pages/CuentaUsuario.aspx"><img src="../Styles/images/user-options/config.png"><p>Configuración</p></a></li>
                                                     <li><a href="../Pages/CarritoCompra.aspx"><img src="../Styles/images/user-options/orders.png"/><p>Carrito</p></a></li>
->>>>>>> origin/manuel
                                                 </ul>
                                             </li>        
                                         </ul>
@@ -112,11 +84,7 @@
                         <nav class="wrap">
                             <ul class="firstLevel">
                                 <li>
-<<<<<<< HEAD
-                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Productos.aspx">Productos</asp:HyperLink>
-=======
                                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Home.aspx">TrueDrive</asp:HyperLink>
->>>>>>> origin/manuel
                                     <ul>
                                         <li>
                                             <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Pages/Productos.aspx">Productos2</asp:HyperLink>
@@ -193,10 +161,4 @@
             </section>
     </form>
 </body>
-    <script src="../Scripts/jquery-2.0.3.js" type="text/javascript"></script>
-    <script src="../Scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
-    <script src="../Scripts/triggerPanel.js"></script>
-    <script src="../Scripts/allowHyperLinks.js" type="text/javascript"></script>
-    <script src="../Scripts/OnEnterSearch.js" type="text/javascript"></script>
-    <script src="../Scripts/MobileHeight.js" type="text/javascript"></script>
 </html>
