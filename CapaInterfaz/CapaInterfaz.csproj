@@ -87,6 +87,7 @@
     <Content Include="Paginas\Productos.aspx" />
     <Content Include="Paginas\Registro.aspx" />
     <Content Include="Paginas\Clients.aspx" />
+<<<<<<< HEAD
 =======
     <Content Include="Styles\BaseStyle.css" />
     <Content Include="Styles\DisplayGreat.css" />
@@ -113,6 +114,8 @@
     <Content Include="Pages\Productos.aspx" />
     <Content Include="Pages\Registro.aspx" />
 >>>>>>> origin/master
+=======
+>>>>>>> origin/Jose
     <Content Include="Panel_Control.aspx" />
     <Content Include="Scripts\Admin\getCategories.js" />
     <Content Include="Scripts\Admin\getUsers.js" />
