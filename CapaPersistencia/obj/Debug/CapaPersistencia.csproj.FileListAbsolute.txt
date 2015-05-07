@@ -8,8 +8,16 @@ C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\bin\Debug\CapaP
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.dll
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+<<<<<<< HEAD
 C:\Users\Silexman\Desktop\TrueDrive\CapaPersistencia\bin\Debug\CapaPersistencia.dll
 C:\Users\Silexman\Desktop\TrueDrive\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
 C:\Users\Silexman\Desktop\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
 C:\Users\Silexman\Desktop\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.dll
 C:\Users\Silexman\Desktop\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+=======
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\bin\Debug\CapaPersistencia.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\bin\Debug\CapaPersistencia.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.csprojResolveAssemblyReference.cache
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Debug\CapaPersistencia.pdb
+>>>>>>> origin/Albertodlg

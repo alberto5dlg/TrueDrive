@@ -12,6 +12,7 @@ C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaNegocio\bin\Debug\CapaPersis
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.pdb
+<<<<<<< HEAD
 C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\bin\Debug\CapaNegocio.dll
 C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\bin\Debug\CapaNegocio.pdb
 C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\bin\Debug\CapaPersistencia.dll
@@ -19,3 +20,12 @@ C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\bin\Debug\CapaPersistencia.pdb
 C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Silexman\Desktop\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.pdb
+=======
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Debug\CapaPersistencia.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\bin\Debug\CapaPersistencia.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaNegocio\obj\Debug\CapaNegocio.pdb
+>>>>>>> origin/Albertodlg

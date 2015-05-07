@@ -1,0 +1,5 @@
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\bin\HADAWEB.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\bin\HADAWEB.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\obj\Release\TrueDrive.csprojResolveAssemblyReference.cache
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\obj\Release\HADAWEB.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\TrueDrive\obj\Release\HADAWEB.pdb
