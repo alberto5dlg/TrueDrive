@@ -10,6 +10,6 @@
 namespace CapaInterfaz.Paginas {
     
     
-    public partial class Login {
+    public partial class Clients {
     }
 }

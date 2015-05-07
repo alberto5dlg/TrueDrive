@@ -81,6 +81,7 @@
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Paginas\Productos.aspx" />
     <Content Include="Paginas\Registro.aspx" />
+    <Content Include="Paginas\Clients.aspx" />
     <Content Include="Panel_Control.aspx" />
     <Content Include="Scripts\Admin\getCategories.js" />
     <Content Include="Scripts\Admin\getUsers.js" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="Paginas\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel_Control.aspx.cs">
       <DependentUpon>Panel_Control.aspx</DependentUpon>
