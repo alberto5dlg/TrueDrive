@@ -1,0 +1,31 @@
+﻿body {
+}
+
+#location {
+    padding-left: 10px;
+}
+
+#titles h1{
+    margin: 5px 0 10px 0;
+    border-bottom: #EC2929 4px solid;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3f4244;
+    padding-left: 15px;
+}
+
+#map {
+	margin-top: 5px;
+}
+
+.location {
+    float: left;
+    border-radius:5px 5px 5px 5px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px; 
+    width: 310px;
+    height: 240px;
+   
+}

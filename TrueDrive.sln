@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaTD", "LibreriaTD\LibreriaTD.csproj", "{A1453F69-4644-4A45-B14F-30E1FA2F115E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueDrive", "TrueDrive\TrueDrive.csproj", "{12663E32-2E33-428E-970C-37C46B6A012A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPersistencia", "CapaPersistencia\CapaPersistencia.csproj", "{837352D6-2125-46AB-B22C-D43719D3169F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{928189A6-F420-43D2-ACB3-DA0AC9A78C01}"
@@ -21,10 +19,6 @@ Global
 		{A1453F69-4644-4A45-B14F-30E1FA2F115E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1453F69-4644-4A45-B14F-30E1FA2F115E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1453F69-4644-4A45-B14F-30E1FA2F115E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{12663E32-2E33-428E-970C-37C46B6A012A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12663E32-2E33-428E-970C-37C46B6A012A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12663E32-2E33-428E-970C-37C46B6A012A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12663E32-2E33-428E-970C-37C46B6A012A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{837352D6-2125-46AB-B22C-D43719D3169F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{837352D6-2125-46AB-B22C-D43719D3169F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{837352D6-2125-46AB-B22C-D43719D3169F}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -33,31 +33,23 @@
 
 .centralBox{
     float:left;
-    margin-top:30px;
+    margin-top:52px;
     width:700px;
 }
-.searchBox {
-    
-    outline:0;
+.socialBox
+{
+    outline: 0;
     margin: 0 auto;
-    max-width:360px;
+    max-width: 450px;
 }
-    .searchBox input[type="text"] {
-        width: 290px; 
-        height: 29px;
-        float:left;
-        border: solid 1px #D4D2D4;
-        border-radius: 4px;
-        -webkit-border-radius:4px;
-        -moz-border-radius:4px;
-        border-right: none;       
-        padding-left: 10px;
+    .socialBox a
+    {
+        margin-right: -15px;
     }
-    .searchBox a {
-         margin-left:-3px;
-   
-    }
-
+        .socialBox a img
+        {
+            width: 60%;  
+        }
 
 .contactSearchBox{
 
@@ -100,7 +92,7 @@
 .menu {
      margin-top:1%;
      overflow: hidden;
-     /*Manuel*/
+    
 }
 
 .register {
@@ -253,7 +245,7 @@
 
 .logo{
     float: left;
-     width:25%;
+     width:10%;
 }
 .logo img{
     width: 100%;
