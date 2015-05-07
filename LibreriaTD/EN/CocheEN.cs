@@ -12,20 +12,20 @@ namespace LibreriaTD.EN
         //Variables privadas que definen los atributos del coche. 
         private string marca;
         private string modelo;
-        private double precio;//precio del producto sin IVA 
+        private float precio;
         private int puertas;
         private string motor;
-        private double km;
+        private float km;
         private int anyo;
         private string combustible;
         private int plazas;
         private string cambio;
         private string color;
+        private int unidades;
         private string matricula;
-        private double precioTotal;// Precio del producto total tras aplicar el IVA 
 
-        public CocheEN(string marca, string modelo,double precio,int puertas,string motor,string matricula,
-            double km,int anyo,string combustible,int plazas,string cambio,string color,int unidades)
+        public CocheEN(string marca, string modelo,float precio,int puertas,string motor,string matricula,
+            float km,int anyo,string combustible,int plazas,string cambio,string color,int unidades)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -38,6 +38,7 @@ namespace LibreriaTD.EN
             this.plazas = plazas; 
             this.cambio = cambio;
             this.color = color;
+            this.unidades = unidades;
             this.matricula = matricula;
         }
         // Getters y  Setters basicos para el funcionamiento de la entidad
@@ -60,7 +61,7 @@ namespace LibreriaTD.EN
             set { modelo = value; }
         }
 
-        public double Precio
+        public float Precio
         {
             get { return precio; }
             set { precio = value; }
@@ -78,7 +79,7 @@ namespace LibreriaTD.EN
             set { motor = value; }
         }
 
-        public double Km
+        public float Km
         {
             get { return km; }
             set { km = value; }
@@ -114,20 +115,22 @@ namespace LibreriaTD.EN
             set { color = value; }
         }
 
-
-        public double PrecioTotal
+        public int Unidades
         {
-            get { return (this.Precio * 1.21); }
-            set { precioTotal = value; }
+            get { return unidades; }
+            set { unidades = value; }
         }
-
         //Cuando adquiramos un nuevo coche en nuestro catalogo lo insertaremos en la base de datos
         public void insertarCoche()
         {
             bool insert = false;
             CocheCAD cocheCad = new CocheCAD();
             insert = cocheCad.InsertarCoche(this);
-           
+            if (!insert) //en caso de que no se pueda insertar el coche pq ya esta en la base de datos
+            {            //modificaremos las unidades 
+                this.Unidades = unidades + 1;
+                cocheCad.modUds(this.unidades);
+            }
         }
         //se borrara un coche por completo cuando no queden mas unidades en stock
         public void borrarCoche()
@@ -135,6 +138,11 @@ namespace LibreriaTD.EN
             bool borra = false;
             CocheCAD cocheCad = new CocheCAD();
             borra = cocheCad.BorrarCoche(this);
+            if (borra == false) // en caso de que no se pueda borrar se llamara a otra funcion 
+            {                   //para modificar las unidades
+                this.Unidades = unidades - 1; //decremento las unidades disponibles
+                cocheCad.modUds(this.unidades);
+            }
         }
 
         public void modKM()
