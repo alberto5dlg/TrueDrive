@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Cars.aspx" />
     <Content Include="Pages\Clients.aspx" />
     <Content Include="Pages\Identity.aspx" />
     <Content Include="Pages\Legal.aspx" />
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cars.aspx.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cars.aspx.designer.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Clients.aspx.cs">
       <DependentUpon>Clients.aspx</DependentUpon>

@@ -31,6 +31,11 @@
     text-align:center;
 }
 
+.anotacionespiepag {
+    font-size : 10px;
+    margin-left: 10%;
+}
+
 .cajaTresBotones {
     margin-bottom: 20px;
     padding-left: 5%;
@@ -53,6 +58,8 @@
     font-size:25px;
     padding:10px;
 }
+
+
 
 .botonModificar {
     width:20%;
@@ -79,7 +86,7 @@
 }
 
 .botonInsertar:hover {
-    font-weight:bold
+    font-weight:bold;
     color:white;
 }
 
