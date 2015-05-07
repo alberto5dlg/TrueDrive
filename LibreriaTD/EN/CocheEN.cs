@@ -21,7 +21,6 @@ namespace LibreriaTD.EN
         private int plazas;
         private string cambio;
         private string color;
-        private int unidades;
         private string matricula;
         private double precioTotal;// Precio del producto total tras aplicar el IVA 
 
@@ -39,7 +38,6 @@ namespace LibreriaTD.EN
             this.plazas = plazas; 
             this.cambio = cambio;
             this.color = color;
-            this.unidades = unidades;
             this.matricula = matricula;
         }
         // Getters y  Setters basicos para el funcionamiento de la entidad
@@ -116,11 +114,6 @@ namespace LibreriaTD.EN
             set { color = value; }
         }
 
-        public int Unidades
-        {
-            get { return unidades; }
-            set { unidades = value; }
-        }
 
         public double PrecioTotal
         {
@@ -134,11 +127,7 @@ namespace LibreriaTD.EN
             bool insert = false;
             CocheCAD cocheCad = new CocheCAD();
             insert = cocheCad.InsertarCoche(this);
-            if (!insert) //en caso de que no se pueda insertar el coche pq ya esta en la base de datos
-            {            //modificaremos las unidades 
-                this.Unidades = unidades + 1;
-                cocheCad.modUds(this.unidades);
-            }
+           
         }
         //se borrara un coche por completo cuando no queden mas unidades en stock
         public void borrarCoche()
@@ -146,11 +135,6 @@ namespace LibreriaTD.EN
             bool borra = false;
             CocheCAD cocheCad = new CocheCAD();
             borra = cocheCad.BorrarCoche(this);
-            if (borra == false) // en caso de que no se pueda borrar se llamara a otra funcion 
-            {                   //para modificar las unidades
-                this.Unidades = unidades - 1; //decremento las unidades disponibles
-                cocheCad.modUds(this.unidades);
-            }
         }
 
         public void modKM()

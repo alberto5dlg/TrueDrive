@@ -10,31 +10,32 @@ namespace LibreriaTD.EN
 {
     class FacturacionEN
     {
-        private double IVA = 1.21;
         private int idFactura;
         private string idCliente;
         private CocheEN[] coches;
-        private double precioIva;
         private double precioSinIva;
         private string direccion;
         private string fecEmision;
         private string fecCobro;
-        private double descBonif;
-        private double precioTotal;
         private int numPedido;
 
-        public FacturacionEN(int idFactura, string idCliente, CocheEN coches, double precioSinIva,
-            string direccion, string fecEmision, string fecCobro, double descBonif, int numPedido)
+        public FacturacionEN(int idFactura, string idCliente, CocheEN[] coches, double precioSinIva,
+            string direccion, string fecEmision, string fecCobro, int numPedido)
         {
             this.idFactura = idFactura;
             this.idCliente = idCliente;
-            this.coches[0] = coches; // Esto tengo dudas de como se hace realmente
+            this.coches = coches; 
             this.precioSinIva = precioSinIva;
             this.direccion = direccion;
             this.fecEmision = fecEmision;
             this.fecCobro = fecCobro;
-            this.descBonif = descBonif;
             this.numPedido = numPedido;
+        }
+
+        public CocheEN[] Coches
+        {
+            get { return coches; }
+            set { coches = value; }
         }
 
         public int IdFactura
@@ -47,12 +48,6 @@ namespace LibreriaTD.EN
         {
             get { return idCliente; }
             set { idCliente = value; }
-        }
-
-        public double PrecioIva
-        {
-            get { return ( this.PrecioSinIva * IVA); }
-            set { precioIva = value; }
         }
 
         public double PrecioSinIva
@@ -77,17 +72,6 @@ namespace LibreriaTD.EN
         {
             get { return fecCobro; }
             set { fecCobro = value; }
-        }
-
-        public double DescBonif
-        {
-            get { return descBonif; }
-            set { descBonif = value; }
-        }
-
-        public double PrecioTotal
-        {
-            get{return (this.PrecioIva - this.DescBonif);}
         }
 
         public int NumPedido

@@ -52,8 +52,7 @@ namespace LibreriaTD.CAD
             return modifi;
         }
 
-        /*Modificar el precio del coche
-         */
+        /*Modificar el precio del coche */
         public bool modPrecio(double mPre)
         {
             bool modifi = false;
