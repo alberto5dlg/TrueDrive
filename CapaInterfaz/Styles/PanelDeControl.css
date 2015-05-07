@@ -1,15 +1,25 @@
-﻿.cajaPrincipal {
+﻿.cajaPrincipal1 {
     margin-bottom: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top:30px;
-    border: 1px solid black;
-    border-top:3px solid brown;
-    margin-left:10%;
-    margin-right:10%;
-    margin-top:30px;
+    margin-left:5%;
+    margin-right:5%;
+    width:70%;
+    margin-top:50px;
     font-weight:bold;
-    border-radius:10px 50px;
+    border-radius:10px;
+    background:#ededed;
+    float:left;
+    height:500px;
+}
+
+.cajaPrincipal2 {
+    margin-bottom: 20px;
+    margin-left:10%;
+    width:15%;
+    margin-top:50px;
+    font-weight:bold;
+    border-radius:3px;
+    background:#ededed;
+    height:500px;
 }
 
 .cajonesFlotantes {
@@ -20,7 +30,6 @@
     padding:18px 20px 18px 10px;
     border:1px solid gainsboro;
     border-top:2px solid brown;
-    background:#d6e3e7;
     font-size:20px;
     font-weight:normal;
 }
@@ -41,53 +50,42 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top:30px;
-    margin-left:25%;
-    margin-right:25%;
+    width:30%;
     margin-top:30px;
     font-weight:bold;
 }
 
 .botonInsertar {
-    width:20%;
-    float:left;
+    width:50%;
     color:black;
-    height:60px;
-    background:#e0fef8;
+    height:80px;
     margin-right:5%;
     cursor:pointer;
     font-size:25px;
     padding:10px;
 }
 
-
-
 .botonModificar {
-    width:20%;
-    float:left;
-    background:#e1ffd9;
+    width:50%;
     color:black;
-    height:60px;
-    margin-right:5%;
+    height:80px;
     cursor:pointer;
     font-size:25px;
     padding:10px;
 }
 
 .botonBorrar {
-    width:20%;
-    float:left;
-    background:#fadede;
+    width:50%;
     color:black;
-    height:60px;
-    margin-right:5%;
+    height:80px;
     cursor:pointer;
     font-size:25px;
     padding:10px;
+    margin-top:80px;
 }
 
 .botonInsertar:hover {
     font-weight:bold;
-    color:white;
 }
 
 .botonModificar:hover {

@@ -42,26 +42,26 @@
                 <nav class="wrap">
                     <ul class="firstLevel">
                         <li>
-                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Clients.aspx">Clientes</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Clients.aspx">Clientes</asp:HyperLink>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Clients.aspx">Agregar cliente</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/NewClient.aspx">Nuevo cliente</asp:HyperLink>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Providers.aspx">Proveedores</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Providers.aspx">Proveedores</asp:HyperLink>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Provider.aspx">Agregar proveedor</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/NewProvider.aspx">Nuevo proveedor</asp:HyperLink>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/Cars.aspx">Coches</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Cars.aspx">Coches</asp:HyperLink>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Car.aspx">Agregar coche</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/NewCar.aspx">Nuevo coche</asp:HyperLink>
                                 </li>
                             </ul>
                         </li>

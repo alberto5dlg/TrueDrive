@@ -9,5 +9,5 @@
 
 
 
-public partial class  Provider{
+public partial class  {
 }

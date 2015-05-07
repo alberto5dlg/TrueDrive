@@ -9,5 +9,5 @@
 
 
 
-public partial class Car {
+public partial class  {
 }

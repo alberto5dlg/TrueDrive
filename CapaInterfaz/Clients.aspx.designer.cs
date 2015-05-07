@@ -9,5 +9,5 @@
 
 
 
-public partial class  Clients{
+public partial class  {
 }

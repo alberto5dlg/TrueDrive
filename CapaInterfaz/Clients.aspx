@@ -2,64 +2,66 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
-    <fieldset class="cajaPrincipal">
-    <legend style="font-size:22px;"> FICHA CLIENTE </legend>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> NIF </legend>
-        <input name="nif" type="text" id="Nif" class="inputDatos" />
-    </fieldset>
-    <fieldset class="cajonesFlotantes"">
-        <legend class="etiquetaCajon"> Nombre </legend>
-        <input name="nombre" type="text" id="Nombre" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Apellidos </legend>
-        <input name="apellidos" type="text" id="Apellidos" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Email </legend>
-        <input name="email" type="text" id="Email" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Direccion </legend>
-        <input name="direccion" type="text" id="Text1" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Pais </legend>
-            <input name="pais" type="text" id="Text2" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Teléfono </legend>
-        <input name="telefono" type="text" id="Text3" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Interesado en </legend>
-        <input type="text" name="interesadoEn" id="InteresadoEn" class="inputDatos"/>
-    </fieldset>
-    <fieldset class="cajonesFlotantes">
-        <legend class="etiquetaCajon"> Fecha de nacimiento </legend>
-        <input name="fechaNac" type="date" id="FechaNac" class="inputDatos"/>
-    </fieldset>
-</fieldset>
+    
+    <div class="cajaPrincipal1">
+        <div style="background:#8dbbe2;color:white;padding:10px;padding-left:50px;">
+            <span style="font-size:30px;color:white;"> Ficha Cliente </span>
+        </div>
+        <div style="padding:50px;">
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> NIF </legend>
+                <input name="nif" type="text" id="Nif" class="inputDatos" />
+            </fieldset>
+            <fieldset class="cajonesFlotantes"">
+                <legend class="etiquetaCajon"> Nombre </legend>
+                <input name="nombre" type="text" id="Nombre" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Apellidos </legend>
+                <input name="apellidos" type="text" id="Apellidos" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Email </legend>
+                <input name="email" type="text" id="Email" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Direccion </legend>
+                <input name="direccion" type="text" id="Text1" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Pais </legend>
+                    <input name="pais" type="text" id="Text2" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Teléfono </legend>
+                <input name="telefono" type="text" id="Text3" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Interesado en </legend>
+                <input type="text" name="interesadoEn" id="InteresadoEn" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Fecha de nacimiento </legend>
+                <input name="fechaNac" type="date" id="FechaNac" class="inputDatos"/>
+            </fieldset>
+        </div>
+    </div>
+    <div class="cajaPrincipal2">
+        <div style="background:#444242;color:white;padding:10px;padding-left:50px;">
+            <span style="font-size:30px;color:white;"> Acciones </span>
+        </div>
+        <div style="padding:50px;">
+            <div class="botonModificar">
+                <a href="/Paginas/modificarCliente.aspx?idCliente=$id">
+                    <img src="../Styles/images/modificar.png" style="width: 100%;"></img>
+                </a>
+            </div>
+            <div class="botonBorrar">
+                <a href="/Paginas/borrarCliente.aspx?idCliente=$id">
+                    <img src="../Styles/images/borrar.png" style="width:100%;"></img>
+                </a>
+            </div>
+        </div>
+    </div>
 
-<div class="cajaTresBotones">
-    <div class="botonInsertar">
-        <a href="/Paginas/insertarCliente.aspx?idCliente=$id">
-            <img src="../Styles/images/insertar.png" style="width:30%;">  </img>
-        </a>
-        Insertar
-    </div>
-    <div class="botonModificar">
-        <a href="/Paginas/modificarCliente.aspx?idCliente=$id">
-            <img src="../Styles/images/modificar.png" style="width: 30%;"></img>
-        </a>
-        Modificar
-    </div>
-    <div class="botonBorrar">
-        <a href="/Paginas/borrarCliente.aspx?idCliente=$id">
-            <img src="../Styles/images/borrar.png" style="width:30%;"></img>
-        </a>
-        Borrar
-    </div>
-</div>
 </asp:Content>
