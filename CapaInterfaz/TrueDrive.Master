@@ -4,14 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head runat="server">
-    <link href="Estilos/navStyle.css" type="text/css" rel="stylesheet" />
-    <link href="Estilos/HeaderStyles.css" type="text/css" rel="stylesheet" />
-    <link href="Estilos/BaseStyle.css" type="text/css" rel="stylesheet" />
-    <link href='Estilos/DisplayGreat.css' type='text/css' rel='stylesheet' media='screen and (min-width: 981px)' />
-    <link href='Estilos/DisplayMedium.css' type='text/css' rel='stylesheet'  media='screen and (min-width: 801px) and (max-width: 980px)'/>
-    <link href='Estilos/Header.css' type='text/css' rel='stylesheet'/>
-    <link rel="stylesheet" href="Scripts/JQM/jquery.mobile-1.4.2.min.css" media="(max-width: 800px)" type="text/css"/>
-    <link rel="stylesheet" href="Estilos/Mobile/Buttons And Navbars/buttons-navbars.css" media="(max-width: 800px)" type="text/css"/>
+    <link href="Styles/navStyle.css" type="text/css" rel="stylesheet" />
+    <link href="Styles/HeaderStyles.css" type="text/css" rel="stylesheet" />
+    <link href="Styles/BaseStyle.css" type="text/css" rel="stylesheet" />
+    <link href='Styles/DisplayGreat.css' type='text/css' rel='stylesheet' media='screen and (min-width: 981px)' />
+    <link href='Styles/DisplayMedium.css' type='text/css' rel='stylesheet'  media='screen and (min-width: 801px) and (max-width: 980px)'/>
+    <link href='Styles/Header.css' type='text/css' rel='stylesheet'/>
+    <link rel="stylesheet" href="Styles/Mobile/Buttons And Navbars/buttons-navbars.css" media="(max-width: 800px)" type="text/css"/>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>TrueDrive.com</title>
@@ -25,31 +24,30 @@
                 <section class="preHeader displayGreat displayMedium">
                     <div class="wrap">
                         <div class="soppingCart">
-                           <a href="../Paginas/CarritoCompra.aspx"><img src="../Estilos/imagenes/carrito_x64.png" /><strong>0</strong></a>
+                           <a href="../Pages/CarritoCompra.aspx"><img src="../Styles/imagenes/carrito_x64.png" /><strong>0</strong></a>
                         </div>
                         <div class="contactBox">                    
-                                <img src="../Estilos/imagenes/social/phone.png" /><strong>987 65 43 21</strong>
+                                <img src="../Styles/imagenes/social/phone.png" /><strong>987 65 43 21</strong>
                           </div>
                         </div>
                 </section>
                 <section class="mainHeader clear-fix displayGreat displayMedium">
                       <div class =" logo displayGreat displayMedium">
-                          <a href="http://www.truedrive.com/"><img src="../Estilos/imagenes/logo.png" /></a>
+                          <a href="http://www.truedrive.com/"><img src="../Styles/imagenes/logo.png" /></a>
                       </div>                                  
                       <div class="centralBox displayGreat">
                           <div class="searchBox">
                                 <div class="contactSearchBox">
-                                    <a  href="http://truedrive.com/Paginas/Contacto.aspx">Contacto:  info@truedrive.com</a>
+                                    <a  href="http://truedrive.com/Pages/Contacto.aspx">Contacto:  info@truedrive.com</a>
                                 </div>
                                 <asp:TextBox runat="server" ID="searchInput"></asp:TextBox>
-                          </div>
                       </div>              
                       <div class="register displayGreat displayMedium">
                          <asp:LoginView runat="server" ID="userView">
                              <AnonymousTemplate> 
                                 <div id="notLogged">
-                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Paginas/Login.aspx">Identifícate</asp:HyperLink>
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Paginas/Registro.aspx">Regístrate</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Login.aspx">Identifícate</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/Registro.aspx">Regístrate</asp:HyperLink>
                                 </div>
                              </AnonymousTemplate>
                              <LoggedInTemplate>
@@ -61,8 +59,8 @@
                                                 <script type="text/javascript" src="../Scripts/Usuario/DropDownMenuOptions.js"></script>
                                                     <li><h3>Tu cuenta</h3></li>
                                                     <li class="dropCaret"><i class="fa fa-caret-up"></i></li>
-                                                    <li><a href="../Paginas/CuentaUsuario.aspx"><img src="../Estilos/imagenes/user-options/config.png"><p>Configuración</p></a></li>
-                                                    <li><a href="../Paginas/CarritoCompra.aspx"><img src="../Estilos/imagenes/user-options/orders.png"/><p>Carrito</p></a></li>
+                                                    <li><a href="../Pages/CuentaUsuario.aspx"><img src="../Styles/imagenes/user-options/config.png"><p>Configuración</p></a></li>
+                                                    <li><a href="../Pages/CarritoCompra.aspx"><img src="../Styles/imagenes/user-options/orders.png"/><p>Carrito</p></a></li>
                                                 </ul>
                                             </li>        
                                         </ul>
@@ -75,13 +73,13 @@
                         <nav class="wrap">
                             <ul class="firstLevel">
                                 <li>
-                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Paginas/Productos.aspx">Productos</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Productos.aspx">Productos</asp:HyperLink>
                                     <ul>
                                         <li>
-                                            <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Paginas/Productos.aspx">Productos2</asp:HyperLink>
+                                            <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Pages/Productos.aspx">Productos2</asp:HyperLink>
                                             <ul class="secondLevel">                                 
                                                 <li>
-                                                    <asp:HyperLink ID="HyperLink24" runat="server" NavigateUrl="~/Paginas/Productos.aspx">Productos3</asp:HyperLink>
+                                                    <asp:HyperLink ID="HyperLink24" runat="server" NavigateUrl="~/Pages/Productos.aspx">Productos3</asp:HyperLink>
                                                 </li>
                                             </ul>
                                         </li>
@@ -98,7 +96,6 @@
 </body>
     <script src="../Scripts/jquery-2.0.3.js" type="text/javascript"></script>
     <script src="../Scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
-    <script src="../Scripts/JQM/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
     <script src="../Scripts/triggerPanel.js"></script>
     <script src="../Scripts/allowHyperLinks.js" type="text/javascript"></script>
     <script src="../Scripts/OnEnterSearch.js" type="text/javascript"></script>
