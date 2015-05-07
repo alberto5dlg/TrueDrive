@@ -1,14 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="CapaInterfaz.Pages.Cars" %>
-
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="../Styles/PanelDeControl.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Car.aspx.cs"  %>
+<asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
     <fieldset class="cajaPrincipal">
         <legend style="font-size:22px;"> FICHA COCHE </legend>
         <fieldset class="cajonesFlotantes">
@@ -83,5 +76,4 @@
             Borrar
         </div>
     </div>
-</body>
-</html>
+</asp:Content>

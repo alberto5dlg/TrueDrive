@@ -45,7 +45,7 @@
                             <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/Clients.aspx">Clientes</asp:HyperLink>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Pages/AddClient.aspx">Agregar cliente</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Clients.aspx">Agregar cliente</asp:HyperLink>
                                 </li>
                             </ul>
                         </li>
@@ -53,7 +53,7 @@
                             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Providers.aspx">Proveedores</asp:HyperLink>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/AddProvider.aspx">Agregar proveedor</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Provider.aspx">Agregar proveedor</asp:HyperLink>
                                 </li>
                             </ul>
                         </li>
@@ -61,7 +61,7 @@
                             <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/Cars.aspx">Coches</asp:HyperLink>
                             <ul>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Pages/AddCar.aspx">Agregar coche</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Car.aspx">Agregar coche</asp:HyperLink>
                                 </li>
                             </ul>
                         </li>

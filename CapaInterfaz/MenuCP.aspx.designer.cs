@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CapaInterfaz.Pages {
+namespace CapaInterfaz {
     
     
-    public partial class Cars {
+    public partial class MenuCP {
     }
 }

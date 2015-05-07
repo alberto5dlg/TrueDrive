@@ -57,8 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\Cars.aspx" />
-    <Content Include="Pages\Clients.aspx" />
+    <Content Include="Clients.aspx" />
+    <Content Include="Car.aspx" />
+    <Content Include="MenuCP.aspx" />
+    <Content Include="Provider.aspx" />
     <Content Include="Pages\Identity.aspx" />
     <Content Include="Pages\Legal.aspx" />
     <Content Include="Pages\Location.aspx" />
@@ -115,6 +117,7 @@
     <Content Include="Scripts\Contact\consultMobile.js" />
     <Content Include="Scripts\Contact\ResizeTextArea.js" />
     <Content Include="Scripts\DisplayTablet.js" />
+    <Content Include="ControlPanel.Master" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
@@ -138,6 +141,41 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.Master.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Master.designer.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Car.aspx.cs">
+      <DependentUpon>Car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car.aspx.designer.cs">
+      <DependentUpon>Car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCP.aspx.cs">
+      <DependentUpon>MenuCP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuCP.aspx.designer.cs">
+      <DependentUpon>MenuCP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Provider.aspx.cs">
+      <DependentUpon>Provider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Provider.aspx.designer.cs">
+      <DependentUpon>Provider.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Log_Admin.aspx.cs">
       <DependentUpon>Log_Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,20 +189,6 @@
     </Compile>
     <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Cars.aspx.cs">
-      <DependentUpon>Cars.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Cars.aspx.designer.cs">
-      <DependentUpon>Cars.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Clients.aspx.cs">
-      <DependentUpon>Clients.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Clients.aspx.designer.cs">
-      <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
@@ -268,6 +292,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ControlPanel\" />
     <Folder Include="Recursos\" />
   </ItemGroup>
   <PropertyGroup>

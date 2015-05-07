@@ -2,3 +2,4 @@ C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\bin\Release\CapaPers
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\bin\Release\CapaPersistencia.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Release\CapaPersistencia.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Release\CapaPersistencia.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaPersistencia\obj\Release\CapaPersistencia.csprojResolveAssemblyReference.cache
