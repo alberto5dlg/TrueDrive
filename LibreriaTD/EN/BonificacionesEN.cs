@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LibreriaTD.CAD;
 
 namespace LibreriaTD.EN
 {
@@ -35,6 +36,26 @@ namespace LibreriaTD.EN
         {
             get { return cantidadGastada; }
             set { cantidadGastada = value; }
+        }
+
+        //Métodos
+        //Inserta una bonificación en la BD
+        public void Insertar()
+        {
+            BonificacionesCAD aux = new BonificacionesCAD();
+            aux.Insertar(this);
+        }
+        //Borra una bonificación de la BD
+        public void Borrar()
+        {
+            BonificacionesCAD aux = new BonificacionesCAD();
+            aux.Borrar(this);
+        }
+        //Actualiza la bonificación
+        public void Actualizar()
+        {
+            BonificacionesCAD aux = new BonificacionesCAD();
+            aux.Actualizar(this);
         }
     }
 }

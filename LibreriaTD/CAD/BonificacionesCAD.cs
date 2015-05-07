@@ -16,9 +16,15 @@ namespace LibreriaTD.CAD
         }
 
         //Inserta una bonificación en la BD
-        public void Insertar(BonificacionesEN bono)
+        public bool Insertar(BonificacionesEN bono)
         {
+            return true;
+        }
 
+        //Borra una bonificación de la BD
+        public bool Borrar(BonificacionesEN bono)
+        {
+            return true;
         }
 
         //Actualiza la cantidad de bonificación en la BD
@@ -28,21 +34,21 @@ namespace LibreriaTD.CAD
         }
 
         //Actualiza la descripción de la bonificación en la BD
-        public void ActualizarDescripcion(BonificacionesEN bono)
+        public bool ActualizarDescripcion(BonificacionesEN bono)
         {
-
+            return true;
         }
 
         //Actualiza la cantidad a gastar en la BD
-        public void ActualizarCantidadGastada(BonificacionesEN bono)
+        public bool ActualizarCantidadGastada(BonificacionesEN bono)
         {
-
+            return true;
         }
 
         //Actualiza una bonificación en la BD
-        public void Actualizar(BonificacionesEN bono)
+        public bool Actualizar(BonificacionesEN bono)
         {
-
+            return true;
         }
     }
 }
