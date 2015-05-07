@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Clients.aspx" />
     <Content Include="Pages\Identity.aspx" />
     <Content Include="Pages\Legal.aspx" />
     <Content Include="Pages\Location.aspx" />
@@ -66,8 +67,11 @@
     <Content Include="Styles\DisplayMedium.css" />
     <Content Include="Styles\FooterStyle.css" />
     <Content Include="Styles\Header.css" />
+    <Content Include="Styles\images\borrar.png" />
     <Content Include="Styles\images\carrito_x64.png" />
+    <Content Include="Styles\images\insertar.png" />
     <Content Include="Styles\images\logo.png" />
+    <Content Include="Styles\images\modificar.png" />
     <Content Include="Styles\images\payments-methods\paypal.png" />
     <Content Include="Styles\images\payments-methods\transfer.png" />
     <Content Include="Styles\images\payments-methods\visa.png" />
@@ -91,6 +95,7 @@
     <Content Include="Styles\Location.css" />
     <Content Include="Styles\LogginStyle.css" />
     <Content Include="Styles\navStyle.css" />
+    <Content Include="Styles\PanelDeControl.css" />
     <Content Include="Styles\RegisterStyle.css" />
     <Content Include="Styles\UserAccountStyle.css" />
     <Content Include="Log_Admin.aspx" />
@@ -145,6 +150,13 @@
     </Compile>
     <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>

@@ -1,0 +1,92 @@
+﻿.cajaPrincipal {
+    margin-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:30px;
+    border: 1px solid black;
+    border-top:3px solid brown;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:30px;
+    font-weight:bold;
+    border-radius:10px 50px;
+}
+
+.cajonesFlotantes {
+    width: 25%;
+    margin-right:5%;
+    margin-bottom: 20px;
+    float: left;
+    padding:18px 20px 18px 10px;
+    border:1px solid gainsboro;
+    border-top:2px solid brown;
+    background:#d6e3e7;
+    font-size:20px;
+    font-weight:normal;
+}
+
+.inputDatos {
+    padding: 3px;
+    width: 100%;
+    text-align:center;
+}
+
+.cajaTresBotones {
+    margin-bottom: 20px;
+    padding-left: 5%;
+    padding-right: %5;
+    padding-top:30px;
+    margin-left:25%;
+    margin-right:25%;
+    margin-top:30px;
+    font-weight:bold;
+}
+
+.botonInsertar {
+    width:25%;
+    float:left;
+    color:black;
+    height:60px;
+    background:#e0fef8;
+    margin-right:5%;
+    cursor:pointer;
+    font-size:25px;
+    padding:10px;
+}
+
+.botonModificar {
+    width:25%;
+    float:left;
+    background:#e1ffd9;
+    color:black;
+    height:60px;
+    margin-right:5%;
+    cursor:pointer;
+    font-size:25px;
+    padding:10px;
+}
+
+.botonBorrar {
+    width:25%;
+    float:left;
+    background:#fadede;
+    color:black;
+    height:60px;
+    margin-right:5%;
+    cursor:pointer;
+    font-size:25px;
+    padding:10px;
+}
+
+.botonInsertar:hover {
+    font-weight:bold
+    color:white;
+}
+
+.botonModificar:hover {
+    font-weight:bold;
+}
+
+.botonBorrar:hover {
+    font-weight:bold;
+}
