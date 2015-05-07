@@ -57,11 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\Clients.aspx" />
+    <Content Include="Clients.aspx" />
     <Content Include="Pages\Identity.aspx" />
     <Content Include="Pages\Legal.aspx" />
     <Content Include="Pages\Location.aspx" />
     <Content Include="Pages\Privacy.aspx" />
+    <Content Include="Pages\Providers.aspx" />
     <Content Include="Styles\BaseStyle.css" />
     <Content Include="Styles\DisplayGreat.css" />
     <Content Include="Styles\DisplayMedium.css" />
@@ -114,6 +115,7 @@
     <Content Include="Scripts\Contact\consultMobile.js" />
     <Content Include="Scripts\Contact\ResizeTextArea.js" />
     <Content Include="Scripts\DisplayTablet.js" />
+    <Content Include="ControlPanel.Master" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
@@ -137,6 +139,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlPanel.Master.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Master.designer.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Log_Admin.aspx.cs">
       <DependentUpon>Log_Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,13 +166,6 @@
     </Compile>
     <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Clients.aspx.cs">
-      <DependentUpon>Clients.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Clients.aspx.designer.cs">
-      <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
@@ -220,6 +229,13 @@
     </Compile>
     <Compile Include="Pages\Productos.aspx.designer.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Providers.aspx.cs">
+      <DependentUpon>Providers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Providers.aspx.designer.cs">
+      <DependentUpon>Providers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>

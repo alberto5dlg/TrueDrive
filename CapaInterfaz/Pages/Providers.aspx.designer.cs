@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CapaInterfaz.Paginas {
+namespace CapaInterfaz.Pages {
     
     
-    public partial class Clients {
+    public partial class Providers {
     }
 }

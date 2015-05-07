@@ -1,19 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Providers.aspx.cs" Inherits="CapaInterfaz.Pages.Providers" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="../Styles/PanelDeControl.css" type="text/css" rel="stylesheet" />
-</asp:Content>
+<!DOCTYPE html>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
-<!-- Lo que insertemos en este bloque ira al body de la página en particular que estamos desarrollando. -->
-
-     <fieldset class="cajaPrincipal">
-        <legend style="font-size:22px;"> FICHA CLIENTE </legend>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+    <fieldset class="cajaPrincipal">
+        <legend style="font-size:22px;"> FICHA PROVEEDORES </legend>
         <fieldset class="cajonesFlotantes">
             <legend class="etiquetaCajon"> NIF </legend>
             <input name="nif" type="text" id="Nif" class="inputDatos" />
         </fieldset>
-        <fieldset class="cajonesFlotantes"">
+        <fieldset class="cajonesFlotantes">
             <legend class="etiquetaCajon"> Nombre </legend>
             <input name="nombre" type="text" id="Nombre" class="inputDatos"/>
         </fieldset>
@@ -67,7 +67,5 @@
             Borrar
         </div>
     </div>
-</asp:Content>
-
-
-   
+</body>
+</html>
