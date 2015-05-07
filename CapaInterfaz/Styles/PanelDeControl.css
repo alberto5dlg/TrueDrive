@@ -13,7 +13,7 @@
 }
 
 .cajonesFlotantes {
-    width: 25%;
+    width: 20%;
     margin-right:5%;
     margin-bottom: 20px;
     float: left;
@@ -34,7 +34,7 @@
 .cajaTresBotones {
     margin-bottom: 20px;
     padding-left: 5%;
-    padding-right: %5;
+    padding-right: 5%;
     padding-top:30px;
     margin-left:25%;
     margin-right:25%;
@@ -43,7 +43,7 @@
 }
 
 .botonInsertar {
-    width:25%;
+    width:20%;
     float:left;
     color:black;
     height:60px;
@@ -55,7 +55,7 @@
 }
 
 .botonModificar {
-    width:25%;
+    width:20%;
     float:left;
     background:#e1ffd9;
     color:black;
@@ -67,7 +67,7 @@
 }
 
 .botonBorrar {
-    width:25%;
+    width:20%;
     float:left;
     background:#fadede;
     color:black;
