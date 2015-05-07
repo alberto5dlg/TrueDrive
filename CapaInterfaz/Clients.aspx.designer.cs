@@ -7,9 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CapaInterfaz.Paginas {
-    
-    
-    public partial class Productos {
-    }
+
+
+public partial class  {
 }
