@@ -17,14 +17,13 @@ namespace LibreriaTD.EN
         private int cantidad;
         private string direccionEnvio;
         private string direccionEntrega;
-        private string numContacto;
         private string email;
         private float precio;
         private string infoAdicional;
 
         //Constructor
 
-        public PedidoEN(int codPedido, string fechaEnvio, string fechaEntrega, string proveedor, string producto, int cantidad, string direccionEnvio, string direccionEntrega, string numContacto, string email, float precio, string infoAdicional)
+        public PedidoEN(int codPedido, string fechaEnvio, string fechaEntrega, string proveedor, string producto, int cantidad, string direccionEnvio, string direccionEntrega, string email, float precio, string infoAdicional)
         {
             this.codPedido = codPedido;
             this.fechaEnvio = fechaEnvio;
@@ -34,7 +33,6 @@ namespace LibreriaTD.EN
             this.cantidad = cantidad;
             this.direccionEnvio = direccionEnvio;
             this.direccionEntrega = direccionEntrega;
-            this.numContacto = numContacto;
             this.precio = precio;
             this.infoAdicional = infoAdicional;
         }
@@ -81,11 +79,6 @@ namespace LibreriaTD.EN
         {
             get { return direccionEntrega; }
             set { direccionEntrega = value; }
-        }
-        public string NumContacto
-        {
-            get { return numContacto; }
-            set { numContacto = value; }
         }
         public string Email
         {
