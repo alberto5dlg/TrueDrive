@@ -97,7 +97,6 @@
     <Content Include="Styles\navStyle.css" />
     <Content Include="Styles\PanelDeControl.css" />
     <Content Include="Styles\RegisterStyle.css" />
-    <Content Include="Styles\Registro.css" />
     <Content Include="Styles\UserAccountStyle.css" />
     <Content Include="Log_Admin.aspx" />
     <Content Include="Pages\CarritoCompra.aspx" />

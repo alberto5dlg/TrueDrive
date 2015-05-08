@@ -15,7 +15,7 @@
                  </li>
                   <li id="Contrasenya">
                      <label class="registerLabel">Contraseña</label>
-                        <input id="contrasenya" name="Contrasenya" type="text" class="textBoxUserAccount" />
+                        <input id="contrasenya" name="Contrasenya" type="password" class="textBoxUserAccount" />
                  </li>
                  <li id="Nombre">
                      <label class="registerLabel">Nombre</label>
