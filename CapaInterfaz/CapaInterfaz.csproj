@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TrueDriveBD.mdf" />
+    <Content Include="App_Data\TrueDriveBD_log.ldf">
+      <DependentUpon>TrueDriveBD.mdf</DependentUpon>
+    </Content>
     <Content Include="Pages\Clients.aspx" />
     <Content Include="Pages\Identity.aspx" />
     <Content Include="Pages\Legal.aspx" />

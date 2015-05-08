@@ -46,6 +46,7 @@
     <Compile Include="CAD\CocheCAD.cs" />
     <Compile Include="CAD\EmpleadoCAD.cs" />
     <Compile Include="CAD\ListaDeseadosCAD.cs" />
+    <Compile Include="CAD\MarcaCAD.cs" />
     <Compile Include="CAD\ProveedorCAD.cs" />
     <Compile Include="EN\BonificacionesEN.cs" />
     <Compile Include="EN\CestaEN.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="EN\EmpleadoEN.cs" />
     <Compile Include="CAD\PedidoCAD.cs" />
     <Compile Include="EN\ListaDeseadosEN.cs" />
+    <Compile Include="EN\MarcaEN.cs" />
     <Compile Include="EN\PedidoEN.cs" />
     <Compile Include="EN\ProveedorEN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
