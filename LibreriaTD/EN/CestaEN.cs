@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LibreriaTD.CAD;
 
 namespace LibreriaTD.EN
 {
@@ -10,7 +11,6 @@ namespace LibreriaTD.EN
     {
         private string idCliente;
         private List<CocheEN> coches;
-        private List<int> cantidad;
         private double precio;
 
         public CestaEN(string id)
@@ -19,37 +19,40 @@ namespace LibreriaTD.EN
             precio = 0;
         }
 
+        public void Insertar()
+        {
+            CestaCAD aux = new CestaCAD();
+            aux.Insertar(this);
+        }
+
+        public void Borrar()
+        {
+            CestaCAD aux = new CestaCAD();
+            aux.Borrar(this);
+        }
+
         public void AddCoche(CocheEN coche)
         {
-            if (coches.Contains(coche))
-            {
-                cantidad[coches.IndexOf(coche)] += 1;
-            }
-            else
+            CestaCAD aux = new CestaCAD();
+            if (aux.InsertarCoche(this, coche))
             {
                 coches.Add(coche);
-                cantidad.Add(1);
+                precio += coche.Precio;
             }
-            precio += coche.Precio;
         }
 
         public void DeleteCoche(CocheEN coche)
         {
-            if(coches.Contains(coche))
+            CestaCAD aux = new CestaCAD();
+            if(aux.BorrarCoche(this, coche))
             {
-                if (cantidad[coches.IndexOf(coche)] == 1)
-                {
-                    cantidad.RemoveAt(coches.IndexOf(coche));
-                    coches.Remove(coche);
-                }
-                else
-                {
-                    cantidad.RemoveAt(coches.IndexOf(coche));
-                }
+                coches.Remove(coche);
                 precio -= coche.Precio;
             }
             
         }
+
+
 
         //Getters Setters
         public string IdCliente //Este id nunca se modificará por lo tanto no tiene setter

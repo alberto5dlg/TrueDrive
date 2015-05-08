@@ -37,24 +37,16 @@ namespace LibreriaTD.CAD
         /* Modificaremos los kilometros de un coche cuando este coche sea alquilado por 
          * algun cliente y tenga mas de los kilometros que tenia antes de ser alquilado
          */
-        public bool modKM(float modKm)
+        public bool modKM(double modKm)
         {
             bool modifi = false;
             return modifi;
         }
-        /*En caso de que no se pueda borrar un coche porque todavia tiene unidades en stock
-         * restaremos una unidad que sera pasada por parametro, porque este coche todavia estara
-         * en stock
-         */
-        public bool modUds(int mUnidad)
-        {
-            bool modifi = false;
-            return modifi;
-        }
+       
 
         /*Modificar el precio del coche
          */
-        public bool modPrecio(float mPre)
+        public bool modPrecio(double mPre)
         {
             bool modifi = false;
             return modifi;
