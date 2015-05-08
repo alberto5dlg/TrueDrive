@@ -29,3 +29,8 @@
     height: 240px;
    
 }
+
+.mapa {
+    border:1px solid grey;
+    margin-top:10px;
+}
