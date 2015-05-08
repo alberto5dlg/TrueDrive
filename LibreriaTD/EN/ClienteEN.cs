@@ -18,10 +18,19 @@ namespace LibreriaTD.EN
         private string telefono;
         private string interesadoEn;
         private string fechaNacimiento;
+        private string usuario;
+        private int codp;
+        private string provincia;
+        private string contrasenya;
 
         public ClienteEN(string nif, string nombre, string apellidos, string email, string direccion,
-            string ciudad, string pais, string telefono, string interesadoEn, string fechaNac)
+            string ciudad, string pais, string telefono, string interesadoEn, string fechaNac,string usuario,
+            string provincia,int codp,string contrasenya)
         {
+            this.codp = codp;
+            this.provincia = provincia;
+            this.usuario = usuario;
+            this.contrasenya = contrasenya;
             this.nif = nif;
             this.nombre = nombre;
             this.apellidos = apellidos;
@@ -32,6 +41,30 @@ namespace LibreriaTD.EN
             this.telefono = telefono;
             this.interesadoEn = interesadoEn;
             this.fechaNacimiento = fechaNac;
+        }
+
+        public int CodigoPostal
+        {
+            get { return codp; }
+            set { codp = value; }
+        }
+
+        public string Provincia
+        {
+            get { return provincia; }
+            set { provincia = value; }
+        }
+
+        public string Usuario
+        {
+            get { return usuario; }
+            set { usuario = value; }
+        }
+
+        public string Contrasenya
+        {
+            get { return contrasenya; }
+            set { contrasenya = value; }
         }
 
         public string nifCliente
