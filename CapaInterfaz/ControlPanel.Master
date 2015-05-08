@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ControlPanel.master.cs" Inherits="CapaInterfaz.ControlPanel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head id="Head1" runat="server">
+
+    <link href="../Styles/PanelDeControl.css" type="text/css" rel="stylesheet" />
+    <link href="../Styles/navStyle.css" type="text/css" rel="stylesheet" />
+    <link href="../Styles/HeaderStyles.css" type="text/css" rel="stylesheet" />
+    <link href="../Styles/BaseStyle.css" type="text/css" rel="stylesheet" />
+    <link href='../Styles/DisplayGreat.css' type='text/css' rel='stylesheet' media='screen and (min-width: 981px)' />
+    <link href='../Styles/DisplayMedium.css' type='text/css' rel='stylesheet'  media='screen and (min-width: 801px) and (max-width: 980px)'/>
+    <link href='../Styles/Header.css' type='text/css' rel='stylesheet'/>
+    <link href='../Styles/FooterStyle.css' type='text/css' rel='stylesheet'/>
+    <script src="../Scripts/jquery-2.0.3.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="../Scripts/triggerPanel.js"></script>
+    <script src="../Scripts/allowHyperLinks.js" type="text/javascript"></script>
+    <script src="../Scripts/OnEnterSearch.js" type="text/javascript"></script>
+    
+    <asp:ContentPlaceHolder ID="headControlPanel" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="mainForm" runat="server" method="post" enctype="application/x-www-form-urlencoded">
+        <header>
+            <section class="preHeader displayGreat displayMedium">
+                <div class="wrap" style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
+                    <span style="font-size: 20px;">PANEL DE ADMINISTRACIÓN</span>
+                </div>
+            </section>
+            <section class="mainHeader clear-fix displayGreat displayMedium">
+                <div class=" logo displayGreat displayMedium" style="margin-left: 45%;">
+                    <a href="http://www.truedrive.com/">
+                        <img src="../Styles/images/logo.png" />
+                    </a>
+                </div>
+            </section>
+            <section class="menu  clear-fix displayGreat displayMedium">
+                <nav class="wrap">
+                    <ul class="firstLevel">
+                        <li>
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Clients.aspx">Clientes</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/NewClient.aspx">Nuevo cliente</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Providers.aspx">Proveedores</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/NewProvider.aspx">Nuevo proveedor</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Cars.aspx">Coches</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/NewCar.aspx">Nuevo coche</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Staff.aspx">Empleados</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/NewStaff.aspx">Nuevo empleado</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Bonuses.aspx">Bonificaciones</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/NewBonuse.aspx">Nueva bonificacion</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Orders.aspx">Pedidos</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/NewOrder.aspx">Nuevo pedido</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <asp:ContentPlaceHolder ID="ContentControlPanel" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+
