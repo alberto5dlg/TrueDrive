@@ -2,41 +2,83 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link href="../Styles/Registro.css" type="text/css" rel="stylesheet"/>
-    <fieldset style="border:0px">
-        <legend class="cabecera">Introduce tus datos</legend>
-        
-        <p><label class="labelCampo">Usuario</label></p>
-            <p> <input class="cajaText" id="usuario" name="Usuario" type="text" /></p>
+    <link href="../Styles/RegisterStyle.css" type="text/css" rel="stylesheet"/>
+     <!-- caja de campo de datos-->
+     <div style="padding-top:20px;" class ="contentWrapper">
+        <h1  class="headerWrap">Introduce tus datos</h1>
+        <!--Primera caja de campo de datos-->
+         <div style="float:left; padding-left:100px;width:42%;padding-top:30px;" class =" contentInside">
+             <ul style="list-style:none;" id="listaregistro1">
+                  <li id="Usuario">
+                     <label class="registerLabel">Usuario</label>
+                        <input id="usuario" name="Usuario" type="text" class="textBoxUserAccount" />
+                 </li>
+                  <li id="Contrasenya">
+                     <label class="registerLabel">Contraseña</label>
+                        <input id="contrasenya" name="Contrasenya" type="text" class="textBoxUserAccount" />
+                 </li>
+                 <li id="Nombre">
+                     <label class="registerLabel">Nombre</label>
+                        <input id="nombre" name="Nombre" type="text" class="textBoxUserAccount" />
+                 </li>
+                   <li id="Apellidos">
+                     <label class="registerLabel">Apellidos</label>
+                        <input id="apellidos" name="Apellidos" type="text" class="textBoxUserAccount" />
+                 </li>
+                 <li id="nif">
+                     <label class="registerLabel">Dni</label>
+                        <input id="dni" name="Dni" type="text" class="textBoxUserAccount" />
+                 </li>
+                  <li id="E-mail">
+                     <label class="registerLabel">E-mail</label>
+                        <input id="email" name="Email" type="text" class="textBoxUserAccount" />
+                 </li>
+                 <li id="FechaNac">
+                     <label class="registerLabel">Fecha de Nacimiento</label>
+                        <input id="fecnac" name="FecNac" type="date" class="textBoxUserAccount" />
+                 </li>
+             </ul>
+        </div>
 
-        <p> <label class="labelCampo">Nombre</label></p>
-             <p><input class="cajaText" id="nombre" name="Nombre" type="text" /></p>
-
-         <p><label class="labelCampo">Apellidos</label></p>
-             <p><input class="cajaText" id="apellidos" name="Apellidos" type="text" /></p>
-
-         <p><label class="labelCampo">Email</label></p>
-            <p> <input class="cajaText" id="email" name="Email" type="text" /></p>
-
-         <p><label class="labelCampo">DNI</label></p>
-            <p> <input class="cajaText" id="dni" name="DNI" type="text" /></p>
-
-         <p><label class="labelCampo">Direccion</label></p>
-            <p> <input class="cajaText" id="direccion" name="Direccion" type="text" /></p>
-
-        <p> <label class="labelCampo">Ciudad</label></p>
-            <p> <input class="cajaText" id="ciudad" name="Ciudad" type="text" /></p>
-
-        <p> <label class="labelCampo">Pais</label></p>
-            <p> <input class="cajaText" id="pais" name="Pais" type="text" /></p>
-
-        <p> <label class="labelCampo">Telefono</label></p>
-            <p> <input class="cajaText" id="telefon" name="Telefono" type="text" /></p>
-
-       <p> <label class="labelCampo">Interesado</label></p>
-             <p><input class="cajaText" id="interesado" name="Interesado" type="text" /></p>
-
-       <p> <label class="labelCampo">Fecha Nacimiento</label></p>
-            <p> <input class="cajaText" id="fecha" name="Fecha" type="date" /></p>
-    </fieldset>
+        <!--Segunda caja de campo de datos-->
+        <div style="float:left;width:42%;padding-top:30px;" class="contentInside">
+            <ul id="listaregistro2">
+                  <li id="dir">
+                     <label class="registerLabel">Dirección</label>
+                        <input id="direccion" name="Direccion" type="text" class="textBoxUserAccount" />
+                 </li>
+                <li id="ciud">
+                     <label class="registerLabel">Ciudad</label>
+                        <input id="Ciudad" name="Ciudad" type="text" class="textBoxUserAccount" />
+                 </li>
+                <li id="cp">
+                     <label class="registerLabel">Cod. Postal</label>
+                        <input id="codp" name="codigoPostal" type="text" class="textBoxUserAccount" />
+                 </li>
+                <li id="prov">
+                     <label class="registerLabel">Provincia</label>
+                        <input id="Provincia" name="Provincia" type="text" class="textBoxUserAccount" />
+                 </li>
+                <li id="pais">
+                     <label class="registerLabel">Pais</label>
+                        <input id="Pais" name="Pais" type="text" class="textBoxUserAccount" />
+                 </li>
+                <li id="Tlfo">
+                     <label class="registerLabel">Teléfono</label>
+                        <input id="telefono" name="telefono" type="text" class="textBoxUserAccount" />
+                 </li>
+                <li id="Interesado">
+                     <label class="registerLabel">Interesado en</label>
+                        <input id="interesado" name="Interesado" type="text" class="textBoxUserAccount" />
+                 </li>
+            </ul>
+        </div>
+         <div style="float:left; padding-left:100px;padding-top:10px;" class="contentInside">
+             <input type="checkbox" name="your-group" value="unit-in-group" /> He leido y acepto los términos y condiciones.
+         </div>
+        <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside">
+            <input type="button" id="registrarbutton" value="Registrar" class="buttonGreat buttonMedium" />
+        </div>
+   </div>
+    
 </asp:Content>
