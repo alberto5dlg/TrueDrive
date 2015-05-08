@@ -61,11 +61,23 @@
     <Content Include="App_Data\TrueDriveBD_log.ldf">
       <DependentUpon>TrueDriveBD.mdf</DependentUpon>
     </Content>
-    <Content Include="Pages\Clients.aspx" />
+    <Content Include="Bonuses.aspx" />
+    <Content Include="Cars.aspx" />
+    <Content Include="Clients.aspx" />
+    <Content Include="MenuCP.aspx" />
+    <Content Include="NewBonuse.aspx" />
+    <Content Include="NewCar.aspx" />
+    <Content Include="NewClient.aspx" />
+    <Content Include="NewOrder.aspx" />
+    <Content Include="NewProvider.aspx" />
+    <Content Include="NewStaff.aspx" />
+    <Content Include="Orders.aspx" />
     <Content Include="Pages\Identity.aspx" />
     <Content Include="Pages\Legal.aspx" />
     <Content Include="Pages\Location.aspx" />
     <Content Include="Pages\Privacy.aspx" />
+    <Content Include="Providers.aspx" />
+    <Content Include="Staff.aspx" />
     <Content Include="Styles\BaseStyle.css" />
     <Content Include="Styles\DisplayGreat.css" />
     <Content Include="Styles\DisplayMedium.css" />
@@ -110,7 +122,6 @@
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Productos.aspx" />
     <Content Include="Pages\Registro.aspx" />
-    <Content Include="Panel_Control.aspx" />
     <Content Include="Scripts\Admin\getCategories.js" />
     <Content Include="Scripts\Admin\getUsers.js" />
     <Content Include="Scripts\Admin\options.js" />
@@ -118,6 +129,7 @@
     <Content Include="Scripts\Contact\consultMobile.js" />
     <Content Include="Scripts\Contact\ResizeTextArea.js" />
     <Content Include="Scripts\DisplayTablet.js" />
+    <Content Include="ControlPanel.Master" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
@@ -141,6 +153,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonuses.aspx.cs">
+      <DependentUpon>Bonuses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bonuses.aspx.designer.cs">
+      <DependentUpon>Bonuses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars.aspx.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cars.aspx.designer.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.Master.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlPanel.Master.designer.cs">
+      <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
     <Compile Include="Log_Admin.aspx.cs">
       <DependentUpon>Log_Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,19 +188,68 @@
     <Compile Include="Log_Admin.aspx.designer.cs">
       <DependentUpon>Log_Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MenuCP.aspx.cs">
+      <DependentUpon>MenuCP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuCP.aspx.designer.cs">
+      <DependentUpon>MenuCP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewBonuse.aspx.cs">
+      <DependentUpon>NewBonuse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewBonuse.aspx.designer.cs">
+      <DependentUpon>NewBonuse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewCar.aspx.cs">
+      <DependentUpon>NewCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewCar.aspx.designer.cs">
+      <DependentUpon>NewCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewClient.aspx.cs">
+      <DependentUpon>NewClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewClient.aspx.designer.cs">
+      <DependentUpon>NewClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewOrder.aspx.cs">
+      <DependentUpon>NewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewOrder.aspx.designer.cs">
+      <DependentUpon>NewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewProvider.aspx.cs">
+      <DependentUpon>NewProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewProvider.aspx.designer.cs">
+      <DependentUpon>NewProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewStaff.aspx.cs">
+      <DependentUpon>NewStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewStaff.aspx.designer.cs">
+      <DependentUpon>NewStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CarritoCompra.aspx.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
       <DependentUpon>CarritoCompra.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Clients.aspx.cs">
-      <DependentUpon>Clients.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Clients.aspx.designer.cs">
-      <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
@@ -232,14 +321,21 @@
     <Compile Include="Pages\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Panel_Control.aspx.cs">
-      <DependentUpon>Panel_Control.aspx</DependentUpon>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers.aspx.cs">
+      <DependentUpon>Providers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Panel_Control.aspx.designer.cs">
-      <DependentUpon>Panel_Control.aspx</DependentUpon>
+    <Compile Include="Providers.aspx.designer.cs">
+      <DependentUpon>Providers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TrueDrive.Master.cs">
       <DependentUpon>TrueDrive.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
