@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Providers.aspx.cs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewProvider.aspx.cs"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
@@ -51,14 +51,9 @@
             <span style="font-size:25px;color:white;"> Acciones </span>
         </div>
         <div style="padding:50px;">
-            <div class="botonModificar">
-                <a href="/Paginas/modificarCliente.aspx?idCliente=$id">
-                    <img src="../Styles/images/modificar.png" style="width: 100%;"></img>
-                </a>
-            </div>
-            <div class="botonBorrar">
-                <a href="/Paginas/borrarCliente.aspx?idCliente=$id">
-                    <img src="../Styles/images/borrar.png" style="width:100%;"></img>
+            <div class="botonInsertar">
+                <a href="/Paginas/insertarProveedor.aspx?idProveedor=$id">
+                    <img src="../Styles/images/insertar.png" style="width: 100%;"></img>
                 </a>
             </div>
         </div>

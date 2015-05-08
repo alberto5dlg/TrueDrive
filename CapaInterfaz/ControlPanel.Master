@@ -65,6 +65,30 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Staff.aspx">Empleados</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/NewStaff.aspx">Nuevo empleado</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Bonuses.aspx">Bonificaciones</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/NewBonuse.aspx">Nueva bonificacion</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Orders.aspx">Pedidos</asp:HyperLink>
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/NewOrder.aspx">Nuevo pedido</asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </section>

@@ -1,27 +1,27 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Providers.aspx.cs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewClient.aspx.cs"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
     <div class="cajaPrincipal1">
         <div style="background:#de3939;color:white;padding:10px;padding-left:50px;">
-            <span style="font-size:25px;color:white;"> Ficha Proveedor </span>
+            <span style="font-size:25px;color:white;"> Ficha Cliente </span>
         </div>
         <div style="padding:50px;">
             <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> CIF </legend>
-                <input name="cif" type="text" id="Cif" class="inputDatos" />
+                <legend class="etiquetaCajon"> NIF </legend>
+                <input name="nif" type="text" id="Nif" class="inputDatos" />
             </fieldset>
             <fieldset class="cajonesFlotantes"">
-                <legend class="etiquetaCajon"> Empresa </legend>
-                <input name="empresa" type="text" id="Empresa" class="inputDatos"/>
+                <legend class="etiquetaCajon"> Nombre </legend>
+                <input name="nombre" type="text" id="Nombre" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> Ciudad </legend>
-                <input name="Ciudad" type="text" id="Ciudad" class="inputDatos"/>
+                <legend class="etiquetaCajon"> Apellidos </legend>
+                <input name="apellidos" type="text" id="Apellidos" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> C.P. </legend>
-                <input name="codP" type="text" id="CP" class="inputDatos"/>
+                <legend class="etiquetaCajon"> Email </legend>
+                <input name="email" type="text" id="Email" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Direccion </legend>
@@ -36,29 +36,23 @@
                 <input name="telefono" type="text" id="Telefono" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> Fax</legend>
-                <input type="text" name="fax" id="Fax" class="inputDatos"/>
+                <legend class="etiquetaCajon"> Interesado en </legend>
+                <input type="text" name="interesadoEn" id="InteresadoEn" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> Email</legend>
-                <input name="email" type="text" id="Email" class="inputDatos"/>
+                <legend class="etiquetaCajon"> Fecha de nacimiento </legend>
+                <input name="fechaNac" type="date" id="FechaNac" class="inputDatos"/>
             </fieldset>
         </div>
     </div>
-
     <div class="cajaPrincipal2">
         <div style="background:#444242;color:white;padding:10px;text-align:center;">
             <span style="font-size:25px;color:white;"> Acciones </span>
         </div>
         <div style="padding:50px;">
-            <div class="botonModificar">
-                <a href="/Paginas/modificarCliente.aspx?idCliente=$id">
-                    <img src="../Styles/images/modificar.png" style="width: 100%;"></img>
-                </a>
-            </div>
-            <div class="botonBorrar">
-                <a href="/Paginas/borrarCliente.aspx?idCliente=$id">
-                    <img src="../Styles/images/borrar.png" style="width:100%;"></img>
+            <div class="botonInsertar">
+                <a href="/Paginas/insertarCliente.aspx?idCliente=$id">
+                    <img src="../Styles/images/insertar.png" style="width: 100%;"></img>
                 </a>
             </div>
         </div>

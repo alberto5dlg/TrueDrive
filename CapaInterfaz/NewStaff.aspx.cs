@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CapaInterfaz
 {
-    public partial class Panel_Control : System.Web.UI.Page
+    public partial class Formulario_web19 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
