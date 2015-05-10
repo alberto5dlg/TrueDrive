@@ -64,6 +64,8 @@
     <Content Include="Bonuses.aspx" />
     <Content Include="Cars.aspx" />
     <Content Include="Clients.aspx" />
+    <Content Include="Privada\ClientMenu.aspx" />
+    <Content Include="Privada\SellCar.aspx" />
     <Content Include="MenuCP.aspx" />
     <Content Include="NewBonuse.aspx" />
     <Content Include="NewCar.aspx" />
@@ -180,6 +182,20 @@
     </Compile>
     <Compile Include="ControlPanel.Master.designer.cs">
       <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Privada\ClientMenu.aspx.cs">
+      <DependentUpon>ClientMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privada\ClientMenu.aspx.designer.cs">
+      <DependentUpon>ClientMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privada\SellCar.aspx.cs">
+      <DependentUpon>SellCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privada\SellCar.aspx.designer.cs">
+      <DependentUpon>SellCar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Log_Admin.aspx.cs">
       <DependentUpon>Log_Admin.aspx</DependentUpon>
