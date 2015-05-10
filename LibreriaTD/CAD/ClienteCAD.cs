@@ -4,21 +4,41 @@ using System.Linq;
 using System.Web;
 using LibreriaTD.EN;
 using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Text;
 
 namespace LibreriaTD.CAD
 {
     class ClienteCAD
     {
-        //private string conexion;
-        
+        private string conexion;
         public ClienteCAD()
         {
+            conexion = @"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\TrueDriveBD.mdf;User Instace=true";
         }
 
         public bool InsertarCliente(ClienteEN newCliente)
         {
-            bool insert = false;
-            return insert;
+            SqlConnection con = null;
+            string comando = "Insert into Cliente (nif,nombre,apellido,email,direccion,ciudad,pais,telefono,interesadoEn,codigopostal,fechaNacimiento,usuario,contraseña,provincia) values ('"+ newCliente.nifCliente+"','"+newCliente.nombreCliente+"',"+newCliente.apellidosCliente+ "','" + newCliente.emailCliente + "','" + newCliente.direccionCliente+"','"+newCliente.ciudadCliente+"','"+newCliente.paisCliente+"','"+newCliente.telefonoCliente+"','"+newCliente.interesadoEnCliente+"','"+newCliente.CodigoPostal+"','"+newCliente.anyoNacimientoCliente+"','"+newCliente.Usuario+"','"+newCliente.Contrasenya+"','"+newCliente.Provincia+"')";
+            con = new SqlConnection(conexion);
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(comando, con);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (SqlException excep)
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         public bool BorrarCliente(ClienteEN borCliente)
