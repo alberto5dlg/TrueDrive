@@ -1,13 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" %>
-
-<script runat="server">
-
-    protected void register_Click(object sender, EventArgs e)
-    {
-
-    }
-</script>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -20,7 +11,7 @@
              <ul style="list-style:none;" id="listaregistro1">
                   <li id="Usuario">
                      <label class="registerLabel">Usuario</label>
-                        <input runat="server" id="usuario" name="Usuario" type="text" class="textBoxUserAccount"  />
+                        <input id="usuario" name="Usuario" type="text" class="textBoxUserAccount" />
                  </li>
                   <li id="Contrasenya">
                      <label class="registerLabel">Contraseña</label>
@@ -58,7 +49,7 @@
                  </li>
                 <li id="ciud">
                      <label class="registerLabel">Ciudad</label>
-                        <input id="ciudad" name="Ciudad" type="text" class="textBoxUserAccount" />
+                        <input id="Ciudad" name="Ciudad" type="text" class="textBoxUserAccount" />
                  </li>
                 <li id="cp">
                      <label class="registerLabel">Cod. Postal</label>
@@ -66,11 +57,11 @@
                  </li>
                 <li id="prov">
                      <label class="registerLabel">Provincia</label>
-                        <input id="provincia" name="Provincia" type="text" class="textBoxUserAccount" />
+                        <input id="Provincia" name="Provincia" type="text" class="textBoxUserAccount" />
                  </li>
                 <li id="pais">
                      <label class="registerLabel">Pais</label>
-                        <input id="pais" name="Pais" type="text" class="textBoxUserAccount" />
+                        <input id="Pais" name="Pais" type="text" class="textBoxUserAccount" />
                  </li>
                 <li id="Tlfo">
                      <label class="registerLabel">Teléfono</label>
@@ -86,9 +77,8 @@
              <input type="checkbox" name="your-group" value="unit-in-group" /> He leido y acepto los términos y condiciones.
          </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside">
-             <input runat="server" type="button" id="registrarbutton" value="Registrar" class="buttonGreat buttonMedium" onclick="register_Click" />
+            <input type="button" id="registrarbutton" value="Registrar" class="buttonGreat buttonMedium" />
         </div>
-         
    </div>
     
 </asp:Content>

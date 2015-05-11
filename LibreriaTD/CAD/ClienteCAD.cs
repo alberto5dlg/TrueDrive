@@ -22,7 +22,7 @@ namespace LibreriaTD.CAD
         public bool InsertarCliente(ClienteEN newCliente)
         {
             SqlConnection con = null;
-            string comando = "Insert into Cliente (nif,nombre,apellido,email,direccion,ciudad,pais,telefono,interesadoEn,codigopostal,fechaNacimiento,usuario,contraseña,provincia) values ('"+ newCliente.nifCliente+"','"+newCliente.nombreCliente+"',"+newCliente.apellidosCliente+ "','" + newCliente.emailCliente + "','" + newCliente.direccionCliente+"','"+newCliente.ciudadCliente+"','"+newCliente.paisCliente+"','"+newCliente.telefonoCliente+"','"+newCliente.interesadoEnCliente+"','"+newCliente.codpCliente+"','"+newCliente.anyoNacimientoCliente+"','"+newCliente.usuarioCliente+"','"+newCliente.contraCliente+"','"+newCliente.provCliente+"')";
+            string comando = "Insert into Cliente (nif,nombre,apellido,email,direccion,ciudad,pais,telefono,interesadoEn,codigopostal,fechaNacimiento,usuario,contraseña,provincia) values ('"+ newCliente.nifCliente+"','"+newCliente.nombreCliente+"',"+newCliente.apellidosCliente+ "','" + newCliente.emailCliente + "','" + newCliente.direccionCliente+"','"+newCliente.ciudadCliente+"','"+newCliente.paisCliente+"','"+newCliente.telefonoCliente+"','"+newCliente.interesadoEnCliente+"','"+newCliente.CodigoPostal+"','"+newCliente.anyoNacimientoCliente+"','"+newCliente.Usuario+"','"+newCliente.Contrasenya+"','"+newCliente.Provincia+"')";
             con = new SqlConnection(conexion);
             try
             {
