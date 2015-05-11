@@ -51,7 +51,7 @@
         font-size: 10px;
         color:black;
     }
-.info {
+.infoFooter {
     float: left; 
     width: 100%;
     height: 30px;
@@ -60,7 +60,7 @@
 }
 
 
-    .info p {
+    .infoFooter p {
         text-align:center;
         vertical-align:central; 
 		padding-bottom: 5px;
@@ -68,7 +68,7 @@
         color:black;
     }
 
-    .info a{
+    .infoFooter a{
         color:black;
     }
 

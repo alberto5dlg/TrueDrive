@@ -152,7 +152,7 @@
                                 </li>
                             </ul>
                         </div>
-                <div class="info">
+                <div class="infoFooter">
                     <p><asp:HyperLink ID="HiperLink69" runat="server" NavigateUrl="~/Pages/Identity.aspx">¿Quiénes somos?</asp:HyperLink>   |  <asp:HyperLink ID="HyperLink68" runat="server"  NavigateUrl="~/Pages/Privacy.aspx">Política de privacidad</asp:HyperLink>  | <asp:HyperLink ID="HyperLink70" runat="server"  NavigateUrl="~/Pages/Legal.aspx">Aviso Legal</asp:HyperLink>  |  Términos de uso  |  Sitemap  |  <asp:HyperLink ID="HyperLink71" runat="server" NavigateUrl="~/Pages/Contacto.aspx">Contacto</asp:HyperLink></p>
                 </div>
                 <div class="credits">
