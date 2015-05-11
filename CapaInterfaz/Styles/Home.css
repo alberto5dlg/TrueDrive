@@ -2,7 +2,7 @@
 
 /*Div que contiene las 3 primeras columnas con foto a la izquierda y contenido explicativo en centro y derecha.*/
 .ecoDrive{
-    min-height: 250px;
+  
 }
 
 /*Los 3 contenedores tienen sus margenes, una altura minima de 220px y fondo de color con esquinas bordeadas.*/
@@ -61,12 +61,19 @@
 /* Siguiente columna en la que presentamos la aplicacion-apartado personal del cliente (My TrueDrive) */
 
 .myTrueDrive {
-    
+    margin-bottom: 20px;
 }
     .myTrueDrive h2 {
         border-bottom: groove #fad6d6;
         text-align: center;
         
+    }
+    .myTrueDrive h4 {
+        text-align: center;
+    }
+
+    .myTrueDrive p {
+        margin: 15px 15px 15px 15px;
     }
 
 .titularApp {

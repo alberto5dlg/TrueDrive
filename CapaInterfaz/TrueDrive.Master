@@ -133,7 +133,9 @@
                             <div class="methods-img"><img src="../Styles/images/payments-methods/transfer.png" /></div>
                         </div>                      
                     </div>
-                    <div class="social">
+                    <div class="columns">
+                        <p><strong>SIGUENOS EN:</strong></p>
+                        <div class="socialFooter">
                             <ul>
                                 <li>
                                     <a href="https://www.facebook.com/" target="_blank"><img src="../Styles/images/social/Facebook-Icon.png" /></a>
@@ -152,6 +154,7 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
                 <div class="infoFooter">
                     <p><asp:HyperLink ID="HiperLink69" runat="server" NavigateUrl="~/Pages/Identity.aspx">¿Quiénes somos?</asp:HyperLink>   |  <asp:HyperLink ID="HyperLink68" runat="server"  NavigateUrl="~/Pages/Privacy.aspx">Política de privacidad</asp:HyperLink>  | <asp:HyperLink ID="HyperLink70" runat="server"  NavigateUrl="~/Pages/Legal.aspx">Aviso Legal</asp:HyperLink>  |  Términos de uso  |  Sitemap  |  <asp:HyperLink ID="HyperLink71" runat="server" NavigateUrl="~/Pages/Contacto.aspx">Contacto</asp:HyperLink></p>
                 </div>
