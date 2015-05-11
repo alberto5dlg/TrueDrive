@@ -16,11 +16,11 @@ namespace CapaInterfaz.Paginas
 
         }
 
-        protected void registrarbutton(object sender, EventArgs e)
+        protected void Registrar_Click(object sender, EventArgs e)
         {
             ClienteEN en = new ClienteEN();
-            en.Usuario = "";
-            en.Contrasenya = "";
+            en.usuCliente = usuario.Text;
+            en.passCliente = "";
             en.nombreCliente = "";
             en.apellidosCliente = "";
             en.nifCliente = "";
@@ -28,8 +28,8 @@ namespace CapaInterfaz.Paginas
             en.anyoNacimientoCliente = "";
             en.direccionCliente = "";
             en.ciudadCliente = "";
-            en.CodigoPostal = 0123;
-            en.Provincia = "";
+            en.codpCliente = 0123;
+            en.provCliente = "";
             en.paisCliente = "";
             en.interesadoEnCliente = "";
             en.telefonoCliente = "";

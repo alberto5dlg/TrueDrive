@@ -23,23 +23,7 @@ namespace LibreriaTD.EN
         private string provincia;
         private string contrasenya;
 
-        public ClienteEN()
-        {
-            this.codp = 0;
-            this.provincia = null;
-            this.usuario = null;
-            this.contrasenya = null;
-            this.nif = null;
-            this.nombre = null;
-            this.apellidos = null;
-            this.email = null;
-            this.direccion = null;
-            this.ciudad = null;
-            this.pais = null;
-            this.telefono = null;
-            this.interesadoEn = null;
-            this.fechaNacimiento = null;
-        }
+        
         public ClienteEN(string nif, string nombre, string apellidos, string email, string direccion,
             string ciudad, string pais, string telefono, string interesadoEn, string fechaNac,string usuario,
             string provincia,int codp,string contrasenya)
@@ -59,26 +43,42 @@ namespace LibreriaTD.EN
             this.interesadoEn = interesadoEn;
             this.fechaNacimiento = fechaNac;
         }
-
-        public int CodigoPostal
+        public ClienteEN()
+        {
+            this.codp = 0;
+            this.provincia = null;
+            this.usuario = null;
+            this.contrasenya = null;
+            this.nif = null;
+            this.nombre = null;
+            this.apellidos = null;
+            this.email = null;
+            this.direccion = null;
+            this.ciudad = null;
+            this.pais = null;
+            this.telefono = null;
+            this.interesadoEn = null;
+            this.fechaNacimiento = null;
+        }
+        public int codpCliente
         {
             get { return codp; }
             set { codp = value; }
         }
 
-        public string Provincia
+        public string provCliente
         {
             get { return provincia; }
             set { provincia = value; }
         }
 
-        public string Usuario
+        public string usuCliente
         {
             get { return usuario; }
             set { usuario = value; }
         }
 
-        public string Contrasenya
+        public string passCliente
         {
             get { return contrasenya; }
             set { contrasenya = value; }
