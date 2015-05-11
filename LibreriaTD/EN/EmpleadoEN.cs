@@ -88,10 +88,12 @@ namespace LibreriaTD.EN
             set { pass = value; }
         }
 
-        public void InsertarEmpleado()
+        public bool InsertarEmpleado()
         {
             EmpleadoCAD inEmp = new EmpleadoCAD();
-            inEmp.InsertarEmpleado(this);
+            bool insert = false;
+            insert = inEmp.InsertarEmpleado(this);
+            return insert;
         }
 
         public void BorrarEmpleado()

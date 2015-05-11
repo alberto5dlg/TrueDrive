@@ -20,20 +20,21 @@ namespace CapaInterfaz
         protected void insertStaff_click(object sender, EventArgs e)
         {
             EmpleadoEN emple = new EmpleadoEN();
-            
-            emple.dni = Nif.Text;
-            emple.nombre = Nombre.Text;
-            emple.apellidos = Apellidos.Text;
-            emple.usuario = Usuario.Text;
-            emple.pass = Pass.Text;
-            emple.email = Email.Text;
-            emple.numContacto = NumContacto.Text;
-            emple.direccion = Direccion.Text;
-            
-            Response.Write("<script>window.alert('Alberrrrtooooorrrr esto funciona !!');</script>");
+            bool insert = false;
+            emple.Dni = Nif.Text;
+            emple.Nombre = Nombre.Text;
+            emple.Apellidos = Apellidos.Text;
+            emple.Usuario = Usuario.Text;
+            emple.Pass = Contrasenya.Text;
+            emple.Email = Email.Text;
+            emple.NumContacto = NumContacto.Text;
+            emple.Direccion = Direccion.Text;
 
-            //emple.InsertarEmpleado();
-
+            insert = emple.InsertarEmpleado();
+             if (insert == true)
+                 Response.Write("<script>window.alert('Insertado Correctamente');</script>");
+             else
+                 Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
 
         }
     }

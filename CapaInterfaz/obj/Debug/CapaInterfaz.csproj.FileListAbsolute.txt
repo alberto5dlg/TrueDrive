@@ -14,3 +14,5 @@ C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\obj\Debug\CapaInter
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\bin\LibreriaTD.dll
 C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\bin\LibreriaTD.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.pdb
