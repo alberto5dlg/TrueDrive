@@ -83,8 +83,10 @@
     <Content Include="Styles\DisplayMedium.css" />
     <Content Include="Styles\FooterStyle.css" />
     <Content Include="Styles\Header.css" />
+    <Content Include="Styles\Home.css" />
     <Content Include="Styles\images\borrar.png" />
     <Content Include="Styles\images\carrito_x64.png" />
+    <Content Include="Styles\images\greendriver.png" />
     <Content Include="Styles\images\insertar.png" />
     <Content Include="Styles\images\logo.png" />
     <Content Include="Styles\images\modificar.png" />

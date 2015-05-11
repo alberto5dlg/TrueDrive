@@ -1,0 +1,22 @@
+﻿
+.home {
+}
+
+.ecoLeft {
+    width: 33%;
+    float: left;
+    
+}
+    .ecoLeft img {
+        width: 100%;
+    }
+
+.ecoRigth {
+    width: 33%;
+    float: left;
+}
+
+.ecoCenter {
+    width: 33%;
+    
+}
