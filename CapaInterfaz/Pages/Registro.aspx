@@ -10,6 +10,7 @@
      <div style="padding-top:20px;" class ="contentWrapper">
         <h1  class="headerWrap">Introduce tus datos</h1>
         <!--Primera caja de campo de datos-->
+        
          <div style="float:left; padding-left:100px;width:42%;padding-top:30px;" class =" contentInside">
              <ul style="list-style:none;" id="listaregistro1">
                   <li id="Usuario">
@@ -81,8 +82,9 @@
          </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
             <input type="button" id="registrarbutton" value="Registrar" class="buttonGreat buttonMedium" />
-            <asp:Button ID="registrar" OnClick="registrar_Click" Text="Registrar" runat="server"/>
+            <asp:Button ID="registrar" OnClick="registrar_Click" Text="Registrar" runat="server" CssClass="buttonMedium buttonGreat" />
         </div>
+     
    </div>
     
 </asp:Content>

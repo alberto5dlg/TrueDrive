@@ -22,7 +22,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="mainForm" runat="server" method="post" enctype="application/x-www-form-urlencoded">
         <div class="displayGreat displayMedium">
             <header>
                 <section class="preHeader displayGreat displayMedium">
@@ -159,6 +158,6 @@
                     <p>Created & Designed by TrueDrive</p>
                 </div>
             </section>
-    </form>
+
 </body>
 </html>

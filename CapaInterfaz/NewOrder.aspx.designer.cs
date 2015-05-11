@@ -9,5 +9,5 @@
 
 
 
-public partial class  NewOrder{
+public partial class  {
 }

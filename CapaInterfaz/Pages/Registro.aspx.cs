@@ -16,7 +16,7 @@ namespace CapaInterfaz.Paginas
 
         }
 
-        protected void Registrar_Click(object sender, EventArgs e)
+        protected void registrar_Click(object sender, EventArgs e)
         {
             ClienteEN en = new ClienteEN();
             en.usuCliente = usuario.Text;
