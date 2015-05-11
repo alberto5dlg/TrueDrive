@@ -1,22 +1,114 @@
-﻿
-.home {
+﻿/*HOJA DE ESTILOS HOME*/
+
+/*Div que contiene las 3 primeras columnas con foto a la izquierda y contenido explicativo en centro y derecha.*/
+.ecoDrive{
+    min-height: 250px;
 }
 
+/*Los 3 contenedores tienen sus margenes, una altura minima de 220px y fondo de color con esquinas bordeadas.*/
 .ecoLeft {
-    width: 33%;
+    width: 30%;
     float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color:#fad6d6;
+    border-radius: 5px;
+    min-height: 220px;
     
 }
+    /*Este primer contenedor tiene una imagen la cual limitamos n altura a la misma que los demas de su misma fila.*/
     .ecoLeft img {
-        width: 100%;
+        height: 220px;
     }
 
 .ecoRigth {
     width: 33%;
     float: left;
+    margin-top: 20px;
+    background-color:#fad6d6;
+    border-radius: 5px;
+    min-height: 220px;
 }
+    /*Tanto el titular del div como el texto los separamos un poco de los bordes para dar sensación de relieve y claridad.*/
+    .ecoRigth p {
+        margin: 15px 15px 15px 15px;
+    }
+    .ecoRigth h3 {
+        text-align: center;
+        margin: 15px 15px 15px 15px;
+    }
 
 .ecoCenter {
     width: 33%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+    background-color:#fad6d6;
+    border-radius: 5px;
+    min-height: 220px;
+    
+}
+
+    .ecoCenter p {
+        margin: 15px 15px 15px 15px;
+    }
+    .ecoCenter h3 {
+        text-align: center;
+        margin: 15px 15px 15px 15px;
+    }
+
+/* Siguiente columna en la que presentamos la aplicacion-apartado personal del cliente (My TrueDrive) */
+
+.myTrueDrive {
+    
+}
+    .myTrueDrive h2 {
+        border-bottom: groove #fad6d6;
+        text-align: center;
+        
+    }
+
+.titularApp {
+    text-align: center;
+    background-color: #fad6d6;
+}
+
+.info {
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: white;
+    border: solid 2px #fad6d6;
+    min-height:400px;
+    border-radius: 5px;
+   
+}
+
+.map {
+    width: 33%;
+    float: left;
+    margin-right: 15px;
+    background-color: white;
+    border: solid 2px #fad6d6;
+    min-height:400px;
+    border-radius: 5px;
+    
+}
+
+    .map img {
+        width: 90%;
+        margin-left:20px;
+        margin-top: 10px;
+    }
+
+.app {
+    width: 30%;
+    float: left;
+    background-color: white;
+    border: solid 2px #fad6d6;
+    min-height:400px;
+    border-radius: 5px;
     
 }
