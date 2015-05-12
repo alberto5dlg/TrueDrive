@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CapaInterfaz {
+namespace TrueDrive.CapaInterfaz {
     
     
     public partial class NewStaff {

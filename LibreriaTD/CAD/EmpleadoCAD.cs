@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using LibreriaTD.EN;
 using System.Data.SqlClient;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlTypes;
+using System.Data.Common;
+using System.Data;
 
 
 namespace LibreriaTD.CAD
@@ -21,6 +27,8 @@ namespace LibreriaTD.CAD
         public bool InsertarEmpleado(EmpleadoEN nE)
         {
             bool insert = false ;
+
+            Console.WriteLine(nE.Nombre);
             string cmd = "Insert into Empleado values('" + nE.Dni + "','" + nE.Nombre + "','" + nE.Apellidos + "','" + nE.Direccion + "','" + nE.NumContacto + "','" + nE.Email + "','" + nE.Usuario + "','" + nE.Usuario + "','" + nE.Pass + "')";
 
             SqlConnection con = new SqlConnection(conexion);
