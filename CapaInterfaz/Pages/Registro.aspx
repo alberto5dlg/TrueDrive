@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeFile="Registro.aspx.cs" Inherits="CapaInterfaz.Pages.Registro" %>
 
 
 
@@ -6,20 +6,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link href="../Styles/RegisterStyle.css" type="text/css" rel="stylesheet"/>
-     <!-- caja de campo de datos-->
-     <div style="padding-top:20px;" class ="contentWrapper">
+    <form runat="server" id="form1">
+    <!-- caja de campo de datos-->
+     <div style="padding-top:20px;" class ="contentWrapper" runat="server">
         <h1  class="headerWrap">Introduce tus datos</h1>
         <!--Primera caja de campo de datos-->
         
-         <div style="float:left; padding-left:100px;width:42%;padding-top:30px;" class =" contentInside">
-             <ul style="list-style:none;" id="listaregistro1">
-                  <li id="Usuario">
+         <div style="float:left; padding-left:100px;width:42%;padding-top:30px;" class =" contentInside" runat="server">
+             <ul style="list-style:none;" id="listaregistro1" runat="server">
+                  <li runat="server" id="usurio">
                      <label class="registerLabel">Usuario</label>
-                        <asp:TextBox runat="server" id="usuario" CssClass="textBoxUserAccount" />
+                        <asp:TextBox runat="server" id="Usuario" CssClass="textBoxUserAccount" />
                  </li>
                   <li id="Contrasenya">
                      <label class="registerLabel">Contraseña</label>
-                        <asp:TextBox runat="server" id="contrasenya"  CssClass="textBoxUserAccount" />
+                        <asp:TextBox runat="server" TextMode="Password" id="contrasenya"  CssClass="textBoxUserAccount" />
                  </li>
                  <li id="Nombre">
                      <label class="registerLabel">Nombre</label>
@@ -81,10 +82,9 @@
              <input type="checkbox" name="your-group" value="unit-in-group" /> He leido y acepto los términos y condiciones.
          </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
-            <input type="button" id="registrarbutton" value="Registrar" class="buttonGreat buttonMedium" />
-            <asp:Button ID="registrar" OnClick="registrar_Click" Text="Registrar" runat="server" CssClass="buttonMedium buttonGreat" />
+            <asp:Button ID="registrar"  Text="Registrar" runat="server" CssClass="buttonMedium buttonGreat" OnClick="registrar_Click" />
         </div>
      
    </div>
-    
+    </form> 
 </asp:Content>

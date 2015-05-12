@@ -9,5 +9,5 @@
 
 
 
-public partial class NewStaff {
+public partial class Staff  {
 }
