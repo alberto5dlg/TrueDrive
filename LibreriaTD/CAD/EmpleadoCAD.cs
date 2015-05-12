@@ -26,10 +26,9 @@ namespace LibreriaTD.CAD
         //devuelve un tipo bool dependiendo de si ha podido insertar
         public bool InsertarEmpleado(EmpleadoEN nE)
         {
-            bool insert = false ;
+            bool insert = false;
 
-            Console.WriteLine(nE.Nombre);
-            string cmd = "Insert into Empleado values('" + nE.Dni + "','" + nE.Nombre + "','" + nE.Apellidos + "','" + nE.Direccion + "','" + nE.NumContacto + "','" + nE.Email + "','" + nE.Usuario + "','" + nE.Usuario + "','" + nE.Pass + "')";
+            string cmd = "Insert into Empleado values('" + nE.Dni + "','" + nE.Nombre + "','" + nE.Apellidos + "','" + nE.Direccion + "','" + nE.NumContacto + "','" + nE.Email + "','" + nE.Usuario + "','" + nE.Pass + "')";
 
             SqlConnection con = new SqlConnection(conexion);
             try
@@ -46,7 +45,6 @@ namespace LibreriaTD.CAD
             finally
             {
                 con.Close();
-                insert = true;
             }
             return insert;
         }
@@ -55,8 +53,27 @@ namespace LibreriaTD.CAD
         //devuelve un tipo bool dependiendo de si ha podido insertar
         public bool BorrarEmpleado(string dni)
         {
-            bool insert = false;
-            return insert;
+            bool delete = false;
+
+            string cmd = "delete from empleado where dni = '" + dni + "'";
+
+            SqlConnection con = new SqlConnection(conexion);
+            try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(cmd, con);
+                c.ExecuteNonQuery();
+                delete = true;
+            }
+            catch (Exception e)
+            {
+                delete = false;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return delete;
         }
 
         //Método que modifica la dirección de un empleado y actualiza la BD
@@ -93,17 +110,59 @@ namespace LibreriaTD.CAD
 
         //Método que saca toda la información de un empleado asociada a un dni
         //devuelve verdadero y la informacion si se ha encontrado
-        public bool SacarEmpleado(string dni)
+        public EmpleadoEN SacarEmpleado(string dni)
         {
-            bool encontrado = false;
+            string cmd = "select * from empleado where dni = '" + dni + "'";
 
-            return encontrado;
+            SqlConnection con = new SqlConnection(conexion);
+            EmpleadoEN emp = new EmpleadoEN();
+            try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(cmd, con);
+                SqlDataReader dr = c.ExecuteReader();
+                dr.Read();
+
+                emp = new EmpleadoEN((string)dr[0], (string)dr[1], (string)dr[2],
+                    (string)dr[3], (int)dr[4], (string)dr[5], (string)dr[6], (string)dr[7]);
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            return emp;
         }
 
         //Método que actualiza la información de un empleado en la BD
-        public void ActualizarEmpleado(EmpleadoEN empleado)
+        public bool ActualizarEmpleado(EmpleadoEN empleado)
         {
+            bool update = false;
 
+            string cmd = "update empleado set nombre = '" + empleado.Nombre + "', apellidos = '" + empleado.Apellidos + "', direccion = '" + empleado.Direccion + "', numContacto = " + empleado.NumContacto + ", email = '" + empleado.Email + "', usuario = '" + empleado.Usuario + "', pass = '" + empleado.Pass + "' where dni = '" + empleado.Dni + "'";
+
+            SqlConnection con = new SqlConnection(conexion);
+            try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(cmd, con);
+                c.ExecuteNonQuery();
+                update = true;
+            }
+            catch (Exception e)
+            {
+                update = false;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return update;
         }
     }
 }

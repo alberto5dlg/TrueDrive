@@ -14,7 +14,7 @@ namespace LibreriaTD.EN
         private string nombre;
         private string apellidos;
         private string direccion;
-        private string numContacto; //Esta variable es del tipo string por si se quiere poner el prefijo de país ej: (+34 XXXXXXXXX)
+        private int numContacto;
         private string email;
         private string usuario;
         private string pass; //Contraseña
@@ -26,14 +26,14 @@ namespace LibreriaTD.EN
             this.nombre = null;
             this.apellidos = null;
             this.direccion = null;
-            this.numContacto = null;
+            this.numContacto = 0;
             this.email = null;
             this.usuario = null;
             this.pass = null;
 
         }
 
-        public EmpleadoEN(string dni, string nombre, string apellidos, string direccion, string numContacto, string email, string usuario, string pass)
+        public EmpleadoEN(string dni, string nombre, string apellidos, string direccion, int numContacto, string email, string usuario, string pass)
         {
             this.dni = dni;
             this.nombre = nombre;
@@ -67,7 +67,7 @@ namespace LibreriaTD.EN
             get { return direccion; }
             set { direccion = value; }
         }
-        public string NumContacto
+        public int NumContacto
         {
             get { return numContacto; }
             set { numContacto = value; }
@@ -100,6 +100,36 @@ namespace LibreriaTD.EN
         {
             EmpleadoCAD boEmp = new EmpleadoCAD();
             boEmp.BorrarEmpleado(this.dni);
+        }
+        //Dado un dni copia todo el contenido del empleado en la clase
+        public bool ClonarEmpleado(string dni)
+        {
+            EmpleadoCAD clEmp = new EmpleadoCAD();
+            EmpleadoEN empAux = clEmp.SacarEmpleado(dni);
+            bool exito = false;
+            if (empAux != null)
+            {
+                this.dni = empAux.dni;
+                this.nombre = empAux.nombre;
+                this.apellidos = empAux.apellidos;
+                this.direccion = empAux.direccion;
+                this.numContacto = empAux.numContacto;
+                this.email = empAux.email;
+                this.usuario = empAux.usuario;
+                this.pass = empAux.pass;
+
+                exito = true;
+            }
+
+            return exito;
+        }
+        //Actualiza los valores del empleado en la BD
+        public bool Actualizar()
+        {
+            bool exito;
+            EmpleadoCAD acEmp = new EmpleadoCAD();
+            exito = acEmp.ActualizarEmpleado(this);
+            return exito;
         }
     }
 }
