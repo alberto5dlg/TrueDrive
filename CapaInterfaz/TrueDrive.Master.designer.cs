@@ -40,6 +40,15 @@ namespace CapaInterfaz {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
         
         /// <summary>
+        /// Control HyperLink4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        
+        /// <summary>
         /// Control HyperLink23.
         /// </summary>
         /// <remarks>
@@ -58,13 +67,22 @@ namespace CapaInterfaz {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink24;
         
         /// <summary>
-        /// Control HyperLink4.
+        /// Control HyperLink7.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
+        
+        /// <summary>
+        /// Control HyperLink8.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink8;
         
         /// <summary>
         /// Control HyperLink6.
