@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using LibreriaTD.EN;
+using LibreriaTD.CAD;
+
 
 namespace CapaInterfaz
 {
@@ -11,6 +14,13 @@ namespace CapaInterfaz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void insertStaff_click(object sender, EventArgs e)
+        {
+            //EmpleadoEN staff= new EmpleadoEN();
+
 
         }
     }
