@@ -20,6 +20,17 @@ namespace LibreriaTD.EN
         private string pass; //Contraseña
 
         //Constructor
+        public EmpleadoEN()
+        {
+            this.dni = null;
+            this.nombre = null;
+            this.apellidos = null;
+            this.direccion = null;
+            this.numContacto = null;
+            this.email = null;
+            this.usuario = null;
+            this.pass = null;
+        }
 
         public EmpleadoEN(string dni, string nombre, string apellidos, string direccion, string numContacto, string email, string usuario, string pass)
         {
