@@ -7,7 +7,7 @@ using LibreriaTD.CAD;
 
 namespace LibreriaTD.EN
 {
-    class EmpleadoEN
+    public class EmpleadoEN
     {
         //Atributos de la clase empleado
         private string dni;
@@ -20,6 +20,18 @@ namespace LibreriaTD.EN
         private string pass; //Contraseña
 
         //Constructor
+        public EmpleadoEN()
+        {
+            this.dni = null;
+            this.nombre = null;
+            this.apellidos = null;
+            this.direccion = null;
+            this.numContacto = null;
+            this.email = null;
+            this.usuario = null;
+            this.pass = null;
+
+        }
 
         public EmpleadoEN(string dni, string nombre, string apellidos, string direccion, string numContacto, string email, string usuario, string pass)
         {

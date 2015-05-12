@@ -31,15 +31,6 @@ namespace CapaInterfaz {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder headControlPanel;
         
         /// <summary>
-        /// Control mainForm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm mainForm;
-        
-        /// <summary>
         /// Control HyperLink3.
         /// </summary>
         /// <remarks>

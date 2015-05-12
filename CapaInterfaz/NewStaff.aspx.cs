@@ -10,7 +10,7 @@ using LibreriaTD.CAD;
 
 namespace CapaInterfaz
 {
-    public partial class Formulario_web19 : System.Web.UI.Page
+    public partial class NewStaff : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -19,7 +19,20 @@ namespace CapaInterfaz
 
         protected void insertStaff_click(object sender, EventArgs e)
         {
-            //EmpleadoEN staff= new EmpleadoEN();
+            EmpleadoEN emple = new EmpleadoEN();
+            
+            emple.dni = Nif.Text;
+            emple.nombre = Nombre.Text;
+            emple.apellidos = Apellidos.Text;
+            emple.usuario = Usuario.Text;
+            emple.pass = Pass.Text;
+            emple.email = Email.Text;
+            emple.numContacto = NumContacto.Text;
+            emple.direccion = Direccion.Text;
+            
+            Response.Write("<script>window.alert('Alberrrrtooooorrrr esto funciona !!');</script>");
+
+            //emple.InsertarEmpleado();
 
 
         }

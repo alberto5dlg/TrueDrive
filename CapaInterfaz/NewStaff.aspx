@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewStaff.aspx.cs"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewStaff.aspx.cs"  Inherits="CapaInterfaz.NewStaff" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
@@ -10,23 +10,35 @@
             <div style="padding:50px;">
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> NIF </legend>
-                    <asp:TextBox id="Nif" CssClass="nif" TextMode="SingleLine" Columns="30" runat="server" />
+                    <asp:TextBox ID="Nif" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                </fieldset>
+                <fieldset class="cajonesFlotantes">
+                    <legend class="etiquetaCajon"> Nombre </legend>
+                    <asp:TextBox ID="Nombre" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                </fieldset>
+                <fieldset class="cajonesFlotantes">
+                    <legend class="etiquetaCajon"> Apellidos </legend>
+                    <asp:TextBox ID="Apellidos" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
                 </fieldset>
                 <fieldset class="cajonesFlotantes"">
                     <legend class="etiquetaCajon"> Usuario </legend>
-                    <input name="usuario" type="text" id="Usuario" class="inputDatos"/>
+                    <asp:TextBox ID="Usuario" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Contraseña </legend>
-                    <input name="contraseña" type="text" id="contraseña" class="inputDatos"/>
+                    <asp:TextBox ID="Contrasenya" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Email </legend>
-                    <input name="email" type="text" id="Email" class="inputDatos"/>
+                    <asp:TextBox ID="Email" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
-                    <legend class="etiquetaCajon"> Telefono </legend>
-                    <input name="telefono" type="text" id="Telefono" class="inputDatos"/>
+                    <legend class="etiquetaCajon"> Número de contacto </legend>
+                    <asp:TextBox ID="NumContacto" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                </fieldset>
+                <fieldset class="cajonesFlotantes">
+                    <legend class="etiquetaCajon"> Dirección </legend>
+                    <asp:TextBox ID="Direccion" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
                 </fieldset>
             </div>
         </div>
@@ -36,8 +48,7 @@
             </div>
             <<div style="padding:50px;">
                 <div class="botonInsertar">
-                    <asp:Button ID="BotonEnviar" Text="Enviar" runat="server" OnClick="insertStaff_click" />
-                    <img src="../Styles/images/insertar.png" style="width: 100%;" />
+                    <asp:Button ID="BotonEnviar" Text="Enviar" runat="server" OnClick="insertStaff_click" style="cursor:pointer;" />
                 </div>
             </div>
         </div>

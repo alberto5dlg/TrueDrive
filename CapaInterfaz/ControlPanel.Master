@@ -24,7 +24,6 @@
 
 </head>
 <body>
-    <form id="mainForm" runat="server" method="post" enctype="application/x-www-form-urlencoded">
         <header>
             <section class="preHeader displayGreat displayMedium">
                 <div class="wrap" style="text-align: center; padding-top: 10px; padding-bottom: 10px;">
@@ -95,7 +94,7 @@
         </header>
 
         <asp:ContentPlaceHolder ID="ContentControlPanel" runat="server"></asp:ContentPlaceHolder>
-    </form>
+    
 </body>
 </html>
 

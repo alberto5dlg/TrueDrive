@@ -358,6 +358,10 @@
       <Project>{928189a6-f420-43d2-acb3-da0ac9a78c01}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LibreriaTD\LibreriaTD.csproj">
+      <Project>{a1453f69-4644-4a45-b14f-30e1fa2f115e}</Project>
+      <Name>LibreriaTD</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Recursos\" />
