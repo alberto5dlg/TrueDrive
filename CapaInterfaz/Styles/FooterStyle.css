@@ -51,7 +51,7 @@
         font-size: 10px;
         color:black;
     }
-.info {
+.infoFooter {
     float: left; 
     width: 100%;
     height: 30px;
@@ -60,7 +60,7 @@
 }
 
 
-    .info p {
+    .infoFooter p {
         text-align:center;
         vertical-align:central; 
 		padding-bottom: 5px;
@@ -68,7 +68,7 @@
         color:black;
     }
 
-    .info a{
+    .infoFooter a{
         color:black;
     }
 
@@ -85,14 +85,14 @@
 
     /*Social Networks*/
 
-.social{
+.socialFooter{
     float: left;
     margin-top: 5px;
     margin-left:10%;
     
 }
 
-    .social ul{
+    .socialFooter ul{
         list-style: none;
         margin-top: 2px;
        
@@ -100,12 +100,15 @@
         
     }
 
-        .social ul li{
+        .socialFooter ul li{
             float: left;
             padding: 5px;
             
           
         }
+            .socialFooter ul li a {
+                width: 30%;
+            }
             .social ul li:hover img{
                 
             }
