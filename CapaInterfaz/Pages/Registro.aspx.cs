@@ -28,20 +28,21 @@ namespace CapaInterfaz.Pages
 
             ClienteEN en = new ClienteEN();
             en.usuCliente = Usuario.Text;
-            en.passCliente = "";
-            en.nombreCliente = "";
-            en.apellidosCliente = "";
-            en.nifCliente = "";
-            en.emailCliente = "";
-            en.anyoNacimientoCliente = "";
-            en.direccionCliente = "";
-            en.ciudadCliente = "";
-            en.codpCliente = 0123;
-            en.provCliente = "";
-            en.paisCliente = "";
-            en.interesadoEnCliente = "";
-            en.telefonoCliente = "";
-            Response.Write(en.usuCliente + "<script>window.alert('Insertado Correctamente');</script>");
+            en.passCliente = contrasenya.Text;
+            en.nombreCliente = nombre.Text;
+            en.apellidosCliente = apellidos.Text;
+            en.nifCliente = dni.Text;
+            en.emailCliente = email.Text;
+            en.anyoNacimientoCliente = fecnac.Text;
+            en.direccionCliente = direccion.Text;
+            en.ciudadCliente = Ciudad.Text;
+            en.codpCliente = Convert.ToInt32(codp.Text);
+            en.provCliente = Provincia.Text;
+            en.paisCliente = Pais.Text;
+            en.interesadoEnCliente = interesado.Text;
+            en.telefonoCliente = telefono.Text;
+
+           
             en.InsertarCliente();
             if (insert == true)
                 Response.Write("<script>window.alert('Insertado Correctamente');</script>");

@@ -1,26 +1,9 @@
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaInterfaz.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaInterfaz.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaNegocio.dll
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\CapaNegocio.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.pdb
+C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\bin\CapaInterfaz.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\bin\CapaInterfaz.pdb
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\bin\CapaNegocio.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\bin\CapaNegocio.pdb
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
-C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb
-C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
-C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.dll
-C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.pdb
-=======
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\bin\CapaInterfaz.dll
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\bin\CapaInterfaz.pdb
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\bin\CapaNegocio.dll
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\bin\CapaNegocio.pdb
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
-C:\Users\Silexman\Desktop\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb
->>>>>>> origin/PartePublica

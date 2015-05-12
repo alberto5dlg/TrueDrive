@@ -40,7 +40,7 @@
                  </li>
                  <li id="FechaNac">
                      <label class="registerLabel">Fecha de Nacimiento</label>
-                        <asp:TextBox runat="server" id="fecnac"  CssClass="textBoxUserAccount" />
+                        <asp:TextBox runat="server" TextMode="Date" id="fecnac"  CssClass="textBoxUserAccount" />
                  </li>
              </ul>
         </div>
@@ -82,7 +82,7 @@
              <input type="checkbox" name="your-group" value="unit-in-group" /> He leido y acepto los términos y condiciones.
          </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
-            <asp:Button ID="registrar"  Text="Registrar" runat="server" CssClass="buttonMedium buttonGreat" OnClick="registrar_Click" />
+            <asp:Button ID="registrar"  Text="Registrar" runat="server" OnClick="registrar_Click" />  
         </div>
      
    </div>

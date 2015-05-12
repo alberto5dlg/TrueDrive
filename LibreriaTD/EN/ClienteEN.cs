@@ -144,10 +144,12 @@ namespace LibreriaTD.EN
             set { fechaNacimiento = value; }
         }
 
-        public void InsertarCliente()
+        public bool InsertarCliente()
         {
+            bool insert = false;
             ClienteCAD nuevoCliente = new ClienteCAD();
-            nuevoCliente.InsertarCliente(this);
+            insert = nuevoCliente.InsertarCliente(this);
+            return insert;
         }
 
         public void BorrarCliente()
@@ -167,5 +169,14 @@ namespace LibreriaTD.EN
             ClienteCAD modTelf = new ClienteCAD();
             modTelf.modTelefono(newTelf);
         }
+
+        public bool ConsultarUsuario()
+        {
+            bool consult = false;
+            ClienteCAD conUsu = new ClienteCAD();
+            consult = conUsu.ConsultarUsuario(this.usuCliente,this.passCliente);
+            return consult;
+        }
+
     }
 }
