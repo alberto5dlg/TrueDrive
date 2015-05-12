@@ -7,21 +7,47 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-
-namespace TrueDrive.CapaInterfaz.Pages
-{
-    public partial class Registro
-    {
-
+namespace CapaInterfaz.Pages {
+    
+    
+    public partial class Registro {
+        
         /// <summary>
-        /// Control usuario.
+        /// Control form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usuario;
-
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
+        /// Control listaregistro1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl listaregistro1;
+        
+        /// <summary>
+        /// Control usurio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl usurio;
+        
+        /// <summary>
+        /// Control Usuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Usuario;
+        
         /// <summary>
         /// Control contrasenya.
         /// </summary>
@@ -30,7 +56,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox contrasenya;
-
+        
         /// <summary>
         /// Control nombre.
         /// </summary>
@@ -39,7 +65,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox nombre;
-
+        
         /// <summary>
         /// Control apellidos.
         /// </summary>
@@ -48,7 +74,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox apellidos;
-
+        
         /// <summary>
         /// Control dni.
         /// </summary>
@@ -57,7 +83,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox dni;
-
+        
         /// <summary>
         /// Control email.
         /// </summary>
@@ -66,7 +92,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox email;
-
+        
         /// <summary>
         /// Control fecnac.
         /// </summary>
@@ -75,7 +101,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox fecnac;
-
+        
         /// <summary>
         /// Control direccion.
         /// </summary>
@@ -84,7 +110,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox direccion;
-
+        
         /// <summary>
         /// Control Ciudad.
         /// </summary>
@@ -93,7 +119,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Ciudad;
-
+        
         /// <summary>
         /// Control codp.
         /// </summary>
@@ -102,7 +128,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox codp;
-
+        
         /// <summary>
         /// Control Provincia.
         /// </summary>
@@ -111,7 +137,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Provincia;
-
+        
         /// <summary>
         /// Control Pais.
         /// </summary>
@@ -120,7 +146,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Pais;
-
+        
         /// <summary>
         /// Control telefono.
         /// </summary>
@@ -129,7 +155,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox telefono;
-
+        
         /// <summary>
         /// Control interesado.
         /// </summary>
@@ -138,7 +164,7 @@ namespace TrueDrive.CapaInterfaz.Pages
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox interesado;
-
+        
         /// <summary>
         /// Control registrar.
         /// </summary>

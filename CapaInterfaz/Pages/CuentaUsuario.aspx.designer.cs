@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaInterfaz.Paginas
+namespace CapaInterfaz.Pages
 {
 
 

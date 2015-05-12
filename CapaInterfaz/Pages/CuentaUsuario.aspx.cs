@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CapaInterfaz.Paginas
+namespace CapaInterfaz.Pages
 {
     public partial class CuentaUsuario : System.Web.UI.Page
     {

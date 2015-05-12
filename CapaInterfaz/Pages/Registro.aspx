@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeFile="Registro.aspx.cs" Inherits="CapaInterfaz.Pages.Registro" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TrueDrive.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="CapaInterfaz.Pages.Registro" %>
 
 
 

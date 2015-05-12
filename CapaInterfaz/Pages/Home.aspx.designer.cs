@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CapaInterfaz.Paginas {
+namespace CapaInterfaz.Pages {
     
     
     public partial class Home {
