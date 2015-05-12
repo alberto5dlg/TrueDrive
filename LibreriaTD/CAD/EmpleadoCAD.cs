@@ -3,23 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using LibreriaTD.EN;
+using System.Data.SqlClient;
+
 
 namespace LibreriaTD.CAD
 {
     class EmpleadoCAD
     {
-        //private string conexion;//Variable que se usará para guardar la cadena de conexión con la BD
-
+        private string conexion = @"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true";
         public EmpleadoCAD()
         {
-            //Aquí se adquirirá la cadena de conexión
+            conexion = "data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true"; 
         }
 
         //Método para insertar un empleado en la BD
         //devuelve un tipo bool dependiendo de si ha podido insertar
-        public bool InsertarEmpleado(EmpleadoEN newEmpleado)
+        public bool InsertarEmpleado(EmpleadoEN nE)
         {
-            bool insert = false;
+            bool insert = false ;
+            string cmd = "Insert into Empleado values('" + nE.Dni + "','" + nE.Nombre + "','" + nE.Apellidos + "','" + nE.Direccion + "','" + nE.NumContacto + "','" + nE.Email + "','" + nE.Usuario + "','" + nE.Usuario + "','" + nE.Pass + "')";
+
+            SqlConnection con = new SqlConnection(conexion);
+            try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(cmd, con);
+                c.ExecuteNonQuery();
+                insert = true;
+            }
+            catch (Exception e)
+            {
+                insert = false;
+            }
+            finally
+            {
+                con.Close();
+                insert = true;
+            }
             return insert;
         }
 
