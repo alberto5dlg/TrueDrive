@@ -18,18 +18,23 @@ namespace CapaInterfaz.Pages
 
         protected void Login_Click(object sender, EventArgs e)
         {
-            bool insert = false;
-
+            bool consult = false;
             ClienteEN cli = new ClienteEN();
             cli.usuCliente = Usuario.Text;
             cli.passCliente = Pass.Text;
 
-           insert = cli.ConsultarUsuario();
+           consult = cli.ConsultarUsuario();
 
-            if (insert == true)
-                Response.Write("<script>window.alert('Insertado Correctamente');</script>");
-            else
-                Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+           if (consult == true)
+           {
+               Response.Write("<script>window.alert('');</script>");
+               if (cli.usuCliente == "admin")
+                   Response.Redirect("../MenuCP.aspx");
+               else
+                   Response.Redirect("../Privada/ClientMenu");
+           }
+           else
+               Response.Write("<script>window.alert('No existe el usuario');</script>");
         }
     }
 }

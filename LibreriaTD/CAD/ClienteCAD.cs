@@ -13,7 +13,7 @@ namespace LibreriaTD.CAD
 {
     class ClienteCAD
     {
-        private string conexion = @"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true";
+        private string conexion;
         public ClienteCAD()
         {
             conexion = @"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true";
@@ -21,48 +21,66 @@ namespace LibreriaTD.CAD
 
         public bool InsertarCliente(ClienteEN newCliente)
         {
-            
+            bool insert = false;
             string comando = "Insert into Cliente (nif,nombre,apellido,email,direccion,ciudad,pais,telefono,interesadoEn,codigopostal,fechaNacimiento,usuario,contraseña,provincia) values ('"+ newCliente.nifCliente+"','"+newCliente.nombreCliente+"',"+newCliente.apellidosCliente+ "','" + newCliente.emailCliente + "','" + newCliente.direccionCliente+"','"+newCliente.ciudadCliente+"','"+newCliente.paisCliente+"','"+newCliente.telefonoCliente+"','"+newCliente.interesadoEnCliente+"','"+newCliente.codpCliente+"','"+newCliente.anyoNacimientoCliente+"','"+newCliente.usuCliente+"','"+newCliente.passCliente+"','"+newCliente.provCliente+"')";
+           
             SqlConnection con = new SqlConnection(conexion);
-            try
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand(comando, con);
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (SqlException excep)
-            {
-                return false;
-            }
-            finally
-            {
-                con.Close();
-            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand(comando, con);
+            cmd.ExecuteNonQuery();
+
+            if (cmd.ExecuteNonQuery() == 1)
+                insert = true;
+            else
+                insert = false;
+            
+            con.Close();
+            return insert;
+           
         }
 
-        public bool BorrarCliente(ClienteEN borCliente)
+        public bool BorrarCliente(string dni)
         {
             bool delete = false;
+            string comando = "DELETE from Cliente WHERE nif ='" + dni + "'";
+
+            SqlConnection con = new SqlConnection(conexion);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(comando, con);
+            cmd.ExecuteNonQuery();
+
+            if (cmd.ExecuteNonQuery() == 1)
+                delete = true;
+            else
+                delete = false;
+
+            con.Close();
             return delete;
         }
 
-        public bool modDireccion(string dni, string direccion,string ciudad)
+        public bool ModCliente(ClienteEN c)
         {
-            bool modify = false;
-            return modify;
-        }
+            bool isModify = false;
+            string comando = "UPDATE Cliente SET nombre='"+c.nombreCliente+"',apellidos='"+c.apellidosCliente+"',email='"+c.emailCliente+"',direccion='"+c.direccionCliente+"',ciudad='"+c.ciudadCliente+"',pais='"+c.paisCliente+"',telefono='"+c.telefonoCliente+"',interesadoEn='"+c.interesadoEnCliente+"',codigopostal="+c.codpCliente+",fechaNacimiento='"+c.anyoNacimientoCliente+"',usuario='"+c.usuCliente+"',contraseña='"+c.passCliente+"',provincia='"+c.provCliente+"' WHERE nif='"+c.nifCliente+"'";
 
-        public bool modTelefono(string telefono)
-        {
-            bool modify = false;
-            return modify;
+            SqlConnection con = new SqlConnection(conexion);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(comando, con);
+            cmd.ExecuteNonQuery();
+
+            if (cmd.ExecuteNonQuery() == 1)
+                isModify = true;
+            else
+                isModify = false;
+
+            con.Close();
+            return isModify;
         }
 
         public bool ConsultarUsuario(string usuario, string pass)
         {
             bool consult = false;
-            string comando = "SELECT * FROM Usuarios WHERE Usuario = "+usuario+" AND Contrasena = " + pass ;
+            string comando = "SELECT * FROM Cliente WHERE Usuario = "+usuario+" AND Contrasena = " + pass ;
 
             SqlConnection con = new SqlConnection(conexion);
             con.Open();

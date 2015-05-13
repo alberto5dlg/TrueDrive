@@ -43,9 +43,12 @@ namespace CapaInterfaz.Pages
             en.telefonoCliente = telefono.Text;
 
            
-            en.InsertarCliente();
+            insert = en.InsertarCliente();
             if (insert == true)
+            {
                 Response.Write("<script>window.alert('Insertado Correctamente');</script>");
+                Response.Redirect("Home.aspx");
+            }
             else
                 Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
 

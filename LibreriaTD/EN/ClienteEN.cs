@@ -152,22 +152,21 @@ namespace LibreriaTD.EN
             return insert;
         }
 
-        public void BorrarCliente()
+        public bool BorrarCliente()
         {
+            bool delete = false;
             ClienteCAD delCliente = new ClienteCAD();
-            delCliente.BorrarCliente(this);
+            delete = delCliente.BorrarCliente(this.nifCliente);
+            return delete;
         }
 
-        public void modDireccion(string newDirecc,string newCiudad)
+        public bool ModCliente()
         {
-            ClienteCAD modDir = new ClienteCAD();
-            modDir.modDireccion(this.nif, newDirecc, newCiudad);
-        }
+            bool modify = false;
+            ClienteCAD cliCad = new ClienteCAD();
+            modify = cliCad.ModCliente(this);
+            return modify;
 
-        public void modTelefono(string newTelf)
-        {
-            ClienteCAD modTelf = new ClienteCAD();
-            modTelf.modTelefono(newTelf);
         }
 
         public bool ConsultarUsuario()

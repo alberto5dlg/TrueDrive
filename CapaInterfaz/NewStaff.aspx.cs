@@ -32,7 +32,7 @@ namespace CapaInterfaz
             emple.Usuario = Usuario.Text;
             emple.Pass = Contrasenya.Text;
             emple.Email = Email.Text;
-            emple.NumContacto = Convert.ToInt32(NumContacto.Text);
+            emple.NumContacto = int.Parse(NumContacto.Text);
             emple.Direccion = Direccion.Text;
 
             insert = emple.InsertarEmpleado();
