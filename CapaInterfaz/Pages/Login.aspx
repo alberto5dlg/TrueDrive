@@ -20,7 +20,7 @@
         </div>
          <div style="float:left; padding-left:30%;width:42%;padding-bottom:15px;" class =" contentInside">
              
-             <asp:Button ID="registrar"  Text="Acceder" runat="server" OnClick="Login_Click" CssClass="buttonGreat buttonMedium" />          
+             <asp:ImageButton ID="acceder" runat="server" OnClick="Login_Click" CssClass="buttonGreat buttonMedium" ImageUrl="../Recursos/Acceder.JPG" />            
          </div>
     </div>
        </form>

@@ -75,7 +75,7 @@
             </ul>
         </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
-            <asp:Button ID="Modificar"  Text="Modificar" runat="server" OnClick="Button_Click"/>  
+            <asp:ImageButton ID="modificar" runat="server" OnClick="Button_Click" ImageUrl="../Recursos/Modificar.JPG" />  
         </div>
    </div>
     </form> 

@@ -82,6 +82,11 @@
     <Content Include="Pages\Location.aspx" />
     <Content Include="Pages\Privacy.aspx" />
     <Content Include="Providers.aspx" />
+    <Content Include="Recursos\Acceder.JPG" />
+    <Content Include="Recursos\Captura.PNG" />
+    <Content Include="Recursos\Modificar.JPG" />
+    <Content Include="Recursos\Registro.JPG" />
+    <Content Include="Recursos\vender.JPG" />
     <Content Include="Staff.aspx" />
     <Content Include="Styles\BaseStyle.css" />
     <Content Include="Styles\DisplayGreat.css" />
@@ -407,9 +412,7 @@
       <Name>LibreriaTD</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Recursos\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

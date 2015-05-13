@@ -17,14 +17,31 @@ namespace LibreriaTD.EN
         private string motor;
         private double km;
         private int anyo;
-        private string combustible;
+        private string tipo;
         private int plazas;
         private string cambio;
         private string color;
         private string matricula;
 
+        public CocheEN()
+        {
+            this.marca = null;
+            this.modelo = null;
+            this.precio = 0;
+            this.puertas = 0;
+            this.motor = null;
+            this.km = 0;
+            this.anyo = 0;
+            this.tipo = null;
+            this.plazas = 0;
+            this.cambio = null;
+            this.color = null;
+            this.matricula = null;
+        }
+
+
         public CocheEN(string marca, string modelo,double precio,int puertas,string motor,string matricula,
-            double km,int anyo,string combustible,int plazas,string cambio,string color)
+            double km,int anyo,string tipo,int plazas,string cambio,string color)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -33,7 +50,7 @@ namespace LibreriaTD.EN
             this.motor = motor;
             this.km = km;
             this.anyo = anyo;
-            this.combustible = combustible;
+            this.tipo = tipo;
             this.plazas = plazas; 
             this.cambio = cambio;
             this.color = color;
@@ -89,10 +106,10 @@ namespace LibreriaTD.EN
             set { anyo = value; }
         }
 
-        public string Combustible
+        public string Tipo
         {
-            get { return combustible; }
-            set { combustible = value; }
+            get { return tipo; }
+            set { tipo = value; }
         }
 
         public int Plazas
@@ -115,12 +132,12 @@ namespace LibreriaTD.EN
 
        
         //Cuando adquiramos un nuevo coche en nuestro catalogo lo insertaremos en la base de datos
-        public void insertarCoche()
+        public bool insertarCoche()
         {
             bool insert = false;
             CocheCAD cocheCad = new CocheCAD();
             insert = cocheCad.InsertarCoche(this);
-            
+            return insert;
         }
         //se borrara un coche por completo cuando no queden mas unidades en stock
         public void borrarCoche()

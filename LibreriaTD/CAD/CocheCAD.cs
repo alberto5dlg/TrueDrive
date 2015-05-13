@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Web;
 using LibreriaTD.EN;
+using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Text;
 
 namespace LibreriaTD.CAD
 {
     public class CocheCAD
     {
 
-        //private string conexion;
+        private string conexion;
         
         public CocheCAD()
         {
@@ -20,9 +25,22 @@ namespace LibreriaTD.CAD
         * devolvera verdadero cuando se inserte correctamente en caso contrario 
         * devolvera false
          */
-        public bool InsertarCoche(CocheEN nuevoCoche)
+        public bool InsertarCoche(CocheEN c)
         {
             bool insert = false;
+            string comando = "Insert into Coche (matricula,marca,modelo,precio,puertas,motor,km,anyo,combustible,plazas,cambio,color) values ('" + c.Matricula  + "','" + c.Marca + "'," + c.Modelo + "','" + c.Precio + "','" + c.Puertas + "','" + c.Motor  + "','" + c.Km  + "','" + c.Anyo + "','" + c.Tipo + "','" + c.Plazas + "','" + c.Cambio + "','" + c.Color +"')";
+
+            SqlConnection con = new SqlConnection(conexion);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(comando, con);
+            cmd.ExecuteNonQuery();
+
+            if (cmd.ExecuteNonQuery() == 1)
+                insert = true;
+            else
+                insert = false;
+
+            con.Close();
             return insert;
         }
         /*Borramos un coche cuando no queden mas unidades de este y no dispongamos de el en stock

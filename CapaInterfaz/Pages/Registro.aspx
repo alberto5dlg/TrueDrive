@@ -82,7 +82,7 @@
              <input type="checkbox" name="your-group" value="unit-in-group" /> He leido y acepto los términos y condiciones.
          </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
-            <asp:Button ID="registrar"  Text="Registrar" runat="server" OnClick="registrar_Click" />  
+            <asp:ImageButton ID="registrar"   runat="server" OnClick="registrar_Click" ImageUrl="../Recursos/Registro.JPG" />  
         </div>
      
    </div>
