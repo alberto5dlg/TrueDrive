@@ -16,18 +16,18 @@ namespace LibreriaTD.CAD
         private string conexion;
         public ClienteCAD()
         {
-            conexion = @"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true";
+            conexion = conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
         }
 
         public bool InsertarCliente(ClienteEN newCliente)
         {
             bool insert = false;
-            string comando = "Insert into Cliente (nif,nombre,apellido,email,direccion,ciudad,pais,telefono,interesadoEn,codigopostal,fechaNacimiento,usuario,contraseña,provincia) values ('"+ newCliente.nifCliente+"','"+newCliente.nombreCliente+"',"+newCliente.apellidosCliente+ "','" + newCliente.emailCliente + "','" + newCliente.direccionCliente+"','"+newCliente.ciudadCliente+"','"+newCliente.paisCliente+"','"+newCliente.telefonoCliente+"','"+newCliente.interesadoEnCliente+"','"+newCliente.codpCliente+"','"+newCliente.anyoNacimientoCliente+"','"+newCliente.usuCliente+"','"+newCliente.passCliente+"','"+newCliente.provCliente+"')";
+            string comando = "Insert into Cliente (nif,nombre,apellidos,email,direccion,ciudad,pais,telefono,interesadoEn,codigopostal,fechaNacimiento,usuario,contraseña,provincia) values ('"+ newCliente.nifCliente+"','"+newCliente.nombreCliente+"','"+newCliente.apellidosCliente+ "','" + newCliente.emailCliente + "','" + newCliente.direccionCliente+"','"+newCliente.ciudadCliente+"','"+newCliente.paisCliente+"','"+newCliente.telefonoCliente+"','"+newCliente.interesadoEnCliente+"','"+newCliente.codpCliente+"','"+newCliente.anyoNacimientoCliente+"','"+newCliente.usuCliente+"','"+newCliente.passCliente+"','"+newCliente.provCliente+"')";
            
             SqlConnection con = new SqlConnection(conexion);
             con.Open();
             SqlCommand cmd = new SqlCommand(comando, con);
-            cmd.ExecuteNonQuery();
+            
 
             if (cmd.ExecuteNonQuery() == 1)
                 insert = true;
@@ -47,7 +47,7 @@ namespace LibreriaTD.CAD
             SqlConnection con = new SqlConnection(conexion);
             con.Open();
             SqlCommand cmd = new SqlCommand(comando, con);
-            cmd.ExecuteNonQuery();
+            
 
             if (cmd.ExecuteNonQuery() == 1)
                 delete = true;
@@ -66,7 +66,7 @@ namespace LibreriaTD.CAD
             SqlConnection con = new SqlConnection(conexion);
             con.Open();
             SqlCommand cmd = new SqlCommand(comando, con);
-            cmd.ExecuteNonQuery();
+          
 
             if (cmd.ExecuteNonQuery() == 1)
                 isModify = true;
@@ -77,17 +77,17 @@ namespace LibreriaTD.CAD
             return isModify;
         }
 
-        public bool ConsultarUsuario(string usuario, string pass)
+        public bool ConsultarUsuario(string usuario, string pass,string ndni)
         {
             bool consult = false;
-            string comando = "SELECT * FROM Cliente WHERE Usuario = "+usuario+" AND Contrasena = " + pass ;
+            string comando = "SELECT * FROM Cliente WHERE Usuario ='"+usuario+"' AND Contraseña = '" + pass+"' AND nif ='"+ndni+"'" ;
 
             SqlConnection con = new SqlConnection(conexion);
             con.Open();
             SqlCommand cmd = new SqlCommand(comando, con);
-            cmd.ExecuteNonQuery();
+           ;
 
-            if (cmd.ExecuteNonQuery() == 1)
+           if (cmd.ExecuteScalar().ToString().Equals(ndni))
                 consult = true;
             else
                 consult = false;

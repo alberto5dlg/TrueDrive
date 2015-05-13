@@ -18,7 +18,7 @@ namespace LibreriaTD.CAD
         
         public CocheCAD()
         {
-
+            conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
         }
 
         /*Con esta funcion insertaremos un coche en nuestra base de datos
@@ -33,7 +33,7 @@ namespace LibreriaTD.CAD
             SqlConnection con = new SqlConnection(conexion);
             con.Open();
             SqlCommand cmd = new SqlCommand(comando, con);
-            cmd.ExecuteNonQuery();
+           
 
             if (cmd.ExecuteNonQuery() == 1)
                 insert = true;

@@ -173,7 +173,7 @@ namespace LibreriaTD.EN
         {
             bool consult = false;
             ClienteCAD conUsu = new ClienteCAD();
-            consult = conUsu.ConsultarUsuario(this.usuCliente,this.passCliente);
+            consult = conUsu.ConsultarUsuario(this.usuCliente,this.passCliente,this.nifCliente);
             return consult;
         }
 
