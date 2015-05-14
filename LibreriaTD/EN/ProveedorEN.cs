@@ -18,6 +18,17 @@ namespace LibreriaTD.EN
         private int telefono;
         private int fax;
 
+        public ProveedorEN()
+        {
+            empresa = null;
+            cif = null;
+            ciudad = null;
+            codigoPostal = 0;
+            pais = null;
+            email = null;
+            telefono = 0;
+            fax = 0;
+        }
 
         public string Empresa
         {
@@ -70,11 +81,12 @@ namespace LibreriaTD.EN
 
         //Metodos para realizar algunos procedimientos con proveedores.
 
-        public int insertarProveedor()
+        public bool insertarProveedor()
         {
+            bool insert = false;
             ProveedorCAD proveedorCad = new ProveedorCAD();
-            proveedorCad.crearProveedor(this);
-            return 0;
+            insert = proveedorCad.crearProveedor(this);
+            return insert;
         }
 
         public int bajaProveedor()

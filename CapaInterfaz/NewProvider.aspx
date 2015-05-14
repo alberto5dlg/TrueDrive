@@ -1,7 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewProvider.aspx.cs"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewProvider.aspx.cs" Inherits="CapaInterfaz.NewProvider" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
+    <form runat="server" >
     <div class="cajaPrincipal1">
         <div style="background:#de3939;color:white;padding:10px;padding-left:50px;">
             <span style="font-size:25px;color:white;"> Ficha Proveedor </span>
@@ -19,14 +21,7 @@
                 <legend class="etiquetaCajon"> Ciudad </legend>
                 <input name="Ciudad" type="text" id="Ciudad" class="inputDatos"/>
             </fieldset>
-            <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> C.P. </legend>
-                <input name="codP" type="text" id="CP" class="inputDatos"/>
-            </fieldset>
-            <fieldset class="cajonesFlotantes">
-                <legend class="etiquetaCajon"> Direccion </legend>
-                <input name="direccion" type="text" id="Direccion" class="inputDatos"/>
-            </fieldset>
+            
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Pais </legend>
                     <input name="pais" type="text" id="Pais" class="inputDatos"/>
@@ -43,6 +38,10 @@
                 <legend class="etiquetaCajon"> Email</legend>
                 <input name="email" type="text" id="Email" class="inputDatos"/>
             </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> C.P. </legend>
+                <input name="codp" type="text" id="CodigoPostalEmpresa" class="inputDatos"/>
+            </fieldset>
         </div>
     </div>
 
@@ -52,10 +51,10 @@
         </div>
         <div style="padding:50px;">
             <div class="botonInsertar">
-                <a href="/Paginas/insertarProveedor.aspx?idProveedor=$id">
-                    <img src="../Styles/images/insertar.png" style="width: 100%;"></img>
-                </a>
+                <asp:ImageButton runat="server" ID="insertar" ImageUrl="../Styles/images/insertar.png" OnClick="insertar_Click" />
+       
             </div>
         </div>
     </div>
+        </form>
 </asp:Content>

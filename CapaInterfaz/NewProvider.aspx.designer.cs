@@ -7,7 +7,18 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-
-
-public partial class NewProvider {
+namespace CapaInterfaz {
+    
+    
+    public partial class NewProvider {
+        
+        /// <summary>
+        /// Control insertar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton insertar;
+    }
 }

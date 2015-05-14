@@ -22,8 +22,8 @@ namespace CapaInterfaz.Pages
             ClienteEN cli = new ClienteEN();
             cli.usuCliente = Usuario.Text;
             cli.passCliente = Pass.Text;
-
-           consult = cli.ConsultarUsuario();
+            
+            consult = cli.ConsultarUsuario();
 
            if (consult == true)
            {

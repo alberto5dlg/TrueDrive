@@ -27,7 +27,7 @@ namespace CapaInterfaz.Privada
         {
             bool insert = false;
             CocheEN car = new CocheEN();
-            string plazas = Request.Form["Plaza"];
+            string pla = Request.Form["Plaza"];
             string precios = Request.Form["Precio"];
             string puertas = Request.Form["Puertas"];
             string kms = Request.Form["Km"];
@@ -43,15 +43,17 @@ namespace CapaInterfaz.Privada
             car.Km = Convert.ToDouble(kms);
             car.Anyo = Convert.ToInt32(anyo);
             car.Cambio = Request.Form["Cambio"];
-            car.Plazas = Convert.ToInt32(plazas);
+            car.Plazas = Convert.ToInt32(pla);
             car.Tipo = Request.Form["Tipo"];
             car.Color = Request.Form["Color"];
+            
+            Response.Write(car.Marca+car.Modelo+car.Precio+car.Puertas+car.Matricula+car.Motor+car.Km+car.Anyo+car.Cambio+car.Plazas+car.Tipo+car.Color);        
 
-            insert = car.insertarCoche();
+           /* insert = car.insertarCoche();
             if (insert == true)
                 Response.Write("<script>window.alert('Se ha puesto a la venta su coche');</script>");
             else
                 Response.Write("<script>window.alert('No se ha podido poner a la venta, contacte con nosotros para cualquier duda');</script>");
-        }
+       */ }
     }
 }

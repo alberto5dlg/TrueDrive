@@ -16,7 +16,7 @@ namespace LibreriaTD.CAD
         private string conexion;
         public ClienteCAD()
         {
-            conexion = conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
+             conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
         }
 
         public bool InsertarCliente(ClienteEN newCliente)
@@ -77,17 +77,16 @@ namespace LibreriaTD.CAD
             return isModify;
         }
 
-        public bool ConsultarUsuario(string usuario, string pass,string ndni)
+        public bool ConsultarUsuario(string usuario, string pass)
         {
             bool consult = false;
-            string comando = "SELECT * FROM Cliente WHERE Usuario ='"+usuario+"' AND Contraseña = '" + pass+"' AND nif ='"+ndni+"'" ;
-
+            string comando = "SELECT usuario,contraseña FROM Cliente WHERE usuario ="+usuario+" AND contraseña ="+pass+"" ;
             SqlConnection con = new SqlConnection(conexion);
             con.Open();
             SqlCommand cmd = new SqlCommand(comando, con);
-           ;
+           
 
-           if (cmd.ExecuteScalar().ToString().Equals(ndni))
+           if (cmd.ExecuteScalar().Equals(usuario))
                 consult = true;
             else
                 consult = false;

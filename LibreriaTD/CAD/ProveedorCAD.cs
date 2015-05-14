@@ -4,46 +4,40 @@ using System.Linq;
 using System.Web;
 using LibreriaTD.EN;
 using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Text;
 
 namespace LibreriaTD.CAD
 {
     public class ProveedorCAD
     {
-        //private string conexion;
+        private string conexion;
 
         public ProveedorCAD()
         {
-           // conexion = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\BDDPAA2011.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
         }
 
         //Crear empleado.
-        public int crearProveedor(ProveedorEN proveedorNuevo)
+        public bool crearProveedor(ProveedorEN p)
         {
-            int idEmpleado = 0;
-            /*SqlConnection con = null;
+            bool insert = false;
+            string comando = "Insert into Proveedor (cif,empresa,ciudad,codigoPostal,pais,email,telefono,fax) values ('" + p.Cif + "','" + p.Empresa + "','" + p.Ciudad + "','" + p.CodigoPostal + "','" + p.Pais + "','" + p.Email + "','" + p.Telefono + "','" + p.Fax + "')";
 
-            string comando = "Insert into Empleado (Nif,nombre,apellidos,usuario,password,direccion,ciudad,pais,codigoPostal,email,telefono,foto,sueldo,cuentaBancaria) values ('" + empleadoNuevo.Nif + "' , '" + empleadoNuevo.Nombre + "' , '" + empleadoNuevo.Apellidos + "' , 'c" + empleadoNuevo.Usuario + "' , '" + empleadoNuevo.Password + "' , '" + empleadoNuevo.Direccion + "' , '" + empleadoNuevo.Ciudad + "' , '" + empleadoNuevo.Pais + "' , '" + empleadoNuevo.CodigoPostal + "' , '" + empleadoNuevo.Email + "' , '" + empleadoNuevo.Telefono + "' , '" + empleadoNuevo.Foto + "' , '" + empleadoNuevo.Sueldo + "' , '" + empleadoNuevo.CuentaBancaria + "')";
+            SqlConnection con = new SqlConnection(conexion);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(comando, con);
 
-            try
-            {
-                con = new SqlConnection(conexion);
-                con.Open();
-                SqlCommand cmd = new SqlCommand(comando, con);
-                idEmpleado = cmd.ExecuteNonQuery();
-                return idEmpleado;
-            }
 
-            catch (SqlException sqlex)
-            {
-                MessageBox.Show(sqlex.Message.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            if (cmd.ExecuteNonQuery() == 1)
+                insert = true;
+            else
+                insert = false;
 
-            finally
-            {
-                if (con != null)
-                    con.Close();
-            }*/
-            return idEmpleado;
+            con.Close();
+            return insert;
         }
 
         //Borrar proveedor.

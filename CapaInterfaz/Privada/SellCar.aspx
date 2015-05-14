@@ -16,7 +16,7 @@
                  </li>
                   <li id="ModeloCoche">
                      <label class="registerLabel">Modelo</label>
-                        <input id="Modelo" name="Modelo" type="password" class="textBoxUserAccount" />
+                        <input id="Modelo" name="Modelo" type="text" class="textBoxUserAccount" />
                  </li>
                  <li id="PrecioVenta">
                      <label class="registerLabel">Precio</label>
