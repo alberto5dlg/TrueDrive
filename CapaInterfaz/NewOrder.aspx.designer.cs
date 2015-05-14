@@ -7,7 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-
-
-public partial class NewOrder {
+namespace CapaInterfaz {
+    
+    
+    public partial class NewClient {
+    }
 }

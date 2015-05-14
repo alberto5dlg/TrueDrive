@@ -16,10 +16,10 @@ namespace LibreriaTD.CAD
 {
     class EmpleadoCAD
     {
-        private string conexion = @"data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true";
+        private string conexion;
         public EmpleadoCAD()
         {
-            conexion = "data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TrueDriveDB.mdf;User Instance=true"; 
+            conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
         }
 
         //Método para insertar un empleado en la BD
@@ -74,38 +74,6 @@ namespace LibreriaTD.CAD
                 con.Close();
             }
             return delete;
-        }
-
-        //Método que modifica la dirección de un empleado y actualiza la BD
-        //devuelve un tipo bool dependiendo de si ha podido actualizar
-        public bool ModDireccion(string dni, string nuevaDireccion)
-        {
-            bool insert = false;
-            return insert;
-        }
-
-        //Método que modifica el email de un empleado y actualiza la BD
-        //devuelve un tipo bool dependiendo de si ha podido actualizar
-        public bool ModEmail(string dni, string nuevoEmail)
-        {
-            bool insert = false;
-            return insert;
-        }
-
-        //Método que modifica el nombre de usuario de un empleado y actualiza la BD
-        //devuelve un tipo bool dependiendo de si ha podido actualizar
-        public bool ModUsuario(string dni, string nuevoUsuario)
-        {
-            bool insert = false;
-            return insert;
-        }
-
-        //Método que modifica la contraseña de un empleado y actualiza la BD
-        //devuelve un tipo bool dependiendo de si ha podido actualizar
-        public bool ModPass(string dni, string nuevaPass)
-        {
-            bool insert = false;
-            return insert;
         }
 
         //Método que saca toda la información de un empleado asociada a un dni

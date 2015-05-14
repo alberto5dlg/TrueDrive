@@ -1,7 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewClient.aspx.cs"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewClient.aspx.cs" Inherits="CapaInterfaz.NewClient"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
+    <form runat="server">
     <div class="cajaPrincipal1">
         <div style="background:#de3939;color:white;padding:10px;padding-left:50px;">
             <span style="font-size:25px;color:white;"> Ficha Cliente </span>
@@ -10,6 +11,14 @@
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> NIF </legend>
                 <input name="nif" type="text" id="Nif" class="inputDatos" />
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Usuario </legend>
+                <input name="usuario" type="text" id="Usuario" class="inputDatos" />
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Contraseña </legend>
+                <input name="contra" type="password" id="Contraseña" class="inputDatos" />
             </fieldset>
             <fieldset class="cajonesFlotantes"">
                 <legend class="etiquetaCajon"> Nombre </legend>
@@ -26,6 +35,18 @@
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Direccion </legend>
                 <input name="direccion" type="text" id="Direccion" class="inputDatos"/>
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Ciudad </legend>
+                <input name="nif" type="text" id="Ciudad" class="inputDatos" />
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Codigo Postal </legend>
+                <input name="codp" type="text" id="Codp" class="inputDatos" />
+            </fieldset>
+            <fieldset class="cajonesFlotantes">
+                <legend class="etiquetaCajon"> Provincia </legend>
+                <input name="prov" type="text" id="Provincia" class="inputDatos" />
             </fieldset>
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Pais </legend>
@@ -51,10 +72,9 @@
         </div>
         <div style="padding:50px;">
             <div class="botonInsertar">
-                <a href="/Paginas/insertarCliente.aspx?idCliente=$id">
-                    <img src="../Styles/images/insertar.png" style="width: 100%;"></img>
-                </a>
+                <asp:ImageButton runat="server" ID="insertar" ImageUrl="../Styles/images/insertar.png" OnClick="registrar_Click" />
             </div>
         </div>
     </div>
+    </form>
 </asp:Content>

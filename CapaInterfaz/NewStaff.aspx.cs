@@ -36,10 +36,14 @@ namespace CapaInterfaz
             emple.Direccion = Direccion.Text;
 
             insert = emple.InsertarEmpleado();
-             if (insert == true)
-                 Response.Write("<script>window.alert('Insertado Correctamente');</script>");
-             else
-                 Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+            if (insert == true)
+            {
+                Response.Write("<script>window.alert('Insertado Correctamente');</script>");
+                if (insert == true)
+                    Response.Redirect("MenuCP.aspx");
+            }
+            else
+                Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
 
         }
     }
