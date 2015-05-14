@@ -26,7 +26,7 @@
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Contraseña </legend>
-                    <asp:TextBox ID="Contrasenya" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:TextBox ID="Contrasenya"  CssClass="inputDatos" TextMode="Password" runat="server" />
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Email </legend>
@@ -48,7 +48,7 @@
             </div>
             <<div style="padding:50px;">
                 <div class="botonInsertar">
-                    <asp:Button ID="BotonEnviar" Text="Enviar" runat="server" OnClick="insertStaff_click" style="cursor:pointer;" />
+                     <asp:ImageButton runat="server" ID="insertar" ImageUrl="../Styles/images/insertar.png" OnClick="insertStaff_click" />
                 </div>
             </div>
         </div>

@@ -39,11 +39,11 @@ namespace CapaInterfaz
             if (insert == true)
             {
                 Response.Write("<script>window.alert('Insertado el proveedor correctamente');</script>");
-                if(insert == true)
-                    Response.Redirect("MenuCP.aspx");
             }
             else
                 Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+            if (insert == true)
+                Response.Redirect("MenuCP.aspx");
         }
     }
 }

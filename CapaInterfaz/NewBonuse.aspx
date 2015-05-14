@@ -1,7 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewBonuse.aspx.cs"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="NewBonuse.aspx.cs" Inherits="CapaInterfaz.NewBonuse"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
+    <form runat="server">
     <div class="cajaPrincipal1">
         <div style="background:#de3939;color:white;padding:10px;padding-left:50px;">
             <span style="font-size:25px;color:white;"> Ficha Bonificación </span>
@@ -27,10 +28,9 @@
         </div>
         <div style="padding:50px;">
             <div class="botonInsertar">
-                <a href="/Paginas/insertarBonificacion.aspx?idBonificacion=$id">
-                    <img src="../Styles/images/insertar.png" style="width: 100%;"></img>
-                </a>
+                <asp:ImageButton runat="server" ID="insertar" ImageUrl="../Styles/images/insertar.png" OnClick="Buton_click" />
             </div>
         </div>
     </div>
+    </form>
 </asp:Content>
