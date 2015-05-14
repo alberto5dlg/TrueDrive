@@ -7,3 +7,12 @@ C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\bin\LibreriaTD.pdb
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
 C:\Users\Albertodlg\Desktop\HADA\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\bin\CapaInterfaz.dll
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\bin\CapaInterfaz.pdb
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\bin\CapaNegocio.dll
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\bin\LibreriaTD.dll
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\bin\CapaNegocio.pdb
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\bin\LibreriaTD.pdb
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
+C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb

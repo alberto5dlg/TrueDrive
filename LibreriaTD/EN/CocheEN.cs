@@ -17,7 +17,7 @@ namespace LibreriaTD.EN
         private string motor;
         private double km;
         private int anyo;
-        private string tipo;
+        private string combustible;
         private int plazas;
         private string cambio;
         private string color;
@@ -27,21 +27,20 @@ namespace LibreriaTD.EN
         {
             this.marca = null;
             this.modelo = null;
-            this.precio = 0;
-            this.puertas = 0;
+            this.precio = -1;
+            this.puertas = -1;
             this.motor = null;
-            this.km = 0;
-            this.anyo = 0;
-            this.tipo = null;
-            this.plazas = 0;
+            this.km = -1;
+            this.anyo = -1;
+            this.combustible = null;
+            this.plazas = -1;
             this.cambio = null;
             this.color = null;
             this.matricula = null;
         }
 
-
-        public CocheEN(string marca, string modelo,double precio,int puertas,string motor,string matricula,
-            double km,int anyo,string tipo,int plazas,string cambio,string color)
+        public CocheEN(string matricula, string marca, string modelo, double precio, int puertas, string motor,
+            double km, int anyo, string combustible, int plazas, string cambio, string color)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -50,8 +49,8 @@ namespace LibreriaTD.EN
             this.motor = motor;
             this.km = km;
             this.anyo = anyo;
-            this.tipo = tipo;
-            this.plazas = plazas; 
+            this.combustible = combustible;
+            this.plazas = plazas;
             this.cambio = cambio;
             this.color = color;
             this.matricula = matricula;
@@ -85,7 +84,7 @@ namespace LibreriaTD.EN
         public int Puertas
         {
             get { return puertas; }
-            set {puertas = value; }
+            set { puertas = value; }
         }
 
         public string Motor
@@ -106,10 +105,10 @@ namespace LibreriaTD.EN
             set { anyo = value; }
         }
 
-        public string Tipo
+        public string Combustible
         {
-            get { return tipo; }
-            set { tipo = value; }
+            get { return combustible; }
+            set { combustible = value; }
         }
 
         public int Plazas
@@ -130,9 +129,9 @@ namespace LibreriaTD.EN
             set { color = value; }
         }
 
-       
+
         //Cuando adquiramos un nuevo coche en nuestro catalogo lo insertaremos en la base de datos
-        public bool insertarCoche()
+        public bool InsertarCoche()
         {
             bool insert = false;
             CocheCAD cocheCad = new CocheCAD();
@@ -140,26 +139,40 @@ namespace LibreriaTD.EN
             return insert;
         }
         //se borrara un coche por completo cuando no queden mas unidades en stock
-        public void borrarCoche()
+        public void BorrarCoche()
         {
             bool borra = false;
             CocheCAD cocheCad = new CocheCAD();
-            borra = cocheCad.BorrarCoche(this);
+            borra = cocheCad.BorrarCoche(this.matricula);
+        }
+        //Actualiza los datos en la BD
+        public bool Actualizar()
+        {
+            bool update = false;
+            CocheCAD cocheCad = new CocheCAD();
+            update = cocheCad.Actualizar(this);
+            return update;
         }
 
-        public void modKM()
+        //Sacamos información de la BD a partir de una matrícula e insertamos los datos en el objeto
+        public bool SacarCoche(string matricula)
         {
-            //se modificaran cuando el coche sea alquilado y tenga mas km. 
+            bool exito = false;
             CocheCAD cocheCad = new CocheCAD();
-            cocheCad.modKM(km);
+            CocheEN coche = cocheCad.SacarCoche(matricula);
+            this.marca = coche.marca;
+            this.modelo = coche.modelo;
+            this.precio = coche.precio;
+            this.puertas = coche.puertas;
+            this.motor = coche.motor;
+            this.km = coche.km;
+            this.anyo = coche.anyo;
+            this.combustible = coche.combustible;
+            this.plazas = coche.plazas;
+            this.cambio = coche.cambio;
+            this.color = coche.color;
+            this.matricula = coche.matricula;
+            return exito;
         }
-        //En caso de subida o bajada de precio del vehiculo, tendremos que modificar su precio 
-        public void modPrecio()
-        {
-            CocheCAD cocheCad = new CocheCAD();
-            cocheCad.modPrecio(precio);
-        }
-
-        
     }
 }
