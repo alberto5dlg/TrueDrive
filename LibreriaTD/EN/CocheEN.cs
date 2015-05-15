@@ -17,7 +17,7 @@ namespace LibreriaTD.EN
         private string motor;
         private double km;
         private int anyo;
-        private string combustible;
+        private string tipo;
         private int plazas;
         private string cambio;
         private string color;
@@ -32,7 +32,7 @@ namespace LibreriaTD.EN
             this.motor = null;
             this.km = -1;
             this.anyo = -1;
-            this.combustible = null;
+            this.tipo = null;
             this.plazas = -1;
             this.cambio = null;
             this.color = null;
@@ -40,7 +40,7 @@ namespace LibreriaTD.EN
         }
 
         public CocheEN(string matricula, string marca, string modelo, double precio, int puertas, string motor,
-            double km, int anyo, string combustible, int plazas, string cambio, string color)
+            double km, int anyo, string tipo, int plazas, string cambio, string color)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -49,7 +49,7 @@ namespace LibreriaTD.EN
             this.motor = motor;
             this.km = km;
             this.anyo = anyo;
-            this.combustible = combustible;
+            this.tipo = tipo;
             this.plazas = plazas;
             this.cambio = cambio;
             this.color = color;
@@ -105,10 +105,10 @@ namespace LibreriaTD.EN
             set { anyo = value; }
         }
 
-        public string Combustible
+        public string Tipo
         {
-            get { return combustible; }
-            set { combustible = value; }
+            get { return tipo; }
+            set { tipo = value; }
         }
 
         public int Plazas
@@ -167,7 +167,7 @@ namespace LibreriaTD.EN
             this.motor = coche.motor;
             this.km = coche.km;
             this.anyo = coche.anyo;
-            this.combustible = coche.combustible;
+            this.tipo = coche.tipo;
             this.plazas = coche.plazas;
             this.cambio = coche.cambio;
             this.color = coche.color;

@@ -16,7 +16,7 @@
                  </li>
                   <li id="Pass">
                      <label class="registerLabel">Contraseña</label>
-                        <asp:TextBox runat="server" TextMode="Password" id="Contrasenya"  CssClass="textBoxUserAccount" />
+                        <asp:TextBox runat="server" id="Contrasenya"  CssClass="textBoxUserAccount" />
                  </li>
                  <li id="nombree">
                      <label class="registerLabel">Nombre</label>

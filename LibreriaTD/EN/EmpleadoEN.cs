@@ -131,5 +131,12 @@ namespace LibreriaTD.EN
             exito = acEmp.ActualizarEmpleado(this);
             return exito;
         }
+        public bool ConsultarEmpleado()
+        {
+            bool consult = false;
+            EmpleadoCAD con = new EmpleadoCAD();
+            consult = con.ConsultarEmpleado(this.Usuario, this.Pass);
+            return consult;
+        }
     }
 }

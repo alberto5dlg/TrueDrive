@@ -28,7 +28,7 @@ namespace LibreriaTD.CAD
         public bool InsertarCoche(CocheEN c)
         {
             bool insert = false;
-            string comando = "Insert into Coche (matricula,marca,modelo,precio,puertas,motor,km,anyo,combustible,plazas,cambio,color) values ('" + c.Matricula + "','" + c.Marca + "','" + c.Modelo + "','" + c.Precio + "','" + c.Puertas + "','" + c.Motor + "','" + c.Km + "','" + c.Anyo + "','" + c.Combustible + "','" + c.Plazas + "','" + c.Cambio + "','" + c.Color + "')";
+            string comando = "Insert into Coche (matricula,marca,modelo,precio,puertas,motor,km,anyo,combustible,plazas,cambio,color) values ('" + c.Matricula + "','" + c.Marca + "','" + c.Modelo + "','" + c.Precio + "','" + c.Puertas + "','" + c.Motor + "','" + c.Km + "','" + c.Anyo + "','" + c.Tipo + "','" + c.Plazas + "','" + c.Cambio + "','" + c.Color + "')";
 
             SqlConnection con = new SqlConnection(conexion);
 
@@ -79,7 +79,7 @@ namespace LibreriaTD.CAD
         {
             bool update = false;
 
-            string cmd = "update coche set marca = '" + coche.Marca + "', modelo = '" + coche.Modelo + "', precio = '" + coche.Precio + "', puertas = '" + coche.Puertas + "', motor = '" + coche.Motor + "', km = '" + coche.Km + "', anyo = '" + coche.Anyo + "', combustible = '" + coche.Combustible + "', plazas = '" + coche.Plazas + "', cambio = '" + coche.Cambio + "', color = '" + coche.Color + "' where matricula = '" + coche.Matricula + "'";
+            string cmd = "update coche set marca = '" + coche.Marca + "', modelo = '" + coche.Modelo + "', precio = '" + coche.Precio + "', puertas = '" + coche.Puertas + "', motor = '" + coche.Motor + "', km = '" + coche.Km + "', anyo = '" + coche.Anyo + "', combustible = '" + coche.Tipo + "', plazas = '" + coche.Plazas + "', cambio = '" + coche.Cambio + "', color = '" + coche.Color + "' where matricula = '" + coche.Matricula + "'";
 
             SqlConnection con = new SqlConnection(conexion);
             try

@@ -80,16 +80,24 @@ namespace LibreriaTD.CAD
         public bool ConsultarUsuario(string usuario, string pass)
         {
             bool consult = false;
-            string comando = "SELECT usuario,contraseña FROM Cliente WHERE usuario ="+usuario+" AND contraseña ="+pass+"" ;
+            string comando = "SELECT usuario,contraseña FROM Cliente WHERE usuario ='"+usuario+"' AND contraseña ='"+pass+"'" ;
             SqlConnection con = new SqlConnection(conexion);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(comando, con);
-           
-
-           if (cmd.ExecuteScalar().Equals(usuario))
-                consult = true;
-            else
+            
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(comando, con);
+                SqlDataReader read = cmd.ExecuteReader();
+                if (read.Read() == true)
+                    consult = true;
+                else
+                    consult = false;
+                
+            }
+            catch (Exception e)
+            {
                 consult = false;
+            }     
 
             con.Close();
             return consult;

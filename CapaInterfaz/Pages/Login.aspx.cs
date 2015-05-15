@@ -22,17 +22,17 @@ namespace CapaInterfaz.Pages
             ClienteEN cli = new ClienteEN();
             cli.usuCliente = Usuario.Text;
             cli.passCliente = Pass.Text;
-            
-            consult = cli.ConsultarUsuario();
 
-           if (consult == true)
-           {
-               Response.Write("<script>window.alert('');</script>");
-               if (cli.usuCliente == "admin")
-                   Response.Redirect("../MenuCP.aspx");
-               else
-                   Response.Redirect("../Privada/ClientMenu");
-           }
+            EmpleadoEN emp = new EmpleadoEN();
+            emp.Usuario = Usuario.Text;
+            emp.Pass = Pass.Text;
+            
+            if(consult = cli.ConsultarUsuario() == true)
+                Response.Redirect("../Privada/ClientMenu.aspx");
+            
+            else if (consult = emp.ConsultarEmpleado() == true)
+               Response.Redirect("../MenuCP.aspx");
+            
            else
                Response.Write("<script>window.alert('No existe el usuario');</script>");
         }
