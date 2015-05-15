@@ -20,6 +20,7 @@ namespace LibreriaTD.CAD
         public EmpleadoCAD()
         {
             conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
+           
         }
 
         //Método para insertar un empleado en la BD

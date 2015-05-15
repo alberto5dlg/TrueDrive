@@ -16,3 +16,5 @@ C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\C
 C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
 C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll
 C:\Users\Sapi\Desktop\uni de mierda\HADA\Repositorio Local Práctica\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.pdb
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.csprojResolveAssemblyReference.cache
+C:\Users\joseFrances\Documents\GitHub\TrueDrive\CapaInterfaz\obj\Debug\CapaInterfaz.dll

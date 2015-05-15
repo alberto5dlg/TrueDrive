@@ -11,6 +11,11 @@
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> NIF </legend>
                     <asp:TextBox ID="Nif" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server"
+                        ControlToValidate="Nif"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                    </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Nombre </legend>
@@ -46,7 +51,7 @@
             <div style="background:#444242;color:white;padding:10px;text-align:center;">
                 <span style="font-size:25px;color:white;"> Acciones </span>
             </div>
-            <<div style="padding:50px;">
+            <div style="padding:50px;">
                 <div class="botonInsertar">
                      <asp:ImageButton runat="server" ID="insertar" ImageUrl="../Styles/images/insertar.png" OnClick="insertStaff_click" />
                 </div>
