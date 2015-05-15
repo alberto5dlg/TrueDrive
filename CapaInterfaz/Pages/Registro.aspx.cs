@@ -44,15 +44,17 @@ namespace CapaInterfaz.Pages
 
            
             insert = en.InsertarCliente();
-            if (insert == true)
+            if (insert == true && CheckBox1.Checked)
             {
                 Response.Write("<script>window.alert('Insertado Correctamente');</script>");
                 Response.Redirect("Home.aspx");
             }
             else
+            {
                 Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+                lab1.Text = "Debe de aceptar los terminos y condiciones";
+            }
 
-
-        }
+        }  
     }
 }
