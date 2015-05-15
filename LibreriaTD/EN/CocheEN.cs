@@ -22,6 +22,7 @@ namespace LibreriaTD.EN
         private string cambio;
         private string color;
         private string matricula;
+        private string imagen;
 
         public CocheEN()
         {
@@ -37,6 +38,7 @@ namespace LibreriaTD.EN
             this.cambio = null;
             this.color = null;
             this.matricula = null;
+            this.imagen = null;
         }
 
         public CocheEN(string matricula, string marca, string modelo, double precio, int puertas, string motor,
@@ -61,6 +63,12 @@ namespace LibreriaTD.EN
         {
             get { return matricula; }
             set { matricula = value; }
+        }
+
+        public string Imagen
+        {
+            get { return imagen; }
+            set { imagen = value; }
         }
 
         public string Marca

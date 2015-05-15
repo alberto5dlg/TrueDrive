@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form22" runat="server">
+    <form id="form22" runat="server" method="post" >
      <link href="../Styles/RegisterStyle.css" type="text/css" rel="stylesheet"/>
      <!-- caja de campo de datos-->
      <div style="padding-top:20px;" class ="contentWrapper" runat="server" >
@@ -34,6 +34,11 @@
                      <label class="registerLabel">Motor</label>
                         <input id="Motor" name="Motor" type="text" class="textBoxUserAccount" />
                  </li>
+                 <li>
+                     <label class="registerLabel">Imagen</label>
+                     <input type="file" id="file1" runat="server" class="textBoxUserAccount" />
+                     <asp:Label ID="Label1" CssClass="registerLabel" runat="server"></asp:Label>
+                 </li>
              </ul>
         </div>
 
@@ -50,10 +55,10 @@
                  </li>
                 <li id="cambio">
                      <label class="registerLabel">Cambio</label>
-                    <select id="Cambio" class ="textBoxUserAccount">
+                    <select name="Cambio" id="Cambio" class ="textBoxUserAccount">
                         <option value="nada"> </option>
-                      <option value="automatico">Automático</option>
-                      <option value="manual">Manual</option>
+                      <option value="Automático">Automático</option>
+                      <option value="Manual">Manual</option>
                     </select>  
                         
                  </li>
@@ -63,7 +68,7 @@
                  </li>
                 <li id="tipo">
                      <label class="registerLabel">Tipo</label>
-                    <select id="Tipo" class ="textBoxUserAccount">
+                    <select name="Tipo" id="Tipo" class ="textBoxUserAccount">
                         <option value="nada"> </option>
                       <option value="Hibrido">Híbrido</option>
                       <option value="Electrico">Eléctrico</option>

@@ -28,21 +28,21 @@ namespace LibreriaTD.CAD
         public bool InsertarCoche(CocheEN c)
         {
             bool insert = false;
-            string comando = "Insert into Coche (matricula,marca,modelo,precio,puertas,motor,km,anyo,combustible,plazas,cambio,color) values ('" + c.Matricula + "','" + c.Marca + "','" + c.Modelo + "','" + c.Precio + "','" + c.Puertas + "','" + c.Motor + "','" + c.Km + "','" + c.Anyo + "','" + c.Tipo + "','" + c.Plazas + "','" + c.Cambio + "','" + c.Color + "')";
+            string comando = "Insert into Coche (matricula,marca,modelo,precio,puertas,motor,km,anyo,tipo,plazas,cambio,color,imagen) values ('" + c.Matricula + "','" + c.Marca + "','" + c.Modelo + "','" + c.Precio + "','" + c.Puertas + "','" + c.Motor + "','" + c.Km + "','" + c.Anyo + "','" + c.Tipo + "','" + c.Plazas + "','" + c.Cambio + "','" + c.Color + "','"+c.Imagen+"')";
 
             SqlConnection con = new SqlConnection(conexion);
 
-            try
-            {
+           try
+           {
                 con.Open();
                 SqlCommand cmd = new SqlCommand(comando, con);
                 cmd.ExecuteNonQuery();
                 insert = true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+           }
+           catch (Exception e)
+           {
+           
+           }
             con.Close();
             return insert;
         }
