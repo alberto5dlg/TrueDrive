@@ -47,13 +47,11 @@ namespace CapaInterfaz.Privada
             car.Tipo = Request.Form["Tipo"];
             car.Color = Request.Form["Color"];
             
-            Response.Write(car.Marca+car.Modelo+car.Precio+car.Puertas+car.Matricula+car.Motor+car.Km+car.Anyo+car.Cambio+car.Plazas+car.Tipo+car.Color);        
-
-           /* insert = car.insertarCoche();
+            insert = car.InsertarCoche();
             if (insert == true)
                 Response.Write("<script>window.alert('Se ha puesto a la venta su coche');</script>");
             else
                 Response.Write("<script>window.alert('No se ha podido poner a la venta, contacte con nosotros para cualquier duda');</script>");
-       */ }
+        }
     }
 }

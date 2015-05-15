@@ -132,5 +132,31 @@ namespace LibreriaTD.CAD
             }
             return update;
         }
+
+        public bool ConsultarEmpleado(string usuario, string pass)
+        {
+            bool consult = false;
+            string comando = "SELECT usuario,pass FROM Empleado WHERE usuario ='" + usuario + "' AND pass ='" + pass + "'";
+            SqlConnection con = new SqlConnection(conexion);
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(comando, con);
+                SqlDataReader read = cmd.ExecuteReader();
+                if (read.Read() == true)
+                    consult = true;
+                else
+                    consult = false;
+                
+            }
+            catch (Exception e)
+            {
+                consult = false;
+            }
+
+            con.Close();
+            return consult;
+        }
     }
 }
