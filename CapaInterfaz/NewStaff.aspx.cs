@@ -11,7 +11,10 @@ using System.Collections.Generic;
 using System.Linq;
 using LibreriaTD.EN;
 using LibreriaTD.CAD;
-
+using System.ComponentModel;
+using System.Drawing;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace CapaInterfaz
 {
@@ -24,16 +27,30 @@ namespace CapaInterfaz
 
         protected void insertStaff_click(object sender, EventArgs e)
         {
-            EmpleadoEN emple = new EmpleadoEN();
             bool insert = false;
-            emple.Dni = Nif.Text;
-            emple.Nombre = Nombre.Text;
-            emple.Apellidos = Apellidos.Text;
-            emple.Usuario = Usuario.Text;
-            emple.Pass = Contrasenya.Text;
-            emple.Email = Email.Text;
-            emple.NumContacto = int.Parse(NumContacto.Text);
-            emple.Direccion = Direccion.Text;
+
+            EmpleadoEN emple = new EmpleadoEN();
+           
+            ValidacionesEN validacion = new ValidacionesEN();
+            
+            //ver si los campos tienen algo y no estan vacios
+            bool usuario = validacion.Vacio(Usuario.Text);
+            bool password = validacion.Vacio(Contrasenya.Text);
+            bool NIF = validacion.Vacio(Nif.Text);
+            bool nombre = validacion.Vacio(Nombre.Text);
+            bool apellidos = validacion.Vacio(Apellidos.Text);
+            bool direccion = validacion.Vacio(Direccion.Text);
+            bool email = validacion.Vacio(Email.Text);
+            //bool NumContacto = validacion.Vacio(NumContacto);
+
+            //ver si los campos respetan la sintaxis mediantes expresiones regulares
+            bool passwordER = validacion.ValidarPassword(Contrasenya.Text);
+            bool nifER = validacion.ValidarNif(Nif.Text);
+            bool nombreER = validacion.ValidarNombrePersona(Nombre.Text);
+            bool apellidosER = validacion.ValidarCiudadPersona(Apellidos.Text);
+            bool emailER = validacion.ValidarEmail(Email.Text);
+
+            
 
             insert = emple.InsertarEmpleado();
             if (insert == true)

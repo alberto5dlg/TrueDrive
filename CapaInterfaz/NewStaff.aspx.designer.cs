@@ -31,6 +31,15 @@ namespace CapaInterfaz {
         protected global::System.Web.UI.WebControls.TextBox Nif;
         
         /// <summary>
+        /// Control RequiredFieldValidator.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator;
+        
+        /// <summary>
         /// Control Nombre.
         /// </summary>
         /// <remarks>
