@@ -25,8 +25,8 @@ namespace LibreriaTD.EN
 
         
         public ClienteEN(string nif, string nombre, string apellidos, string email, string direccion,
-            string ciudad, string pais, string telefono, string interesadoEn, string fechaNac,string usuario,
-            string provincia,int codp,string contrasenya)
+            string ciudad, string pais, string telefono, string interesadoEn, int codp, string fechaNac,
+            string usuario,string contrasenya,string provincia)
         {
             this.codp = codp;
             this.provincia = provincia;
