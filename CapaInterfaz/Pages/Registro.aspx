@@ -9,11 +9,11 @@
     <link href="../Styles/RegisterStyle.css" type="text/css" rel="stylesheet"/>
     <form runat="server" id="form1">
     <!-- caja de campo de datos-->
-     <div style="padding-top:20px;" class ="contentWrapper" runat="server">
+     <div id="Div1" style="padding-top:20px;" class ="contentWrapper" runat="server">
         <h1  class="headerWrap">Introduce tus datos</h1>
         <!--Primera caja de campo de datos-->
         
-         <div style="float:left; padding-left:100px;width:42%;padding-top:30px;" class =" contentInside" runat="server">
+         <div id="Div2" style="float:left; padding-left:100px;width:42%;padding-top:30px;" class =" contentInside" runat="server">
              <ul style="list-style:none;" id="listaregistro1" runat="server">
                   <li runat="server" id="usurio">
                       <label class="registerLabel">Usuario</label>
@@ -23,33 +23,57 @@
                           ErrorMessage="Campo requerido"
                           ForeColor="Red">
                       </asp:RequiredFieldValidator>
+                      <asp:RegularExpressionValidator CssClass="registerLabel" ID="RegularExpressionValidator" runat="server" 
+                          ErrorMessage="Introduzca solo letras y números"
+                          ControlToValidate="Usuario"     
+                          ValidationExpression= "[0-9a-zA-Z]+" 
+                           ForeColor="Red">
+                       </asp:RegularExpressionValidator>
                  </li>
                   <li id="Contrasenya">
                       <label class="registerLabel">Contraseña</label>
-                      <asp:TextBox runat="server" TextMode="Password" ID="contrasenya" CssClass="textBoxUserAccount" />
+                      <asp:TextBox runat="server" TextMode="Password" ID="TextBox1" CssClass="textBoxUserAccount" />
                       <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator1" runat="server"
                           ControlToValidate="contrasenya"
                           ErrorMessage="Campo requerido"
                           ForeColor="Red">
                       </asp:RequiredFieldValidator>
+                      <asp:RegularExpressionValidator CssClass="registerLabel" ID="RegularExpressionValidator1" runat="server" 
+                          ErrorMessage="Introduzca solo letras y números"
+                          ControlToValidate="contrasenya"     
+                          ValidationExpression= "[0-9a-zA-Z]+"
+                          ForeColor="Red" >
+                       </asp:RegularExpressionValidator>
                   </li>
                  <li id="Nombre">
                      <label class="registerLabel">Nombre</label>
-                     <asp:TextBox runat="server" ID="nombre" CssClass="textBoxUserAccount" />
+                     <asp:TextBox runat="server" ID="TextBox2" CssClass="textBoxUserAccount" />
                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator2" runat="server"
                          ControlToValidate="nombre"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
                      </asp:RequiredFieldValidator>
+                     <asp:RegularExpressionValidator CssClass="registerLabel" ID="RegularExpressionValidator2" runat="server" 
+                          ErrorMessage="Introduzca solo letras"
+                          ControlToValidate="nombre"     
+                          ValidationExpression= "[a-zA-Z]+"
+                          ForeColor="Red">
+                     </asp:RegularExpressionValidator>
                  </li>
                    <li id="Apellidos">
                        <label class="registerLabel">Apellidos</label>
-                       <asp:TextBox runat="server" ID="apellidos" CssClass="textBoxUserAccount" />
+                       <asp:TextBox runat="server" ID="TextBox3" CssClass="textBoxUserAccount" />
                        <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator3" runat="server"
                            ControlToValidate="apellidos"
                            ErrorMessage="Campo requerido"
                            ForeColor="Red">
                        </asp:RequiredFieldValidator>
+                       <asp:RegularExpressionValidator CssClass="registerLabel" ID="RegularExpressionValidator3" runat="server" 
+                          ErrorMessage="Introduzca solo letras"
+                          ControlToValidate="apellidos"     
+                          ValidationExpression= "[a-zA-Z]+"
+                          ForeColor="Red">
+                       </asp:RegularExpressionValidator>
                  </li>
                  <li id="nif">
                      <label class="registerLabel">Dni</label>
@@ -59,6 +83,12 @@
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
                      </asp:RequiredFieldValidator>
+                     <asp:RegularExpressionValidator CssClass="registerLabel" ID="RegularExpressionValidator4" runat="server"
+                         ErrorMessage="Introduzca 8 dígitos y una letra"
+                         ControlToValidate="dni"
+                         ValidationExpression="^\d{8}[a-zA-Z]{1}"
+                         ForeColor="Red">
+                     </asp:RegularExpressionValidator>
                  </li>
                   <li id="E-mail">
                       <label class="registerLabel">E-mail</label>
@@ -68,6 +98,12 @@
                           ErrorMessage="Campo requerido"
                           ForeColor="Red">
                       </asp:RequiredFieldValidator>
+                      <asp:RegularExpressionValidator CssClass="registerLabel" ID="RegularExpressionValidator5" runat="server" 
+                          ErrorMessage="Introduzca un mail correcto"
+                          ControlToValidate="email"     
+                          ValidationExpression= "^[a-zA-Z0-9_-]{2,}[@][a-zA-Z0-9_-]{2,}[.]{1}[a-zA-Z]{2,4}"
+                          ForeColor="Red">
+                     </asp:RegularExpressionValidator>
                  </li>
                  <li id="FechaNac">
                      <label class="registerLabel">Fecha de Nacimiento</label>
@@ -122,7 +158,7 @@
                  </li>
                 <li id="pais">
                     <label class="registerLabel">Pais</label>
-                    <asp:TextBox runat="server" id="Pais"  CssClass="textBoxUserAccount" />
+                    <asp:TextBox runat="server" id="TextBox4"  CssClass="textBoxUserAccount" />
                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator11" runat="server"
                         ControlToValidate="Pais"
                         ErrorMessage="Campo requerido"
@@ -140,7 +176,7 @@
                  </li>
                 <li id="Interesado">
                     <label class="registerLabel">Interesado en</label>
-                    <asp:TextBox runat="server" ID="interesado" CssClass="textBoxUserAccount" />
+                    <asp:TextBox runat="server" ID="TextBox5" CssClass="textBoxUserAccount" />
                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator13" runat="server"
                          ControlToValidate="interesado"
                          ErrorMessage="Campo requerido"
