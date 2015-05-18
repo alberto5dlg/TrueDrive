@@ -42,18 +42,21 @@ namespace CapaInterfaz.Pages
             en.interesadoEnCliente = interesado.Text;
             en.telefonoCliente = telefono.Text;
 
-           
-            insert = en.InsertarCliente();
-            if (insert == true && CheckBox1.Checked)
+            if (CheckBox1.Checked)
             {
-                Response.Write("<script>window.alert('Insertado Correctamente');</script>");
-                Response.Redirect("Home.aspx");
+                insert = en.InsertarCliente();
+                if (insert == true)
+                {
+                    Response.Write("<script>window.alert('Insertado Correctamente');</script>");
+                    Response.Redirect("Home.aspx");
+                }
+                else
+                {
+                    Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+                }
             }
             else
-            {
-                Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
                 lab1.Text = "Debe de aceptar los terminos y condiciones";
-            }
 
         }  
     }

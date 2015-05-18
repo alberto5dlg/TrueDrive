@@ -24,26 +24,6 @@ namespace CapaInterfaz.Privada
 
         }
 
-         private Boolean ValidaExtension(string sExtension)
-        {
-            Boolean rel = false;
-            switch (sExtension)
-            {
-                case ".jpg": 
-                case ".jpeg":
-                case ".png": 
-                case ".gif": 
-                case ".bmp":
-                    rel = true;
-                    break;
-                default:
-                    rel = false;
-                    break;
-
-            }
-            return rel;
-        }
-
 
         protected void Button_click(object sender, EventArgs e)
         {
@@ -67,38 +47,43 @@ namespace CapaInterfaz.Privada
             car.Plazas = Convert.ToInt32(pla);
             car.Tipo = Request.Form["Tipo"];
             car.Color = Request.Form["Color"];
-           
-            if((file1.PostedFile!=null)&&(file1.PostedFile.ContentLength > 0))
+
+            if ((file1.PostedFile != null) && (file1.PostedFile.ContentLength > 0))
             {
-                if (file1.Value.EndsWith(".JPG") || file1.Value.EndsWith(".jpg") || 
-                    file1.Value.EndsWith(".ico") || file1.Value.EndsWith(".ICO") || 
-                    file1.Value.EndsWith(".gif") || file1.Value.EndsWith(".GIF") || 
-                    file1.Value.EndsWith(".png") || file1.Value.EndsWith(".PNG")) 
+                if (file1.Value.EndsWith(".JPG") || file1.Value.EndsWith(".jpg") ||
+                    file1.Value.EndsWith(".ico") || file1.Value.EndsWith(".ICO") ||
+                    file1.Value.EndsWith(".gif") || file1.Value.EndsWith(".GIF") ||
+                    file1.Value.EndsWith(".png") || file1.Value.EndsWith(".PNG"))
                 {
-                       string fn = System.IO.Path.GetFileName(file1.PostedFile.FileName);
-                       string SaveLocation = Server.MapPath(@"../ICoches") + "//" + fn;
-                       
-                       try
-                       {
-                           file1.PostedFile.SaveAs(SaveLocation);
-                           Label1.Text = "El archivo se ha cargado.";
-                           car.Imagen = SaveLocation;  
-                       }
-                       catch (Exception ex)
-                       {
-                           Response.Write(ex.Message);
-                       }
+                    string fn = System.IO.Path.GetFileName(file1.PostedFile.FileName);
+                    string SaveLocation = Server.MapPath(@"../ICoches") + "//" + fn;
+
+                    try
+                    {
+                        file1.PostedFile.SaveAs(SaveLocation);
+                        Label1.Text = "El archivo se ha cargado.";
+                        car.Imagen = SaveLocation;
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write(ex.Message);
+                    }
                 }
                 else
                     Label1.Text = "No se pudo cargar el archivo seleccionado, por favor seleccione una imagen .jpg, .gif o .png";
             }
-            
 
-            insert = car.InsertarCoche();
-            if (insert == true)
-                Response.Write("<script>window.alert('Se ha puesto a la venta su coche');</script>");
+            if (CheckBox1.Checked)
+            {
+                insert = car.InsertarCoche();
+                if (insert == true)
+                    Response.Write("<script>window.alert('Se ha puesto a la venta su coche');</script>");
+                else
+                    Response.Write("<script>window.alert('No se ha podido poner a la venta, contacte con nosotros para cualquier duda');</script>");
+
+            }
             else
-                Response.Write("<script>window.alert('No se ha podido poner a la venta, contacte con nosotros para cualquier duda');</script>");
+                lab1.Text = "Debe de aceptar los terminos y condiciones";
         }
     }
 }

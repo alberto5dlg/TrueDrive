@@ -81,7 +81,8 @@
             </ul>
         </div>
          <div style="float:left; padding-left:100px;padding-top:10px;" class="contentInside">
-             <input type="checkbox" name="your-group" value="unit-in-group" /> He leido y acepto los términos y condiciones.
+             <asp:CheckBox ID="CheckBox1" Checked="False" runat="server" /> He leido y acepto los términos y condiciones.
+             <asp:Label ID="lab1" CssClass="registerLabel" BackColor="Red" runat="server" ></asp:Label>
          </div>
          <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
             <asp:ImageButton ID="vender"  runat="server" OnClick="Button_click" ImageUrl="../Recursos/Vender.JPG" />  

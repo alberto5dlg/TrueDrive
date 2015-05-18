@@ -151,7 +151,7 @@
         </div>
          <div style="float:left; padding-left:100px;padding-top:10px;" class="contentInside">
              <asp:CheckBox ID="CheckBox1" Checked="False" runat="server" /> He leido y acepto los términos y condiciones.
-             <asp:Label ID="lab1" runat="server" ></asp:Label>
+             <asp:Label ID="lab1" CssClass="registerLabel" BackColor="Red" runat="server" ></asp:Label>
          </div>
         <div  style="float:left; padding-left:100px;padding-bottom:30px;" class="contentInside buttonGreat buttonMedium">
             <asp:ImageButton ID="registrar" runat="server" OnClick="registrar_Click" ImageUrl="../Recursos/Registro.JPG" />  
