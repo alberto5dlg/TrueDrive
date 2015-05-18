@@ -285,6 +285,21 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    .hibrido a {
+        color: red;      
+        font-size: 40px;
+        padding: 89px 176px;
+        background-image:url("images/hibrido.jpg");
+    }
+
+    .electrico a {
+        color: red;      
+        font-size: 40px;
+        padding: 89px 165px;
+        background-image:url("images/electrico.jpg");
+    }
+
     @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none) {
         .buttonGreat a {
             font-size: 15px;
