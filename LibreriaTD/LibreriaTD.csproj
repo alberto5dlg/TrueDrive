@@ -50,7 +50,6 @@
     <Compile Include="CAD\ListaDeseadosCAD.cs" />
     <Compile Include="CAD\MarcaCAD.cs" />
     <Compile Include="CAD\ProveedorCAD.cs" />
-    <Compile Include="EN\ValidacionesEN.cs" />
     <Compile Include="EN\BonificacionesEN.cs" />
     <Compile Include="EN\CestaEN.cs" />
     <Compile Include="EN\ClienteEN.cs" />

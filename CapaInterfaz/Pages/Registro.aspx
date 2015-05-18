@@ -32,7 +32,7 @@
                  </li>
                   <li id="Contrasenya">
                       <label class="registerLabel">Contraseña</label>
-                      <asp:TextBox runat="server" TextMode="Password" ID="TextBox1" CssClass="textBoxUserAccount" />
+                      <asp:TextBox runat="server" TextMode="Password" ID="contrasenya" CssClass="textBoxUserAccount" />
                       <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator1" runat="server"
                           ControlToValidate="contrasenya"
                           ErrorMessage="Campo requerido"
@@ -47,7 +47,7 @@
                   </li>
                  <li id="Nombre">
                      <label class="registerLabel">Nombre</label>
-                     <asp:TextBox runat="server" ID="TextBox2" CssClass="textBoxUserAccount" />
+                     <asp:TextBox runat="server" ID="nombre" CssClass="textBoxUserAccount" />
                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator2" runat="server"
                          ControlToValidate="nombre"
                          ErrorMessage="Campo requerido"
@@ -62,7 +62,7 @@
                  </li>
                    <li id="Apellidos">
                        <label class="registerLabel">Apellidos</label>
-                       <asp:TextBox runat="server" ID="TextBox3" CssClass="textBoxUserAccount" />
+                       <asp:TextBox runat="server" ID="apellidos" CssClass="textBoxUserAccount" />
                        <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator3" runat="server"
                            ControlToValidate="apellidos"
                            ErrorMessage="Campo requerido"
@@ -158,7 +158,7 @@
                  </li>
                 <li id="pais">
                     <label class="registerLabel">Pais</label>
-                    <asp:TextBox runat="server" id="TextBox4"  CssClass="textBoxUserAccount" />
+                    <asp:TextBox runat="server" id="Pais"  CssClass="textBoxUserAccount" />
                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator11" runat="server"
                         ControlToValidate="Pais"
                         ErrorMessage="Campo requerido"
@@ -176,7 +176,7 @@
                  </li>
                 <li id="Interesado">
                     <label class="registerLabel">Interesado en</label>
-                    <asp:TextBox runat="server" ID="TextBox5" CssClass="textBoxUserAccount" />
+                    <asp:TextBox runat="server" ID="interesado" CssClass="textBoxUserAccount" />
                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator13" runat="server"
                          ControlToValidate="interesado"
                          ErrorMessage="Campo requerido"

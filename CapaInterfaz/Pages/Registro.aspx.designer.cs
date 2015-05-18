@@ -85,13 +85,13 @@ namespace CapaInterfaz.Pages {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control contrasenya.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox contrasenya;
         
         /// <summary>
         /// Control RequiredFieldValidator1.
@@ -112,13 +112,13 @@ namespace CapaInterfaz.Pages {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox nombre;
         
         /// <summary>
         /// Control RequiredFieldValidator2.
@@ -139,13 +139,13 @@ namespace CapaInterfaz.Pages {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
         
         /// <summary>
-        /// Control TextBox3.
+        /// Control apellidos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox apellidos;
         
         /// <summary>
         /// Control RequiredFieldValidator3.
@@ -310,13 +310,13 @@ namespace CapaInterfaz.Pages {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
         
         /// <summary>
-        /// Control TextBox4.
+        /// Control Pais.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox Pais;
         
         /// <summary>
         /// Control RequiredFieldValidator11.
@@ -346,13 +346,13 @@ namespace CapaInterfaz.Pages {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator12;
         
         /// <summary>
-        /// Control TextBox5.
+        /// Control interesado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox interesado;
         
         /// <summary>
         /// Control RequiredFieldValidator13.
