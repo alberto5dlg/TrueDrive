@@ -13,44 +13,62 @@ namespace LibreriaTD.EN
         private List<CocheEN> coches;
         private double precio;
 
+        public CestaEN()
+        {
+            idCliente = null;
+            precio = 0;
+            coches = new List<CocheEN>();
+        }
         public CestaEN(string id)
         {
             idCliente = id;
             precio = 0;
+            coches = new List<CocheEN>();
         }
 
-        public void Insertar()
+        public bool Insertar()
         {
             CestaCAD aux = new CestaCAD();
-            aux.Insertar(this);
+            bool insert = aux.Insertar(this);
+            return insert;
         }
 
-        public void Borrar()
+        public bool Borrar()
         {
             CestaCAD aux = new CestaCAD();
-            aux.Borrar(this);
+            bool delete = aux.Borrar(this);
+            return delete;
+        }
+
+        public void SacarCesta(string id)
+        {
+            CestaCAD cesta = new CestaCAD();
+            CestaEN cestaAux = new CestaEN();
+            cestaAux = cesta.SacarCesta(id);
+            this.idCliente = cestaAux.idCliente;
+            this.coches = cestaAux.coches;
+            this.precio = cestaAux.precio;
         }
 
         public void AddCoche(CocheEN coche)
         {
             CestaCAD aux = new CestaCAD();
-            if (aux.InsertarCoche(this, coche))
-            {
-                coches.Add(coche);
-                precio += coche.Precio;
-            }
+            coches.Add(coche);
+            precio += coche.Precio;
         }
 
         public void DeleteCoche(CocheEN coche)
         {
-            CestaCAD aux = new CestaCAD();
-            if(aux.BorrarCoche(this, coche))
-            {
-                coches.Remove(coche);
-                precio -= coche.Precio;
-            }
-            
+            coches.Remove(coche);
+            precio -= coche.Precio;
         }
+
+        public bool Actualizar()
+        {
+            CestaCAD aux = new CestaCAD();
+            return aux.Actualizar(this);
+        }
+
 
 
 
@@ -63,11 +81,13 @@ namespace LibreriaTD.EN
         public List<CocheEN> Coches //Este get devuelve un array con los coches
         {
             get { return coches; }
+            set { coches = value; }
         }
 
         public double Precio//El precio se calcula al añadir un coche a la lista, por lo tanto solo se tendrá el getter
         {
             get { return precio; }
+            set { precio = value; }
         }
 
     }
