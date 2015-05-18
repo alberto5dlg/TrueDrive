@@ -20,30 +20,65 @@
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Nombre </legend>
                     <asp:TextBox ID="Nombre" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="Nombre"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Apellidos </legend>
                     <asp:TextBox ID="Apellidos" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                        ControlToValidate="Apellidos"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes"">
                     <legend class="etiquetaCajon"> Usuario </legend>
                     <asp:TextBox ID="Usuario" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
+                        ControlToValidate="Usuario"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Contraseña </legend>
                     <asp:TextBox ID="Contrasenya"  CssClass="inputDatos" TextMode="Password" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
+                        ControlToValidate="Contrasenya"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Email </legend>
                     <asp:TextBox ID="Email" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
+                        ControlToValidate="Email"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Número de contacto </legend>
                     <asp:TextBox ID="NumContacto" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
+                        ControlToValidate="NumContacto"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
                 <fieldset class="cajonesFlotantes">
                     <legend class="etiquetaCajon"> Dirección </legend>
                     <asp:TextBox ID="Direccion" CssClass="inputDatos" TextMode="SingleLine" runat="server" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server"
+                        ControlToValidate="Direccion"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                        </asp:RequiredFieldValidator>
                 </fieldset>
             </div>
         </div>

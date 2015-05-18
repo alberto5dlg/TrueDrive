@@ -7,7 +7,27 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-
-
-public partial class  NewCar{
+namespace CapaInterfaz {
+    
+    
+    public partial class NewCar {
+        
+        /// <summary>
+        /// Control file1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile file1;
+        
+        /// <summary>
+        /// Control insertar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton insertar;
+    }
 }

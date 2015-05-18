@@ -11,10 +11,20 @@
                   <li id="Usuarios">
                      <label class="registerLabel">Usuario</label>
                         <asp:TextBox runat="server" id="Usuario" CssClass="textBoxUserAccount" />
+                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="Pass"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                          </asp:RequiredFieldValidator>
                  </li>
                   <li id="Contrasenya">
                      <label class="registerLabel">Contraseña</label>
                         <asp:TextBox runat="server" TextMode="Password" id="Pass"  CssClass="textBoxUserAccount" />
+                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator" runat="server"
+                        ControlToValidate="Pass"
+                        ErrorMessage="Campo requerido"
+                        ForeColor="Red">
+                    </asp:RequiredFieldValidator>
                  </li>
                 </ul>
         </div>

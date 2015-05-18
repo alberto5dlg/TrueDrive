@@ -17,8 +17,8 @@
              <ul style="list-style:none;" id="listaregistro1" runat="server">
                   <li runat="server" id="usurio">
                       <label class="registerLabel">Usuario</label>
-                      <asp:TextBox runat="server" ID="Usuario" CssClass="textBoxUserAccount" />
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server"
+                      <asp:TextBox  runat="server" ID="Usuario" CssClass="textBoxUserAccount" />
+                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator" runat="server"
                           ControlToValidate="Usuario"
                           ErrorMessage="Campo requerido"
                           ForeColor="Red">
@@ -27,7 +27,7 @@
                   <li id="Contrasenya">
                       <label class="registerLabel">Contraseña</label>
                       <asp:TextBox runat="server" TextMode="Password" ID="contrasenya" CssClass="textBoxUserAccount" />
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator1" runat="server"
                           ControlToValidate="contrasenya"
                           ErrorMessage="Campo requerido"
                           ForeColor="Red">
@@ -36,7 +36,7 @@
                  <li id="Nombre">
                      <label class="registerLabel">Nombre</label>
                      <asp:TextBox runat="server" ID="nombre" CssClass="textBoxUserAccount" />
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator2" runat="server"
                          ControlToValidate="nombre"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -45,7 +45,7 @@
                    <li id="Apellidos">
                        <label class="registerLabel">Apellidos</label>
                        <asp:TextBox runat="server" ID="apellidos" CssClass="textBoxUserAccount" />
-                       <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
+                       <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator3" runat="server"
                            ControlToValidate="apellidos"
                            ErrorMessage="Campo requerido"
                            ForeColor="Red">
@@ -54,7 +54,7 @@
                  <li id="nif">
                      <label class="registerLabel">Dni</label>
                      <asp:TextBox runat="server" ID="dni" CssClass="textBoxUserAccount" />
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"
+                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator4" runat="server"
                          ControlToValidate="dni"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -63,7 +63,7 @@
                   <li id="E-mail">
                       <label class="registerLabel">E-mail</label>
                       <asp:TextBox runat="server" ID="email" CssClass="textBoxUserAccount" />
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server"
+                      <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator5" runat="server"
                           ControlToValidate="email"
                           ErrorMessage="Campo requerido"
                           ForeColor="Red">
@@ -72,7 +72,7 @@
                  <li id="FechaNac">
                      <label class="registerLabel">Fecha de Nacimiento</label>
                      <asp:TextBox runat="server" TextMode="Date" ID="fecnac" CssClass="textBoxUserAccount" />
-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server"
+                     <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator6" runat="server"
                          ControlToValidate="fecnac"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -87,7 +87,7 @@
                   <li id="dir">
                       <label class="registerLabel">Dirección</label>
                       <asp:TextBox runat="server" ID="direccion" CssClass="textBoxUserAccount" />
-                      <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server"
+                      <asp:RequiredFieldValidator CssClass="registerLabel"  ID="RequiredFieldValidator7" runat="server"
                          ControlToValidate="direccion"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -96,7 +96,7 @@
                 <li id="ciud">
                     <label class="registerLabel">Ciudad</label>
                     <asp:TextBox runat="server" ID="Ciudad" CssClass="textBoxUserAccount" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server"
+                    <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator8" runat="server"
                          ControlToValidate="Ciudad"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -105,7 +105,7 @@
                 <li id="cp">
                     <label class="registerLabel">Cod. Postal</label>
                     <asp:TextBox runat="server" id="codp"  CssClass="textBoxUserAccount" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server"
+                    <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator9" runat="server"
                         ControlToValidate="codp"
                         ErrorMessage="Campo requerido"
                         ForeColor="Red">
@@ -114,7 +114,7 @@
                 <li id="prov">
                     <label class="registerLabel">Provincia</label>
                     <asp:TextBox runat="server" ID="Provincia" CssClass="textBoxUserAccount" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server"
+                    <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator10" runat="server"
                          ControlToValidate="Provincia"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -123,7 +123,7 @@
                 <li id="pais">
                     <label class="registerLabel">Pais</label>
                     <asp:TextBox runat="server" id="Pais"  CssClass="textBoxUserAccount" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server"
+                    <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator11" runat="server"
                         ControlToValidate="Pais"
                         ErrorMessage="Campo requerido"
                         ForeColor="Red">
@@ -132,7 +132,7 @@
                 <li id="Tlfo">
                     <label class="registerLabel">Teléfono</label>
                     <asp:TextBox runat="server" ID="telefono" CssClass="textBoxUserAccount" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server"
+                    <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator12" runat="server"
                          ControlToValidate="telefono"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">
@@ -141,7 +141,7 @@
                 <li id="Interesado">
                     <label class="registerLabel">Interesado en</label>
                     <asp:TextBox runat="server" ID="interesado" CssClass="textBoxUserAccount" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server"
+                    <asp:RequiredFieldValidator CssClass="registerLabel" ID="RequiredFieldValidator13" runat="server"
                          ControlToValidate="interesado"
                          ErrorMessage="Campo requerido"
                          ForeColor="Red">

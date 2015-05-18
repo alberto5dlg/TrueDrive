@@ -28,40 +28,54 @@ namespace CapaInterfaz
         protected void insertStaff_click(object sender, EventArgs e)
         {
             bool insert = false;
-
-            EmpleadoEN emple = new EmpleadoEN();
-           
             ValidacionesEN validacion = new ValidacionesEN();
-            
+            bool validation = true;
+
             //ver si los campos tienen algo y no estan vacios
-            bool usuario = validacion.Vacio(Usuario.Text);
-            bool password = validacion.Vacio(Contrasenya.Text);
-            bool NIF = validacion.Vacio(Nif.Text);
-            bool nombre = validacion.Vacio(Nombre.Text);
-            bool apellidos = validacion.Vacio(Apellidos.Text);
-            bool direccion = validacion.Vacio(Direccion.Text);
-            bool email = validacion.Vacio(Email.Text);
-            //bool NumContacto = validacion.Vacio(NumContacto);
-
-            //ver si los campos respetan la sintaxis mediantes expresiones regulares
-            bool passwordER = validacion.ValidarPassword(Contrasenya.Text);
-            bool nifER = validacion.ValidarNif(Nif.Text);
-            bool nombreER = validacion.ValidarNombrePersona(Nombre.Text);
-            bool apellidosER = validacion.ValidarCiudadPersona(Apellidos.Text);
-            bool emailER = validacion.ValidarEmail(Email.Text);
-
-            
-
-            insert = emple.InsertarEmpleado();
-            if (insert == true)
+            validation = validacion.Vacio(Usuario.Text);
+            validation = validacion.Vacio(Contrasenya.Text);
+            validation = validacion.Vacio(Nif.Text);
+            validation = validacion.Vacio(Nombre.Text);
+            validation = validacion.Vacio(Apellidos.Text);
+            validation = validacion.Vacio(Direccion.Text);
+            validation = validacion.Vacio(Email.Text);
+            //validation = validacion.Vacio(NumContacto);
+            if (validation == false)
             {
-                Response.Write("<script>window.alert('Insertado Correctamente');</script>");
-                if (insert == true)
-                    Response.Redirect("MenuCP.aspx");
-            }
-            else
-                Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+                //si estan todos los campos rellenos entonces pasamos a comprobar si estan bien 
+                //ver si los campos respetan la sintaxis mediantes expresiones regulares
+                bool validation2 = false;
+                validation2 = validacion.ValidarPassword(Contrasenya.Text);
+                validation2 = validacion.ValidarNif(Nif.Text);
+                validation2 = validacion.ValidarNombrePersona(Nombre.Text);
+                validation2 = validacion.ValidarCiudadPersona(Apellidos.Text);
+                validation2 = validacion.ValidarEmail(Email.Text);
+                //Si se cumple lo anterior entonces insertamos 
+                if (validation2 == true)
+                {
+                    EmpleadoEN emple = new EmpleadoEN();
 
+                    emple.Dni = Nif.Text;
+                    emple.Nombre = Nombre.Text;
+                    emple.Apellidos = Apellidos.Text;
+                    emple.Usuario = Usuario.Text;
+                    emple.Pass = Contrasenya.Text;
+                    emple.Email = Email.Text;
+                    emple.NumContacto = Convert.ToInt32(NumContacto.Text);
+                    emple.Direccion = Direccion.Text;
+
+                    insert = emple.InsertarEmpleado();
+                    if (insert == true)
+                    {
+                        Response.Write("<script>window.alert('Insertado Correctamente');</script>");
+                        if (insert == true)
+                            Response.Redirect("MenuCP.aspx");
+                    }
+                    else
+                        Response.Write("<script>window.alert('No se ha conseguido insertar');</script>");
+                }
+
+            }
         }
     }
 }

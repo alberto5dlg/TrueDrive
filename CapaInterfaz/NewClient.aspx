@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
     <form runat="server">
-    <div class="cajaPrincipal1">
+    <div class="cajaPrincipal1" style="min-height:750px;">
         <div style="background:#de3939;color:white;padding:10px;padding-left:50px;">
             <span style="font-size:25px;color:white;"> Ficha Cliente </span>
         </div>

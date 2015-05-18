@@ -8,7 +8,9 @@ namespace LibreriaTD.EN
 {
     public class ValidacionesEN
     {
-        
+        public ValidacionesEN()
+        {
+        }
 
         //ver si un campo pasado por parametro esta vacio o no
         public bool Vacio(string campo)
