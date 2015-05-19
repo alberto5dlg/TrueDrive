@@ -1,0 +1,10 @@
+﻿.productsContainer {
+    background-color: gray;
+    border-radius: 5px;
+    padding-left: 20px;
+    min-height: 250px;
+}
+
+.productContainer img {
+    width: 25%;
+}

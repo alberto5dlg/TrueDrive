@@ -129,6 +129,7 @@
     <Content Include="Styles\LogginStyle.css" />
     <Content Include="Styles\navStyle.css" />
     <Content Include="Styles\PanelDeControl.css" />
+    <Content Include="Styles\Products.css" />
     <Content Include="Styles\RegisterStyle.css" />
     <Content Include="Styles\UserAccountStyle.css" />
     <Content Include="Log_Admin.aspx" />
