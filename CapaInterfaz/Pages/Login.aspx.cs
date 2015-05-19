@@ -26,15 +26,19 @@ namespace CapaInterfaz.Pages
             EmpleadoEN emp = new EmpleadoEN();
             emp.Usuario = Usuario.Text;
             emp.Pass = Pass.Text;
-            
-            if(consult = cli.ConsultarUsuario() == true)
+
+            if (consult = cli.ConsultarUsuario() == true)
+            {
                 Response.Redirect("../Privada/ClientMenu.aspx");
-            
+                Session["Usuario"] = cli.usuCliente;
+            }
             else if (consult = emp.ConsultarEmpleado() == true)
-               Response.Redirect("../MenuCP.aspx");
-            
-           else
-               Response.Write("<script>window.alert('No existe el usuario');</script>");
+            {
+                Session["Empleado"] = emp.Usuario;
+                Response.Redirect("../MenuCP.aspx");
+            }
+            else
+                Response.Write("<script>window.alert('No existe el usuario');</script>");
         }
     }
 }

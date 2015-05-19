@@ -163,7 +163,7 @@ namespace LibreriaTD.CAD
                 SqlDataReader dr = c.ExecuteReader();
                 while (dr.Read())
                 {
-                    coche = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11]);
+                    coche = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11],(string)dr[12]);
                     coches.Add(coche);
                 }
                 dr.Close();

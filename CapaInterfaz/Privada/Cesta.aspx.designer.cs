@@ -10,6 +10,6 @@
 namespace CapaInterfaz {
     
     
-    public partial class Formulario_web115 {
+    public partial class Cesta {
     }
 }

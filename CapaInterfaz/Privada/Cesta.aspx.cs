@@ -7,10 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace CapaInterfaz
 {
-    public partial class Formulario_web115 : System.Web.UI.Page
+    public partial class Cesta : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Response.Write(Session["Usuario"].ToString());
+            if (Session["Usuario"] == null)
+            {
+                Response.Write("<script>window.alert('Debes estar registrado para poder acceder');</script>");
+                Response.Redirect("../Pages/Home.aspx");
+            }
 
         }
     }

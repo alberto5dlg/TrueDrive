@@ -59,6 +59,7 @@ namespace CapaInterfaz
                     try
                     {
                         file1.PostedFile.SaveAs(SaveLocation);
+                        //string SaveLocation2 = Server.MapPath("/ICoches/") + fn;
                         car.Imagen = SaveLocation;
                     }
                     catch (Exception ex)

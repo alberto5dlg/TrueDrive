@@ -27,7 +27,7 @@
                 <section class="preHeader displayGreat displayMedium">
                     <div class="wrap">
                         <div class="soppingCart">
-                           <a href="../Pages/CarritoCompra.aspx"><img src="../Styles/images/carrito_x64.png" /><strong>0</strong></a>
+                           <a href="../Privada/Cesta.aspx"><img src="../Styles/images/carrito_x64.png" /><strong>0</strong></a>
                         </div>
                         <div class="contactBox">                    
                                 <img src="../Styles/images/social/phone.png" /><strong>987 65 43 21</strong>

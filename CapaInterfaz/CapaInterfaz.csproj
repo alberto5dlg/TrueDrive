@@ -64,6 +64,8 @@
     <Content Include="Bonuses.aspx" />
     <Content Include="Cars.aspx" />
     <Content Include="Clients.aspx" />
+    <Content Include="Pages\Electrics.aspx" />
+    <Content Include="Pages\Hybrid.aspx" />
     <Content Include="Privada\Favoritos.aspx" />
     <Content Include="Privada\Cesta.aspx" />
     <Content Include="Privada\ClientMenu.aspx" />
@@ -129,7 +131,6 @@
     <Content Include="Styles\RegisterStyle.css" />
     <Content Include="Styles\UserAccountStyle.css" />
     <Content Include="Log_Admin.aspx" />
-    <Content Include="Pages\CarritoCompra.aspx" />
     <Content Include="Pages\Contacto.aspx" />
     <Content Include="Pages\CuentaUsuario.aspx" />
     <Content Include="Pages\Home.aspx" />
@@ -194,6 +195,20 @@
     </Compile>
     <Compile Include="ControlPanel.Master.designer.cs">
       <DependentUpon>ControlPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Electrics.aspx.cs">
+      <DependentUpon>Electrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Electrics.aspx.designer.cs">
+      <DependentUpon>Electrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Hybrid.aspx.cs">
+      <DependentUpon>Hybrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Hybrid.aspx.designer.cs">
+      <DependentUpon>Hybrid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Privada\Favoritos.aspx.cs">
       <DependentUpon>Favoritos.aspx</DependentUpon>
@@ -292,13 +307,6 @@
     </Compile>
     <Compile Include="Orders.aspx.designer.cs">
       <DependentUpon>Orders.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\CarritoCompra.aspx.cs">
-      <DependentUpon>CarritoCompra.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\CarritoCompra.aspx.designer.cs">
-      <DependentUpon>CarritoCompra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>

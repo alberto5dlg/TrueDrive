@@ -112,7 +112,7 @@ namespace LibreriaTD.CAD
                 SqlCommand c = new SqlCommand(comando, con);
                 SqlDataReader dr = c.ExecuteReader();
                 dr.Read();
-                coche = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11]);
+                coche = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11],(string)dr[12]);
 
                 dr.Close();
             }
@@ -138,8 +138,34 @@ namespace LibreriaTD.CAD
                 SqlDataReader dr = c.ExecuteReader();
                 while (dr.Read())
                 {
-                    coche = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11]);
+                    coche = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11],(string)dr[12]);
                     coches.Add(coche);
+                }
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+
+            }
+            con.Close();
+            return coches.ToArray();
+        }
+
+        public CocheEN[] ExtraerPorTipo(string tipo)
+        {
+            List<CocheEN> coches = new List<CocheEN>();
+            CocheEN nCar;
+            string comando = "select * from coche where tipo='"+tipo+"'";
+            SqlConnection con = new SqlConnection(conexion);
+             try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(comando, con);
+                SqlDataReader dr = c.ExecuteReader();
+                while (dr.Read())
+                {
+                    nCar = new CocheEN((string)dr[0], (string)dr[1], (string)dr[2], double.Parse((string)dr[3]), int.Parse((string)dr[4]), (string)dr[5], double.Parse((string)dr[6]), int.Parse((string)dr[7]), (string)dr[8], int.Parse((string)dr[9]), (string)dr[10], (string)dr[11],(string)dr[12]);
+                    coches.Add(nCar);
                 }
                 dr.Close();
             }

@@ -42,7 +42,7 @@ namespace LibreriaTD.EN
         }
 
         public CocheEN(string matricula, string marca, string modelo, double precio, int puertas, string motor,
-            double km, int anyo, string tipo, int plazas, string cambio, string color)
+            double km, int anyo, string tipo, int plazas, string cambio, string color,string imagen)
         {
             this.marca = marca;
             this.modelo = modelo;
@@ -56,6 +56,7 @@ namespace LibreriaTD.EN
             this.cambio = cambio;
             this.color = color;
             this.matricula = matricula;
+            this.imagen = imagen;
         }
         // Getters y  Setters basicos para el funcionamiento de la entidad
 
@@ -181,6 +182,12 @@ namespace LibreriaTD.EN
             this.color = coche.color;
             this.matricula = coche.matricula;
             return exito;
+        }
+
+        public CocheEN[] ExtraerTipo(string tipo)
+        {
+            CocheCAD ncar = new CocheCAD();
+            return ncar.ExtraerPorTipo(tipo);
         }
     }
 }
