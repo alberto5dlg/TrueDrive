@@ -62,16 +62,18 @@ namespace LibreriaTD.CAD
         {
             bool isModify = false;
             string comando = "UPDATE Cliente SET nombre='"+c.nombreCliente+"',apellidos='"+c.apellidosCliente+"',email='"+c.emailCliente+"',direccion='"+c.direccionCliente+"',ciudad='"+c.ciudadCliente+"',pais='"+c.paisCliente+"',telefono='"+c.telefonoCliente+"',interesadoEn='"+c.interesadoEnCliente+"',codigopostal="+c.codpCliente+",fechaNacimiento='"+c.anyoNacimientoCliente+"',usuario='"+c.usuCliente+"',contraseña='"+c.passCliente+"',provincia='"+c.provCliente+"' WHERE nif='"+c.nifCliente+"'";
-
             SqlConnection con = new SqlConnection(conexion);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(comando, con);
-          
 
-            if (cmd.ExecuteNonQuery() == 1)
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(comando, con);
+                cmd.ExecuteNonQuery();
                 isModify = true;
-            else
-                isModify = false;
+            }
+            catch (Exception e)
+            { }
+
 
             con.Close();
             return isModify;
@@ -115,7 +117,7 @@ namespace LibreriaTD.CAD
                 SqlDataReader dr = c.ExecuteReader();
                 dr.Read();
                 cliente = new ClienteEN((string)dr[0],(string)dr[1],(string)dr[2],(string)dr[3],(string)dr[4],
-                        (string)dr[5],(string)dr[6],(string)dr[7],(string)dr[8],(int)dr[9],dr[10].ToString(),
+                        (string)dr[5],(string)dr[6],(string)dr[7],(string)dr[8],(int)dr[9],(string)dr[10],
                         (string)dr[11],(string)dr[12],(string)dr[13]);
                
                 dr.Close();

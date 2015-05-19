@@ -20,7 +20,7 @@
                      <a class="registerLabel"; href="../Pages/Home.aspx" rel="external"><font size ="3"> Mi lista de favoritos</font></a>
                 </li>
                 <li>
-                     <a class="registerLabel"; href="../Pages/Home.aspx" rel="external"><font size ="3"> Cerrar Sesión</font></a>
+                     <a class="registerLabel"; href="../Privada/Cerrar.aspx" rel="external"><font size ="3"> Cerrar Sesión</font></a>
                 </li>
             </ul>
          </div>

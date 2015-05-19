@@ -28,7 +28,7 @@
                  </li>
                  <li id="nif">
                      <label class="registerLabel">Dni</label>
-                        <asp:TextBox runat="server" id="Dni" CssClass="textBoxUserAccount" />
+                        <asp:TextBox runat="server" ReadOnly="true" id="Dni" CssClass="textBoxUserAccount" />
                  </li>
                   <li id="E-mail">
                      <label class="registerLabel">E-mail</label>
