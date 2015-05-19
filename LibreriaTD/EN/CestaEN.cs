@@ -7,7 +7,7 @@ using LibreriaTD.CAD;
 namespace LibreriaTD.EN
 {
 
-    class CestaEN
+    public class CestaEN
     {
         private string idCliente;
         private List<CocheEN> coches;

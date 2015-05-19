@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using LibreriaTD.EN;
+using LibreriaTD.CAD;
+using System.Data;
 
 namespace CapaInterfaz
 {
@@ -11,13 +14,37 @@ namespace CapaInterfaz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (Session["Usuario"] == null)
             {
                 Response.Write("<script>window.alert('Debes estar registrado para poder acceder');</script>");
                 Response.Redirect("../Pages/Home.aspx");
             }
+            else
+            {
+                ClienteEN cli = new ClienteEN();
+                cli = cli.sacarCliente(Session["Usuario"].ToString());
+                CestaEN cesta = new CestaEN();
+                cesta.SacarCesta(cli.nifCliente);
+                DataTable tabla = new DataTable();
+                tabla.Columns.Add("Imagen");
+                tabla.Columns.Add("Marca");
+                tabla.Columns.Add("Modelo");
+                tabla.Columns.Add("Precio");
+                precio.Text = "Precio total: " + cesta.Precio;
+                for (int i = 0; i < cesta.Coches.Count; i++)
+                {
+                    DataRow row = tabla.NewRow();
+                    row["Imagen"] = cesta.Coches[i].Imagen;
+                    row["Marca"] = cesta.Coches[i].Marca;
+                    row["Modelo"] = cesta.Coches[i].Modelo;
+                    row["Precio"] = cesta.Coches[i].Precio;
+                    tabla.Rows.Add(row);
+                }
 
+                ListProducts.DataSource = tabla;
+                ListProducts.DataBind();
+            }
         }
     }
 }
