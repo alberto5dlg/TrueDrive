@@ -60,14 +60,13 @@ namespace CapaInterfaz.Privada
                     file1.Value.EndsWith(".png") || file1.Value.EndsWith(".PNG"))
                 {
                     string fn = System.IO.Path.GetFileName(file1.PostedFile.FileName);
-                    string SaveLocation = Server.MapPath(@"../ICoches") + "//" + fn;
+                    string SaveLocation = Server.MapPath(@"../Styles/images/products") + "//" + fn;
 
                     try
                     {
                         file1.PostedFile.SaveAs(SaveLocation);
                         Label1.Text = "El archivo se ha cargado.";
-                        //string SaveLocation2 = Server.MapPath(@"../ICoches/")+ fn;
-                        car.Imagen = SaveLocation;
+                        car.Imagen = fn;
                     }
                     catch (Exception ex)
                     {

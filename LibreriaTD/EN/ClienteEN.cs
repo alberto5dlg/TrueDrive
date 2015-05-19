@@ -177,5 +177,12 @@ namespace LibreriaTD.EN
             return consult;
         }
 
+        public ClienteEN sacarCliente(string usuario)
+        {
+            ClienteCAD cli = new ClienteCAD();
+            ClienteEN user = cli.sacarCliente(usuario);
+            return user;
+        }
+
     }
 }

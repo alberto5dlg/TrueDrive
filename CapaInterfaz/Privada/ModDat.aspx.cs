@@ -23,6 +23,28 @@ namespace CapaInterfaz.Privada
                 Response.Write("<script>window.alert('Debes estar registrado para poder acceder');</script>");
                 Response.Redirect("../Pages/Home.aspx");
             }
+            else
+            {
+                string user = Session["Usuario"].ToString();
+                ClienteEN en = new ClienteEN();
+                ClienteEN c = en.sacarCliente(user);
+                
+                Usuario.Text = c.usuCliente;
+                Contrasenya.Text = c.passCliente;
+                Nombre.Text = c.nombreCliente;
+                Apellidos.Text = c.apellidosCliente;
+                Dni.Text = c.nifCliente;
+                Email.Text = c.emailCliente;
+                Fecnac.Text = c.anyoNacimientoCliente;
+                Direccion.Text = c.direccionCliente;
+                Ciudad.Text = c.ciudadCliente;
+                Codp.Text = Convert.ToString(c.codpCliente);
+                Provincia.Text = c.provCliente;
+                Pais.Text = c.paisCliente;
+                Telefono.Text = c.telefonoCliente;
+                Interesado.Text = c.interesadoEnCliente;
+                Response.Write("<script>window.alert('" + c.usuCliente+ " JAJAJ');</script>");
+            }
         }
 
         protected void Button_Click(object sender, EventArgs e)
@@ -47,7 +69,10 @@ namespace CapaInterfaz.Privada
 
             modify = en.ModCliente();
             if (modify == true)
+            {
                 Response.Write("<script>window.alert('Se han modificado sus datos correctamente');</script>");
+                Page_Load(sender,e);
+            }
             else
                 Response.Write("<script>window.alert('Algun error en la modificacion, consulte con nuestros tecnicos');</script>");
 
