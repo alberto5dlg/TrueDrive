@@ -54,13 +54,13 @@ namespace CapaInterfaz
                     file1.Value.EndsWith(".png") || file1.Value.EndsWith(".PNG"))
                 {
                     string fn = System.IO.Path.GetFileName(file1.PostedFile.FileName);
-                    string SaveLocation = Server.MapPath(@"/ICoches") + "//" + fn;
+                    string SaveLocation = Server.MapPath(@"/Styles/images/products") + "//" + fn;
 
                     try
                     {
                         file1.PostedFile.SaveAs(SaveLocation);
                         //string SaveLocation2 = Server.MapPath("/ICoches/") + fn;
-                        car.Imagen = SaveLocation;
+                        car.Imagen = fn;
                     }
                     catch (Exception ex)
                     {
