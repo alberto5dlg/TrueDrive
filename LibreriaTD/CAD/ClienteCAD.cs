@@ -115,7 +115,7 @@ namespace LibreriaTD.CAD
                 SqlDataReader dr = c.ExecuteReader();
                 dr.Read();
                 cliente = new ClienteEN((string)dr[0],(string)dr[1],(string)dr[2],(string)dr[3],(string)dr[4],
-                        (string)dr[5],(string)dr[6],(string)dr[7],(string)dr[8],(int)dr[9],(string)dr[10],
+                        (string)dr[5],(string)dr[6],(string)dr[7],(string)dr[8],(int)dr[9],dr[10].ToString(),
                         (string)dr[11],(string)dr[12],(string)dr[13]);
                
                 dr.Close();
