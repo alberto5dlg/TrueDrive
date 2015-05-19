@@ -18,7 +18,11 @@ namespace CapaInterfaz.Privada
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] == null)
+            {
+                Response.Write("<script>window.alert('Debes estar registrado para poder acceder');</script>");
+                Response.Redirect("../Pages/Home.aspx");
+            }
         }
 
         protected void Button_Click(object sender, EventArgs e)

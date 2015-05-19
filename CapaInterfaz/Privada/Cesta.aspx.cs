@@ -11,7 +11,7 @@ namespace CapaInterfaz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Response.Write(Session["Usuario"].ToString());
+            
             if (Session["Usuario"] == null)
             {
                 Response.Write("<script>window.alert('Debes estar registrado para poder acceder');</script>");

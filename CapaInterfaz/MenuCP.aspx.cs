@@ -11,7 +11,11 @@ namespace CapaInterfaz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Empleado"] == null)
+            {
+                Response.Write("<script>window.alert('Debes ser empleado para poder acceder');</script>");
+                Response.Redirect("~/Pages/Home.aspx");
+            }
         }
     }
 }

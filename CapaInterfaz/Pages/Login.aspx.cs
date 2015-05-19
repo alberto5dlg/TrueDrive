@@ -29,11 +29,14 @@ namespace CapaInterfaz.Pages
 
             if (consult = cli.ConsultarUsuario() == true)
             {
-                Response.Redirect("../Privada/ClientMenu.aspx");
+                Session.Add("Usuario",cli.usuCliente);
                 Session["Usuario"] = cli.usuCliente;
+                Response.Redirect("../Privada/ClientMenu.aspx");
+                
             }
             else if (consult = emp.ConsultarEmpleado() == true)
             {
+                Session.Add("Empleado", emp.Usuario);
                 Session["Empleado"] = emp.Usuario;
                 Response.Redirect("../MenuCP.aspx");
             }
