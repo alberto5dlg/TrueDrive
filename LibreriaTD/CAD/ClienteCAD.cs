@@ -105,21 +105,19 @@ namespace LibreriaTD.CAD
 
         public ClienteEN sacarCliente(string usuario)
         {
-            ClienteEN cli = new ClienteEN();
-            string comando = "select * from Cliente where usuario = '" + usuario + "'";
-
+            ClienteEN cliente = new ClienteEN();
+            string comando = "SELECT * FROM Cliente WHERE usuario='" + usuario + "'";
             SqlConnection con = new SqlConnection(conexion);
             try
             {
-
                 con.Open();
                 SqlCommand c = new SqlCommand(comando, con);
                 SqlDataReader dr = c.ExecuteReader();
                 dr.Read();
-                cli = new ClienteEN((string)dr[0],(string)dr[1],(string)dr[2],(string)dr[3],(string)dr[4],
+                cliente = new ClienteEN((string)dr[0],(string)dr[1],(string)dr[2],(string)dr[3],(string)dr[4],
                         (string)dr[5],(string)dr[6],(string)dr[7],(string)dr[8],(int)dr[9],(string)dr[10],
                         (string)dr[11],(string)dr[12],(string)dr[13]);
-
+               
                 dr.Close();
             }
             catch (Exception e)
@@ -127,8 +125,7 @@ namespace LibreriaTD.CAD
 
             }
             con.Close();
-
-            return cli;
+            return cliente;
         }
     }
 }
