@@ -2,11 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
-    <asp:GridView ID="GridElectrico" runat="server" ViewStateMode="Enabled" AllowPaging="true">
-        <EmptyDataTemplate><h2> No hay coches electricos </h2></EmptyDataTemplate>
-       
-    </asp:GridView>
+    <ul class="lProducts">
+                        <asp:ListView ID="ListProducts" runat="server">
+                            <ItemTemplate>
+                                <li>
+                                    <div>
+                                        <label><%#Eval("modelo")%></label>
+                                        <label><%#Eval("marca")%></label>
+                                        <label><%#Eval("precio")%></label>
+                                        <img src="../Styles/images/products/<%#Eval("imagen")%>" />
+                                    </div>
+
+                                </li>
+                            </ItemTemplate>
+                        </asp:ListView>
+    </ul>
         
-        </form>
+        
 </asp:Content>

@@ -13,12 +13,12 @@ namespace CapaInterfaz {
     public partial class Electrics {
         
         /// <summary>
-        /// Control GridElectrico.
+        /// Control ListProducts.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridElectrico;
+        protected global::System.Web.UI.WebControls.ListView ListProducts;
     }
 }

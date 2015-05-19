@@ -35,8 +35,8 @@ namespace CapaInterfaz
                 tabla.Rows.Add(row);
             }
 
-            GridElectrico.DataSource = tabla;
-            GridElectrico.DataBind();
+            ListProducts.DataSource = tabla;
+            ListProducts.DataBind();
         }
     }
 }
