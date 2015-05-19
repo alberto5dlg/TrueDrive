@@ -10,10 +10,23 @@
                             <ItemTemplate>
                                 <li>
                                     <div class="productContainer">
-                                        <label><%#Eval("modelo")%></label>
-                                        <label><%#Eval("marca")%></label>
-                                        <label><%#Eval("precio")%></label>
-                                        <img src="../Styles/images/products/<%#Eval("imagen")%>" />
+                                        <div class="productImage">
+                                            <img src="../Styles/images/products/<%#Eval("imagen")%>" />
+                                            <div class="shopButton">
+                                                <img src="../Styles/images/shopButton.png" />
+                                            </div>
+                                        </div>
+                                        <div class="productData">
+                                            <p><label>Modelo: <%#Eval("modelo")%></label></p>
+                                            <p><label>Marca: <%#Eval("marca")%></label></p>
+                                            <p><label>Tipo: <%#Eval("tipo")%></label></p>
+                                            <p><label>Puertas: <%#Eval("puertas")%></label></p>
+                                            <p><label>Cambio: <%#Eval("cambio")%></label></p>
+                                            <p><label>Color: <%#Eval("color")%></label></p>
+                                            <p><label>Precio: <%#Eval("precio")%> €</label></p>
+                                        </div>
+                                        
+                                        
                                     </div>
 
                                 </li>
