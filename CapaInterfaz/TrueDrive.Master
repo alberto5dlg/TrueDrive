@@ -90,21 +90,11 @@
                                     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/Productos.aspx">Productos</asp:HyperLink>
                                     <ul>
                                         <li>
-                                            <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Pages/Productos.aspx">Electricos</asp:HyperLink>
-                                            <ul class="secondLevel">                                 
-                                                <li>
-                                                    <asp:HyperLink ID="HyperLink24" runat="server" NavigateUrl="~/Pages/Productos.aspx">Marca</asp:HyperLink>
-                                                </li>
-                                            </ul>
+                                            <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/Pages/Electrics.aspx">Electricos</asp:HyperLink>                                        
                                         </li>
                                          <li>
-                                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Pages/Productos.aspx">Hibridos</asp:HyperLink>
-                                            <ul class="secondLevel">                                 
-                                                <li>
-                                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Pages/Productos.aspx">Marca</asp:HyperLink>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Pages/Hybrid.aspx">Hibridos</asp:HyperLink>
+                                         </li>
                                     </ul>
                                 </li>
                                 <li>

@@ -14,10 +14,10 @@
                      <a class="registerLabel"; href="../Privada/ModDat.aspx" rel="external"><font size ="3"> Modifica tus datos</font></a>
                 </li>
                 <li>
-                     <a class="registerLabel"; href="../Pages/Home.aspx" rel="external"><font size ="3"> Mi Cesta</font></a>
+                     <a class="registerLabel"; href="../Privada/Cesta.aspx" rel="external"><font size ="3"> Mi Cesta</font></a>
                 </li>
                 <li>
-                     <a class="registerLabel"; href="../Pages/Home.aspx" rel="external"><font size ="3"> Mi lista de favoritos</font></a>
+                     <a class="registerLabel"; href="../Privada/Favoritos.aspx" rel="external"><font size ="3"> Mi lista de favoritos</font></a>
                 </li>
                 <li>
                      <a class="registerLabel"; href="../Privada/Cerrar.aspx" rel="external"><font size ="3"> Cerrar Sesión</font></a>
