@@ -16,7 +16,7 @@
                         ErrorMessage="Campo requerido"
                         ForeColor="Red">
                           </asp:RequiredFieldValidator>
-                 </li>
+                  </li>
                   <li id="Contrasenya">
                      <label class="registerLabel">Contraseña</label>
                         <asp:TextBox runat="server" TextMode="Password" id="Pass"  CssClass="textBoxUserAccount" />
@@ -25,7 +25,7 @@
                         ErrorMessage="Campo requerido"
                         ForeColor="Red">
                     </asp:RequiredFieldValidator>
-                 </li>
+                  </li>
                 </ul>
         </div>
          <div style="float:left; padding-left:30%;width:42%;padding-bottom:15px;" class =" contentInside">

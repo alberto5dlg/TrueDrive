@@ -1,7 +1,12 @@
 ﻿
 .lProducts {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+    .lProducts li{
+        margin-bottom: 20px;
+    }
 
 .productsContainer {
     padding-left: 20px;
