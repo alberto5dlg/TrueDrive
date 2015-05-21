@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using LibreriaTD.EN;
-using System.Data.SqlClient;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data.SqlTypes;
-using System.Data.Common;
+using LibreriaTD.EN;
 using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Text;
 
 
 namespace LibreriaTD.CAD
 {
-    class EmpleadoCAD
+    public class EmpleadoCAD
     {
         private string conexion;
         public EmpleadoCAD()
@@ -106,6 +104,35 @@ namespace LibreriaTD.CAD
             }
 
             return emp;
+        }
+
+        //Método que saca toda la información de un empleado asociada a un dni
+        //devuelve verdadero y la informacion si se ha encontrado
+        public EmpleadoEN[] MostrarEmpleados()
+        {
+            List<EmpleadoEN> empleados = new List<EmpleadoEN>();
+            EmpleadoEN nEmple;
+            string cmd = "select * from empleado";
+
+            SqlConnection con = new SqlConnection(conexion);
+            try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(cmd, con);
+                SqlDataReader dr = c.ExecuteReader();
+                while (dr.Read())
+                {
+                    nEmple = new EmpleadoEN((string)dr[0], (string)dr[1], (string)dr[2],
+                        (string)dr[3], int.Parse((string)dr[3]), (string)dr[5], (string)dr[6], (string)dr[7]);
+                }
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+            }
+
+            con.Close();
+            return empleados.ToArray();
         }
 
         //Método que actualiza la información de un empleado en la BD

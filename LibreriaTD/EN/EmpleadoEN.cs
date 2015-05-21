@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Web;
 using LibreriaTD.CAD;
 
 
@@ -137,6 +137,12 @@ namespace LibreriaTD.EN
             EmpleadoCAD con = new EmpleadoCAD();
             consult = con.ConsultarEmpleado(this.Usuario, this.Pass);
             return consult;
+        }
+
+        public EmpleadoEN[] MostrarEmpleados()
+        {
+            EmpleadoCAD nemple = new EmpleadoCAD();
+            return nemple.MostrarEmpleados();
         }
     }
 }
