@@ -14,35 +14,16 @@
                             </div>
                         </div>
                         <div class="productData">
-                            <p>
-                                <label>Dni: <%#Eval("dni")%></label>
-                            </p>
-                            <p>
-                                <label>Nombre: <%#Eval("nombre")%></label>
-                            </p>
-                            <p>
-                                <label>Apellidos: <%#Eval("apellidos")%></label>
-                            </p>
-                            <p>
-                                <label>Direccion: <%#Eval("direccion")%></label>
-                            </p>
-                            <p>
-                                <label>numContaco: <%#Eval("numContacto")%></label>
-                            </p>
-                            <p>
-                                <label>Email: <%#Eval("email")%></label>
-                            </p>
-                            <p>
-                                <label>Usuario: <%#Eval("usuario")%></label>
-                            </p>
-                            <p>
-                                <label>pASS: <%#Eval("pass")%></label>
-                            </p>
+                            <p><label>Dni: <%#Eval("dni")%></label></p>
+                            <p><label>Nombre: <%#Eval("nombre")%></label></p>
+                            <p><label>Apellidos: <%#Eval("apellidos")%></label></p>
+                            <p><label>Direccion: <%#Eval("direccion")%></label></p>
+                            <p><label>numContaco: <%#Eval("numContacto")%></label></p>
+                            <p><label>Email: <%#Eval("email")%></label></p>
+                            <p><label>Usuario: <%#Eval("usuario")%></label></p>
+                            <p><label>pASS: <%#Eval("pass")%></label></p>
                         </div>
-
-
                     </div>
-
                 </li>
             </ItemTemplate>
         </asp:ListView>

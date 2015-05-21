@@ -123,12 +123,14 @@ namespace LibreriaTD.CAD
                 while (dr.Read())
                 {
                     nEmple = new EmpleadoEN((string)dr[0], (string)dr[1], (string)dr[2],
-                        (string)dr[3], int.Parse((string)dr[3]), (string)dr[5], (string)dr[6], (string)dr[7]);
+                        (string)dr[3], (int)dr[4], (string)dr[5], (string)dr[6], (string)dr[7]);
+                    empleados.Add(nEmple);
                 }
                 dr.Close();
             }
             catch (Exception e)
             {
+                return null;    
             }
 
             con.Close();
