@@ -5,7 +5,7 @@
      <link href="../Styles/RegisterStyle.css" type="text/css" rel="stylesheet"/>
     <form runat="server">
         <div id="Div1" style=" padding-bottom:20px; padding-top:20px;" class ="contentWrapper" runat="server">
-            <h1  class="headerWrap">Contatacte con nosotros</h1>
+            <h1  class="headerWrap">Contacte con nosotros</h1>
             <div style="float:left; padding-left:100px;padding-top:10px;" class =" contentInside" runat="server">
                 
                  <asp:Label ID="nombrel" runat="server" CssClass="registerLabel">Nombre</asp:Label>
