@@ -1,29 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Web;
 using LibreriaTD.CAD;
 
 namespace LibreriaTD.EN
 {
-    class BonificacionesEN
+    public class BonificacionesEN
     {
-        private string idBonificacion;
-        private double cantidadBonificacion;
+        private int idBonificacion;
         private string descripcion;
-        private double cantidadGastada;
+        private decimal cantidadBonificacion;
+        private string franja;
+
+         public BonificacionesEN()
+        {
+            this.idBonificacion = -1;
+            this.descripcion = null;
+            this.cantidadBonificacion = -1;
+            this.franja = null;
+        }
+
+         public BonificacionesEN(int idBonificacion, string descripcion, decimal cantidadBonificacion, string franja)
+        {
+            this.idBonificacion = idBonificacion;
+            this.cantidadBonificacion = cantidadBonificacion;
+            this.descripcion = descripcion;
+            this.franja = franja;
+        }
 
         //Getters y Setters
-        public string Id
+         public int IdBonificacion
         {
             get { return idBonificacion; }
             set { idBonificacion = value; }
-        }
-
-        public double CantidadBonificacion
-        {
-            get { return cantidadBonificacion; }
-            set { cantidadBonificacion = value; }
         }
 
         public string Descripcion
@@ -32,30 +42,22 @@ namespace LibreriaTD.EN
             set { descripcion = value; }
         }
 
-        public double CantidadGastada
+        public decimal CantidadBonificacion
         {
-            get { return cantidadGastada; }
-            set { cantidadGastada = value; }
+            get { return cantidadBonificacion; }
+            set { cantidadBonificacion = value; }
         }
 
-        //Métodos
-        //Inserta una bonificación en la BD
-        public void Insertar()
+        public string Franja
         {
-            BonificacionesCAD aux = new BonificacionesCAD();
-            aux.Insertar(this);
+            get { return franja; }
+            set { franja = value; }
         }
-        //Borra una bonificación de la BD
-        public void Borrar()
+
+        public BonificacionesEN[] MostrarBonificaciones()
         {
-            BonificacionesCAD aux = new BonificacionesCAD();
-            aux.Borrar(this);
-        }
-        //Actualiza la bonificación
-        public void Actualizar()
-        {
-            BonificacionesCAD aux = new BonificacionesCAD();
-            aux.Actualizar(this);
+            BonificacionesCAD nemple = new BonificacionesCAD();
+            return nemple.MostrarBonificaciones();
         }
     }
 }

@@ -1,54 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Web;
 using LibreriaTD.EN;
+using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using System.Text;
 
 namespace LibreriaTD.CAD
 {
-    class BonificacionesCAD
+    public class BonificacionesCAD
     {
+
+        private string conexion;
+        
         //private string conexion;//Variable que se usará para guardar la cadena de conexión con la BD
 
         public BonificacionesCAD()
         {
-
+             conexion = @"Data Source=(LocalDB)\v11.0;AttachDbFilename='|DataDirectory|\TrueDriveBD.mdf';Integrated Security=True";
         }
 
-        //Inserta una bonificación en la BD
-        public bool Insertar(BonificacionesEN bono)
+        public BonificacionesEN[] MostrarBonificaciones()
         {
-            return true;
-        }
+            List<BonificacionesEN> bonificaciones = new List<BonificacionesEN>();
+            BonificacionesEN nBoni;
+            string cmd = "select * from bonificaciones";
 
-        //Borra una bonificación de la BD
-        public bool Borrar(BonificacionesEN bono)
-        {
-            return true;
-        }
+            SqlConnection con = new SqlConnection(conexion);
+            try
+            {
+                con.Open();
+                SqlCommand c = new SqlCommand(cmd, con);
+                SqlDataReader dr = c.ExecuteReader();
+                while (dr.Read())
+                {
+                    nBoni = new BonificacionesEN((int)dr[0], (string)dr[1], (decimal)dr[2], (string)dr[3]);
+                    bonificaciones.Add(nBoni);
+                }
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
 
-        //Actualiza la cantidad de bonificación en la BD
-        public void ActualizarCantidadBonificacion(BonificacionesEN bono)
-        {
-
-        }
-
-        //Actualiza la descripción de la bonificación en la BD
-        public bool ActualizarDescripcion(BonificacionesEN bono)
-        {
-            return true;
-        }
-
-        //Actualiza la cantidad a gastar en la BD
-        public bool ActualizarCantidadGastada(BonificacionesEN bono)
-        {
-            return true;
-        }
-
-        //Actualiza una bonificación en la BD
-        public bool Actualizar(BonificacionesEN bono)
-        {
-            return true;
+            con.Close();
+            return bonificaciones.ToArray();
         }
     }
 }

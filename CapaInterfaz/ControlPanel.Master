@@ -73,7 +73,7 @@
                             </ul>
                         </li>
                         <li>
-                            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/BonusesList.aspx">Bonificaciones</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/BonusList.aspx">Bonificaciones</asp:HyperLink>
                             <ul>
                                 <li>
                                     <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/NewBonuse.aspx">Nueva bonificacion</asp:HyperLink>
