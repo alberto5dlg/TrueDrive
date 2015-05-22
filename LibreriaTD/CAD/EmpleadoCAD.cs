@@ -81,29 +81,30 @@ namespace LibreriaTD.CAD
         {
             string cmd = "select * from empleado where dni = '" + dni + "'";
 
+            List<EmpleadoEN> empleados = new List<EmpleadoEN>();
+            EmpleadoEN nEmple = new EmpleadoEN();
+
             SqlConnection con = new SqlConnection(conexion);
-            EmpleadoEN emp = new EmpleadoEN();
             try
             {
                 con.Open();
                 SqlCommand c = new SqlCommand(cmd, con);
                 SqlDataReader dr = c.ExecuteReader();
-                dr.Read();
-
-                emp = new EmpleadoEN((string)dr[0], (string)dr[1], (string)dr[2],
-                    (string)dr[3], (int)dr[4], (string)dr[5], (string)dr[6], (string)dr[7]);
+                while (dr.Read())
+                {
+                    nEmple = new EmpleadoEN((string)dr[0], (string)dr[1], (string)dr[2],
+                        (string)dr[3], (int)dr[4], (string)dr[5], (string)dr[6], (string)dr[7]);
+                    empleados.Add(nEmple);
+                }
                 dr.Close();
             }
             catch (Exception e)
             {
                 return null;
             }
-            finally
-            {
-                con.Close();
-            }
 
-            return emp;
+            con.Close();
+            return nEmple;
         }
 
         //Método que saca toda la información de un empleado asociada a un dni
@@ -188,5 +189,6 @@ namespace LibreriaTD.CAD
             con.Close();
             return consult;
         }
+
     }
 }
