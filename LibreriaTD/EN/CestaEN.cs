@@ -59,8 +59,14 @@ namespace LibreriaTD.EN
 
         public void DeleteCoche(CocheEN coche)
         {
-            coches.Remove(coche);
-            precio -= coche.Precio;
+            for (int i = 0; i < coches.Count; i++)
+            {
+                if (coches[i].Matricula == coche.Matricula)
+                {
+                    coches.RemoveAt(i);
+                    precio -= coche.Precio;
+                }
+            }
         }
 
         public bool Actualizar()

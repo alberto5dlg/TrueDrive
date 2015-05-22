@@ -1,0 +1,49 @@
+
+.lProducts {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+    .lProducts li{
+        margin-bottom: 20px;
+    }
+
+.productsContainer {
+    padding-left: 20px;
+    min-height: 250px;
+    width: 620px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.productImage {
+    float: left;
+    width: 300px;
+    padding-left: 20px;
+    margin-right: 20px;
+    min-height: 200px;
+}
+
+.productData {
+    background-color:#fad6d6;
+    border-radius: 5px;
+    float:left;
+    width: 300px;
+    padding-left: 20px;
+    min-height: 145px;
+}
+
+    .productData p {
+        font-style: italic;
+    }
+.productImage img {
+    width: 100%;
+    border-radius: 5px;
+    vertical-align: central;
+}
+
+.InfoPrecio
+{
+    border: 2px solid black;
+    padding: 10px 500px 10px 10px;
+}
