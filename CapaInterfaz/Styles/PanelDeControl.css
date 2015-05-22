@@ -8,7 +8,7 @@
     border-radius:10px;
     background:#ededed;
     float:left;
-    height:550px;
+    min-height:600px;
 }
 
 .cajaPrincipal2 {

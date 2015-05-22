@@ -65,6 +65,7 @@
     <Content Include="Cars.aspx" />
     <Content Include="Clients.aspx" />
     <Content Include="BonusList.aspx" />
+    <Content Include="CarsList.aspx" />
     <Content Include="StaffList.aspx" />
     <Content Include="Privada\Cerrar.aspx" />
     <Content Include="Pages\Electrics.aspx" />
@@ -201,6 +202,13 @@
     </Compile>
     <Compile Include="BonusList.aspx.designer.cs">
       <DependentUpon>BonusList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarsList.aspx.cs">
+      <DependentUpon>CarsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarsList.aspx.designer.cs">
+      <DependentUpon>CarsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="StaffList.aspx.cs">
       <DependentUpon>StaffList.aspx</DependentUpon>

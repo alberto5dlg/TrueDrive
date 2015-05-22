@@ -43,9 +43,11 @@ namespace CapaInterfaz
                 row["Pass"] = listaEmpleado[i].Pass;
                 tabla.Rows.Add(row);
             }
+            
 
             ListProducts.DataSource = tabla;
             ListProducts.DataBind();
         }
+
     }
 }

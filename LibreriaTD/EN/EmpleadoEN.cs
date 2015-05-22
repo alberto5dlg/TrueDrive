@@ -144,5 +144,13 @@ namespace LibreriaTD.EN
             EmpleadoCAD nemple = new EmpleadoCAD();
             return nemple.MostrarEmpleados();
         }
+
+        public EmpleadoEN SacarEmpleado(string dni)
+        {
+            EmpleadoCAD nemple = new EmpleadoCAD();
+            return nemple.SacarEmpleado(dni);
+        }
+
+       
     }
 }

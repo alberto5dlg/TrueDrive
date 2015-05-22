@@ -10,7 +10,7 @@
 namespace CapaInterfaz {
     
     
-    public partial class Staff {
+    public partial class CarsList {
         
         /// <summary>
         /// Control ListProducts.

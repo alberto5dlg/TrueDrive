@@ -1,32 +1,36 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Staff.aspx.cs"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ControlPanel.Master" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="CapaInterfaz.Staff" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headControlPanel" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentControlPanel" runat="server">
     
     <div class="cajaPrincipal1">
+        <asp:ListView ID="ListProducts" runat="server">
+            <itemtemplate>
+                
+
         <div style="background:#de3939;color:white;padding:10px;padding-left:50px;">
             <span style="font-size:25px;color:white;"> Ficha Empleado </span>
         </div>
         <div style="padding:50px;">
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> NIF </legend>
-                <input name="nif" type="text" id="Nif" class="inputDatos" />
+                <input name="nif" type="text" id="Nif" value="<%#Eval("dni")%>" class="inputDatos" />
             </fieldset>
             <fieldset class="cajonesFlotantes"">
                 <legend class="etiquetaCajon"> Usuario </legend>
-                <input name="usuario" type="text" id="Usuario" class="inputDatos"/>
+                <input name="usuario" type="text" id="Usuario" value="<%#Eval("usuario")%>" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Contraseña </legend>
-                <input name="contraseña" type="text" id="contraseña" class="inputDatos"/>
+                <input name="contraseña" type="text" id="contraseña" value="<%#Eval("pass")%>" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Email </legend>
-                <input name="email" type="text" id="Email" class="inputDatos"/>
+                <input name="email" type="text" id="Email" value="<%#Eval("email")%>" class="inputDatos"/>
             </fieldset>
             <fieldset class="cajonesFlotantes">
                 <legend class="etiquetaCajon"> Telefono </legend>
-                <input name="telefono" type="text" id="Telefono" class="inputDatos"/>
+                <input name="telefono" type="text" id="Telefono" value="<%#Eval("numContacto")%>" class="inputDatos"/>
             </fieldset>
         </div>
     </div>
@@ -47,6 +51,8 @@
             </div>
         </div>
     </div>
-
+    
+            </itemtemplate>
+        </asp:ListView>
 </asp:Content>
 
