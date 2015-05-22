@@ -7,19 +7,18 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-
 namespace CapaInterfaz {
     
-
-public partial class Cars {
     
-    /// <summary>
-    /// Control ListProducts.
-    /// </summary>
-    /// <remarks>
-    /// Campo generado automáticamente.
-    /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ListView ListProducts;
-}
+    public partial class CarsList {
+        
+        /// <summary>
+        /// Control ListProducts.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListProducts;
+    }
 }

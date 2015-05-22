@@ -10,15 +10,14 @@ using System.Data;
 
 namespace CapaInterfaz
 {
-    public partial class Cars : System.Web.UI.Page
+    public partial class CarsList : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string matricula = Request.QueryString["matricula"];
-            CocheEN car = new CocheEN();
+            CocheEN coc = new CocheEN();
 
-            CocheEN Coche = car.SacarCar(matricula);
-
+            CocheEN[] listaCoches = coc.MostrarCoches();
+            
             DataTable tabla = new DataTable();
 
             tabla.Columns.Add("Matricula");
@@ -35,27 +34,29 @@ namespace CapaInterfaz
             tabla.Columns.Add("Color");
             tabla.Columns.Add("Imagen");
 
-           
+            for (int i = 0; i < listaCoches.Length; i++)
+            {
+
                 DataRow row = tabla.NewRow();
-                row["Matricula"] = Coche.Matricula;
-                row["Marca"] = Coche.Marca;
-                row["Modelo"] = Coche.Modelo;
-                row["Precio"] = Coche.Precio;
-                row["Puertas"] = Coche.Puertas;
-                row["Motor"] = Coche.Motor;
-                row["Km"] = Coche.Km;
-                row["Anyo"] = Coche.Anyo;
-                row["Tipo"] = Coche.Tipo;
-                row["Plazas"] = Coche.Plazas;
-                row["Cambio"] = Coche.Cambio;
-                row["Color"] = Coche.Color;
-                row["Imagen"] = Coche.Imagen;
+                row["Matricula"] = listaCoches[i].Matricula;
+                row["Marca"] = listaCoches[i].Marca;
+                row["Modelo"] = listaCoches[i].Modelo;
+                row["Puertas"] = listaCoches[i].Puertas;
+                row["Motor"] = listaCoches[i].Motor;
+                row["Km"] = listaCoches[i].Km;
+                row["Anyo"] = listaCoches[i].Anyo;
+                row["Tipo"] = listaCoches[i].Tipo;
+                row["Plazas"] = listaCoches[i].Plazas;
+                row["Cambio"] = listaCoches[i].Cambio;
+                row["Color"] = listaCoches[i].Color;
+                row["Imagen"] = listaCoches[i].Imagen;
                 tabla.Rows.Add(row);
+            }
             
-            
+
             ListProducts.DataSource = tabla;
             ListProducts.DataBind();
-        }
         
+        }
     }
 }

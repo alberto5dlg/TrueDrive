@@ -189,5 +189,18 @@ namespace LibreriaTD.EN
             CocheCAD ncar = new CocheCAD();
             return ncar.ExtraerPorTipo(tipo);
         }
+
+        public CocheEN[] MostrarCoches()
+        {
+            CocheCAD ncoche = new CocheCAD();
+            return ncoche.SacarCoches();
+        }
+
+        public CocheEN SacarCar(string matricula)
+        {
+            CocheCAD ncoche = new CocheCAD();
+            return ncoche.SacarCoche(matricula);
+        }
+
     }
 }

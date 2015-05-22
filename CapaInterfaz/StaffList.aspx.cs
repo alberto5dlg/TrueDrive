@@ -49,9 +49,5 @@ namespace CapaInterfaz
             ListProducts.DataBind();
         }
 
-        protected void sub(object sender, EventArgs e)
-        {
-        }
-
     }
 }
